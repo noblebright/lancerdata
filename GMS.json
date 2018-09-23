@@ -5,7 +5,38 @@
     "flavor": "From Cradle to the Stars, General Massive Systems did it rst and did it best. GMS: reliable quality, universal licensing, total coverage."
   },
   "pilotGear": [],
-  "coreBonuses": [],
+  "coreBonuses": [
+    {
+      "id": "gms_auto_stabilizing_hardpoints",
+      "name": "Auto-Stabilizing Hardpoints",
+      "text": "Choose 1 mount on your mech. Attacks from this mount can be made with +1 Accuracy"
+    },
+    {
+      "id": "gms_burnout_insulation",
+      "name": "BURNOUT Insulation",
+      "text": "Choose 1 mount on your mech. The first time per turn you hit with an attack from this mount, deal +1d6 bonus damage."
+    },
+    {
+      "id": "gms_improved_armamanet",
+      "name": "Improved Armament",
+      "text": "If your mech has less than 3 mounts, gain an additional Flexible Mount"
+    },
+    {
+      "id": "gms_integrated_weapon",
+      "name": "Integrated Weapon",
+      "text": "Choose 1 base mount on your mech (not one granted by an ultimate). It gains capacity for an additional auxiliary weapon, which can be fired whenever that mount is fired."
+    },
+    {
+      "id": "gms_mount_retrofitting",
+      "name": "Mount Retrofitting",
+      "text": "Upgrade one of your mech’s mounts into a CORE mount. A CORE mount can mount 1 heavy, 1 main, or up to 2 auxiliary weapons"
+    },
+    {
+      "id": "gms_reserve_capacitors",
+      "name": "Reserve Capacitors",
+      "text": "When you spend core power to activate an ultimate, you can also repair your mech’s HP to full and cool all heat as a Free Action, then roll a 1d20. On a 20, regain 1 core power."
+    }
+  ],
   "shells": [
     {
       "id": "gms_everest",
