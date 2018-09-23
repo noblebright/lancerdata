@@ -201,6 +201,11 @@
       "id": "unique",
       "name": "Unique",
       "text": "Unique indicates that a weapon or system cannot be duplicated. You can only install it once per mech."
+    },
+    {
+      "id": "ai",
+      "name": "AI",
+      "text": "Your mech has an NHP unit installed in it. It is obedient to you alone. When you hand over the controls, it can take actions and move on its own prerogative when not piloted, using its stats."
     }
   ]
 }
