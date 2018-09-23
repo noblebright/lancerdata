@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "name": "Lancer Core Rules",
+    "abbrev": "core",
+    "dummyCorp": true
+  },
+  "statuses": [
+    {
+      "id": "crippled",
+      "name": "Crippled",
+      "text": "* Your maximum speed becomes 2 (after all modifiers)\n* You cannot boost"
+    },
+    {
+      "id": "coreBreach",
+      "name": "Core Breach",
+      "text": "* You cannot cool heat or lose heat\n* Make an overheating check each time you take heat"
+    },
+    {
+      "id": "critical",
+      "name": "Critical",
+      "text": "* You cannot gain HP or repair\n* Make a critical check each time you take damage"
+    },
+    {
+      "id": "destroyed",
+      "name": "Destroyed",
+      "text": "* When destroyed, a mech counts as permanently stunned and shut down until it's restored to working condition (these conditions cannot be removed in any way). It then becomes an object on the battlefield and provides cover accordingly."
+    },
+    {
+      "id": "engaged",
+      "name": "Engaged",
+      "text": "* While Engaged in melee, all your ranged attacks are made with +1 difficulty.\n* If you become engaged with a target the same size or larger, you immediately stop movign and lose any unspent movement from that move."
+    },
+    {
+      "id": "hidden",
+      "name": "Hidden",
+      "text": "* You cannot be targeted by hostile attacks or actions, and enemies only know your apporximate location.  Performing any attack, taking reactions, or ending your turn out of cover will end Hiding."
+    },
+    {
+      "id": "immobilized",
+      "name": "Immobilized",
+      "text": "* Your maximum speed becomes 0. You cannot move or boost. An immobilized target can still defend itself to some degree (making checks, etc)."
+    },
+    {
+      "id": "impaired",
+      "name": "Impaired",
+      "text": "* +1 Difficulty on all actions, attacks, and skill checks"
+    },
+    {
+      "id": "invisible",
+      "name": "Invisible",
+      "text": "* All attack rolls against an invisible target have a 50% chance to miss outright (check before the attack)."
+    },
+    {
+      "id": "jammed",
+      "name": "Jammed",
+      "text": "* The only attacks a Jammed mech can make are improvised attacks, grapples, or rams\n* A Jammed mech cannot use comms to talk to other players (can only talk to GM)\n* A Jammed mech cannot make or benefit from Tech actions\n* A Jammed mech cannot take reactions"
+    },
+    {
+      "id": "lockOn",
+      "name": "Lock On",
+      "text": "* An attacker can consume the Lock On status on a target to gain +1 Accuracy on its next attack against that target. Lock On may also activate other talents or abilities."
+    },
+    {
+      "id": "shutDown",
+      "name": "Shut Down",
+      "text": "* Your mech is stunned, but you can still take the Boot Up action\n* Your mech cools\n* You cannot be affected by tech actions or system attacks or effects\n * Shutting down (or being shut down) re-shackles any unshackled AI."
+    },
+    {
+      "id": "stunned",
+      "name": "Stunned",
+      "text": "* You cannot overcharge, take free actions, reactions, move, or take any actions with your mech. A pilot in a stunned mech can still mount or dismount their mech, eject, or take actions normally.\n* Attackers receive +1 Accuracy to attack you\n* You automatically fail all hull or agility checks"
+    },
+    {
+      "id": "prone",
+      "name": "Prone",
+      "text": "* Attackers receive +1 Accuracy to attack prone targets\n* A mech knocked prone is crippled while prone. It costs a mech’s full movement to stand up. A mech cannot stand up while immobilized."
+    },
+    {
+      "id": "volatile",
+      "name": "Volatile",
+      "text": "* Volatile mechs roll +1 die on overheating checks"
+    },
+    {
+      "id": "vulnerable",
+      "name": "Vulnerable",
+      "text": "* Vulnerable mechs roll +1 die on critical checks"
+    }
+  ],
+  "tags": [
+    {
+      "id": "heatSelf",
+      "name": "Heat (Self)",
+      "text": "this tag indicates a weapon or system that deals Heat to its user, applied immediately upon firing."
+    },
+    {
+      "id": "ap",
+      "name": "Armor Piercing (AP)",
+      "text": "The damage from this weapon ignores armor"
+    },
+    {
+      "id": "accurate",
+      "name": "Accurate",
+      "text": "This weapon attacks with +1 Accuracy"
+    },
+    {
+      "id": "arcing",
+      "name": "Arcing",
+      "text": "This weapon ignores line of sight as long as it can trace a path to its target. Arcing weapons typically lob projectiles in an arc"
+    },
+    {
+      "id": "inaccurate",
+      "name": "Inaccurate",
+      "text": "This weapon attacks with +1 Difficulty"
+    },
+    {
+      "id": "loading",
+      "name": "Loading",
+      "text": "indicates that a weapon must be reloaded before being used again. Weapons can be reloaded by the Stabilize actions or some systems."
+    },
+    {
+      "id": "reliable",
+      "name": "Reliable",
+      "text": "This weapon always does X damage, even if it misses its target or rolls lower damage. It has some degree or self-correction or is simply powerful enough that even a glancing blow will cause damage."
+    },
+    {
+      "id": "unreliable",
+      "name": "Unreliable",
+      "text": " When attacking with this weapon, roll a d6 before you make your attack roll. If it comes up as a ‘1’, the weapon jams immediately. Lose the attack, and it cannot be used until the start of your next turn."
+    },
+    {
+      "id": "accurate",
+      "name": "Accurate",
+      "text": "This weapon attacks with +1 Accuracy"
+    },
+    {
+      "id": "ordnance",
+      "name": "Ordnance",
+      "text": "Ordnance weapons must be fired before taking any other action or movement on a turn (you can still act and move normally afterwards). In addition, ordnance weapons are too cumbersome to be used against targets in engagement with your mech, and cannot be used for overwatch"
+    },
+    {
+      "id": "seeking",
+      "name": "Seeking",
+      "text": "This weapon totally ignores cover and line of sight as long as it can draw a path to its target. Seeking weapons are typically self guided and propelled, and can move through complicated paths to their targets."
+    },
+    {
+      "id": "smart",
+      "name": "Smart",
+      "text": "Smart weapons have some degree of self-guiding systems, self-propelled projectiles, or even nanorobotic ammunition. They must typically be scrambled or jammed rather than avoided. Smart weapons attack e-defense instead of evasion, even when making a melee or ranged attack. If a target has no listed e-defense, they count e-defense as 8."
+    },
+    {
+      "id": "ammo",
+      "name": "Ammo",
+      "text": "Indicates a special damage type. Only one can be used per weapon at a time and can be swapped as an interaction."
+    },
+    {
+      "id": "dangerZone",
+      "name": "Danger Zone",
+      "text": "This system, talent, or weapon only activates when your mech has 1/2 or more of its heat gauge filled in"
+    },
+    {
+      "id": "deployable",
+      "name": "Deployable",
+      "text": "This system can be deployed in a free adjacent space as a quick action, unless otherwise noted. It has 10 hp/size and evasion 5."
+    },
+    {
+      "id": "drone",
+      "name": "Drone",
+      "text": " Indicates a self-propelled system with rudimentary intelligence. Some drone systems are mech systems that must be activated, others are deployable. Deployable drones, unless otherwise noted, are size ½ and have evasion 10, 10 HP, and 0 armor, and can benefit from cover and other defenses. They roll all mech skill checks with +0. If they are destroyed (when they reach 0 HP), they must be repaired (like any other system) before they can be used again, but are restored to full hp when you rest or full repair"
+    },
+    {
+      "id": "grenade",
+      "name": "Grenade",
+      "text": "This explosive or other device can be thrown at a point in range and line of sight as a quick action"
+    },
+    {
+      "id": "limited",
+      "name": "Limited",
+      "text": " Indicates that a weapon or system can only be used x number of times before a full repair"
+    },
+    {
+      "id": "mine",
+      "name": "Mine",
+      "text": " Indicates an explosive that can be planted as a quick action in a free adjacent space. Mines cannot be placed adjacent to any other mines and arm as an end of round action. They activate as soon as any target enters an adjacent space. Mines create a burst attack starting from the space in which they were placed. A mine can be detected with a quick action and a successful systems check and disarmed by moving adjacent to the mine and making a successful engineering check as a quick action (on a failure, the mine explodes normally)"
+    },
+    {
+      "id": "mod",
+      "name": "Mod",
+      "text": "Indicates a weapon mod. Only one can be taken per weapon."
+    },
+    {
+      "id": "protocol",
+      "name": "Protocol",
+      "text": "This system can be activated as a Free Action at the start of your turn. Deactivating it might take a different action."
+    },
+    {
+      "id": "shield",
+      "name": "Shield",
+      "text": "Indicates the system is an energy shield of some kind"
+    },
+    {
+      "id": "unique",
+      "name": "Unique",
+      "text": "Unique indicates that a weapon or system cannot be duplicated. You can only install it once per mech."
+    }
+  ]
+}
