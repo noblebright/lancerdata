@@ -1,0 +1,635 @@
+{
+  "meta": {
+    "name": "General Massive Systems",
+    "abbrev": "GMS",
+    "flavor": "From Cradle to the Stars, General Massive Systems did it rst and did it best. GMS: reliable quality, universal licensing, total coverage."
+  },
+  "pilotGear": [],
+  "coreBonuses": [],
+  "shells": [
+    {
+      "id": "gms_everest",
+      "name": "Standard Pattern I (\"Everest\")",
+      "size": 1,
+      "armor": 0,
+      "sp": 6,
+      "stats": {
+        "any": 1
+      },
+      "mounts": [
+        "flexible",
+        "main",
+        "heavy"
+      ],
+      "flavor": "The Everest -- officially, the General Massive Systems Standard Pattern I -- is a plainly designed chassis. Simple lines. Functional grace. Sturdy bulk. Its use-name, Everest, comes from one of the names of the tallest mountain on Cradle. Of the surveyed, named mountains in known space, Mount Everest -- or Sagarmatha, or Chomolungma, as it has been called in Old Human tongues -- is neither the most prominent peak, nor the even the tallest in Cradles local star system; and yet, pilots the galaxy over learned to call their GMS-SPi's by that ancient name. Why?\n\nThe sentimental answer is that the Everest is called the Everest because it is a reminder of what was once the limit of human endurance, of what once was the peak of human achievement. To summit Everest was to stand atop the world, the culmination of months -- maybe years -- of training, investment, and effort, defying death and injury upon your quest to summit.\n\nThe real answer is probably much less intentional. Somewhere along the line, GMS's plain naming convention coupled with Unions anthropocentric emphasis lead a cadet, having graduated to a full pilot, to paint EVEREST across their GMS-SPi's flank. Maybe it was meant to be their callsign, or maybe it was meant to represent their success following grueling training, but either way the name stuck in the insular pilot culture. Other pilots adopted the name, and over five centuries it has grown to become the official-unofficial designation for all GMS-SPi chassis.\n\nVeteran pilots may never return to crew an Everest after they've moved on to other chassis, but they'll always remember when they reached that first summit, when they proved they were worthy of planting their own flag on the peak of the world.\n\nThe Everest may not be the most specialized chassis in the galaxy, but it is the backbone of the galaxy, and humanity steps to the stars from its shoulders.",
+      "ultName": "GMS Hyperspec Fuel Injector",
+      "ultPassive": "If you roll a 20 on your d20 for the first roll of any kind on your turn (the actual number 20 on the physical die, before modifiers, sometimes called a natural 20) you can make any quick action as a free action at any point before the end of your turn. This passive can only take effect once per turn, and only on your turn.",
+      "actions": {
+        "gms_everest_ult": {
+          "name": "Power Up",
+          "type": "free",
+          "tags": {
+            "corePower": true,
+            "protocol": true
+          },
+          "text": "This turn only, you can make an additional Full Action as a free action or 2 Quick actions as free actions."
+        }
+      },
+      "ultActive": "**Power Up**  \n<Action id=\"gms_everest_ult\" format=\"text\">",
+      "license": {}
+    }
+  ],
+  "weapons": [
+    {
+      "id": "mc-amr",
+      "name": "Anti-Materiel Rifle",
+      "size": "heavy",
+      "type": "rifle",
+      "tags": {
+        "loading": true,
+        "ordnance": true,
+        "ap": true
+      },
+      "range": {
+        "target": 20
+      },
+      "damage": {
+        "kinetic": "2d6+2"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-ar",
+      "name": "Assault Rifle",
+      "size": "main",
+      "type": "rifle",
+      "tags": {},
+      "range": {
+        "target": 10
+      },
+      "damage": {
+        "kinetic": "1d6"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-cb",
+      "name": "Charged Blade",
+      "size": "main",
+      "type": "melee",
+      "tags": {
+        "loading": true,
+        "ordnance": true,
+        "ap": true
+      },
+      "range": {
+        "target": 1
+      },
+      "damage": {
+        "energy": "1d3+3"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-dla",
+      "name": "Drone Nexus (Light)",
+      "size": "auxiliary",
+      "type": "nexus",
+      "tags": {
+        "smart": true
+      },
+      "range": {
+        "target": 8
+      },
+      "damage": {
+        "energy": "1d3"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-dhk",
+      "name": "Drone Nexus (Hunter-Killer)",
+      "size": "main",
+      "type": "nexus",
+      "tags": {
+        "smart": true
+      },
+      "range": {
+        "target": 10
+      },
+      "damage": {
+        "kinetic": "1d6"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-hb",
+      "name": "Heavy Machine Gun",
+      "size": "heavy",
+      "type": "cannon",
+      "tags": {
+        "inaccurate": true
+      },
+      "range": {
+        "target": 10
+      },
+      "damage": {
+        "kinetic": "2d6+1"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-hb",
+      "name": "Heavy Melee Weapon",
+      "size": "heavy",
+      "type": "melee",
+      "tags": {},
+      "range": {
+        "target": 1
+      },
+      "damage": {
+        "kinetic": "2d6+2"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-eb",
+      "name": "Heavy Charged Blade",
+      "size": "heavy",
+      "type": "melee",
+      "tags": {
+        "ap": true
+      },
+      "range": {
+        "target": 1
+      },
+      "damage": {
+        "kinetic": "1d6+3"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-hw",
+      "name": "Howitzer",
+      "size": "heavy",
+      "type": "cannon",
+      "tags": {
+        "arcing": true,
+        "inaccurate": true,
+        "ordnance": true,
+        "loading": true
+      },
+      "range": {
+        "blast": [
+          20,
+          2
+        ]
+      },
+      "damage": {
+        "explosive": "2d6"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-mr",
+      "name": "Missile Rack",
+      "size": "auxiliary",
+      "type": "launcher",
+      "tags": {
+        "loading": true
+      },
+      "range": {
+        "blast": [
+          10,
+          1
+        ]
+      },
+      "damage": {
+        "explosive": "1d3+1"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-m",
+      "name": "Mortar",
+      "size": "main",
+      "type": "launcher",
+      "tags": {
+        "arcing": true,
+        "inaccurate": true
+      },
+      "range": {
+        "blast": [
+          10,
+          1
+        ]
+      },
+      "damage": {
+        "explosive": "1d6"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-p",
+      "name": "Pistol",
+      "size": "auxiliary",
+      "type": "cqb",
+      "tags": {},
+      "range": {
+        "target": 5
+      },
+      "threat": 3,
+      "damage": {
+        "kinetic": "1d3"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-cyclone",
+      "name": "Pulse Rifle",
+      "size": "superheavy",
+      "type": "rifle",
+      "tags": {
+        "reliable": 5,
+        "accurate": true,
+        "loading": true
+      },
+      "range": {
+        "target": 15
+      },
+      "damage": {
+        "kinetic": "3d6+3"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-rpg",
+      "name": "RPG",
+      "size": "main",
+      "type": "launcher",
+      "tags": {
+        "loading": true
+      },
+      "range": {
+        "blast": [
+          10,
+          2
+        ]
+      },
+      "damage": {
+        "explosive": "1d6"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-sg",
+      "name": "Shotgun",
+      "size": "main",
+      "type": "cqb",
+      "tags": {},
+      "range": {
+        "target": 5
+      },
+      "threat": 3,
+      "damage": {
+        "kinetic": "1d6"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-tb",
+      "name": "Tactical Melee",
+      "size": "main",
+      "type": "melee",
+      "tags": {},
+      "range": {
+        "target": 1
+      },
+      "damage": {
+        "kinetic": "1d6+2"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-tk",
+      "name": "Tactical Knife",
+      "size": "auxiliary",
+      "type": "melee",
+      "tags": {},
+      "range": {
+        "target": 1
+      },
+      "damage": {
+        "kinetic": "1d3+1"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-tp",
+      "name": "Thermal Pistol",
+      "size": "auxiliary",
+      "type": "cqb",
+      "tags": {},
+      "range": {
+        "line": [
+          5,
+          1
+        ]
+      },
+      "damage": {
+        "energy": 2
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-tl",
+      "name": "Thermal Rifle",
+      "size": "main",
+      "type": "rifle",
+      "tags": {
+        "ap": true
+      },
+      "range": {
+        "target": 5
+      },
+      "damage": {
+        "energy": "1d3+2"
+      },
+      "license": {}
+    },
+    {
+      "id": "mc-el",
+      "name": "Thermal Lance",
+      "size": "heavy",
+      "type": "cannon",
+      "tags": {
+        "selfHeat": 2
+      },
+      "range": {
+        "line": [
+          10,
+          1
+        ]
+      },
+      "damage": {
+        "energy": "2d6"
+      },
+      "license": {}
+    }
+  ],
+  "systems": [
+    {
+      "id": "gms_personalizations",
+      "name": "Personalizations",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "stats": {
+        "hp": 2
+      },
+      "text": "When you take this mod, your mech gains +2 HP and you may establish with your GM 1 minor eect or modication you have made to your mech. This mod cannot grant any statistical or combat benet to your mech other than the hp benet, but could provide other useful eects. If your GM agrees that this mod would help you with a particular skill check, they can give you +1 Accuracy on the check.",
+      "license": {}
+    },
+    {
+      "id": "gms_stable_structure",
+      "name": "Stable Structure",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "text": "Attempts to knock you prone are made with +1 Difficulty, and you make rolls to resist getting knocked prone with +1 Accuracy.",
+      "license": {}
+    },
+    {
+      "id": "gms_manipulators",
+      "name": "Manipulators",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "flavor": "Precise interaction with the built or natural environment, soft targets, and sensitive material below rated tonnage is part of the daily routine for support-class mechs. Manipulators, haptic-padded multi-digit hands, allow for such precise manipulation.",
+      "text": "Gain 2 extra sets of limbs. These limbs cannot be used to make attacks, but can otherwise hold and manipulate the environment and items as normal. In addition, these manipulators can interact with objects in the environment that a pilot would normally have to interact with (a pilot sized touch pad, etc) with no penalty.",
+      "license": {}
+    },
+    {
+      "id": "gms_paintjob",
+      "name": "Custom Paint Job",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "text": "Each time you lose your rst point of structure, you can roll twice for your critical check and choose either result.",
+      "license": {}
+    },
+    {
+      "id": "gms_apple",
+      "name": "Pattern-A Apple High Explosive Grenades",
+      "sp": 1,
+      "tags": {
+        "grenade": true,
+        "limited": 2
+      },
+      "actions": {
+        "gms_apple_action": {
+          "name": "Apple HE Grenade",
+          "type": "quick",
+          "range": {
+            "blast": [
+              5,
+              2
+            ]
+          },
+          "damage": {
+            "explosive": "1d6"
+          },
+          "tags": {
+            "limited": 2,
+            "grenade": true
+          },
+          "text": "Targets caught in the blast must pass an agility check or take 1d6 explosive damage"
+        }
+      },
+      "flavor": "The GMS Pattern-A HEX Grenade is a pilots best friend in a tight spot. Inert until activation by its neurocoded welder, the Apple is guaranteed to neutralize any hard or soft target within its eective radius.",
+      "text": "<Action id=\"gms_apple_action\" format=\"text\"/>",
+      "license": {}
+    },
+    {
+      "id": "gms_jericho",
+      "name": "Pattern-A Jericho Deployable Cover",
+      "sp": 2,
+      "tags": {
+        "deployable": true
+      },
+      "actions": {
+        "gms_jericho_action": {
+          "name": "Jericho Deployable Cover",
+          "type": "quick",
+          "tags": {
+            "deployable": true
+          },
+          "text": "Using this system creates a Line 4 section of Light Cover adjacent to the user (in any orientation, as long as there is free space). Requires a full action to pick up. Reusable. The cover has 5 Evasion, 40 HP, and can be targeted and destroyed. A mech can spend 1 repair during a rest to repair it to full HP."
+        }
+      },
+      "text": "<Action id=\"gms_jericho_action\" format=\"text\"/>",
+      "license": {}
+    },
+    {
+      "id": "gms_pancake",
+      "name": "Pancake Anti-Vehicular Mines",
+      "sp": 1,
+      "tags": {
+        "mine": true,
+        "limited": 23
+      },
+      "actions": {
+        "gms_pancake_action": {
+          "name": "Pancake Anti-Vehicular Mines",
+          "type": "quick",
+          "tags": {
+            "mine": true,
+            "limited": 23
+          },
+          "range": {
+            "burst": 1
+          },
+          "damage": {
+            "explosive": "1d6+ 3"
+          },
+          "text": "This mine detonates when any target moves adjacent to it for a burst 1 attack, 1d6+3 explosive damage. A target can pass an agility check to halve this damage."
+        }
+      },
+      "flavor": "Used primarily for area denial, the GMS AV Mine system has begun to see more oensive employment by GMS pilots in combat theaters.",
+      "text": "<Action id=\"gms_jericho_action\" format=\"text\"/>",
+      "license": {}
+    },
+    {
+      "id": "gms_filter",
+      "name": "Pattern-A Filter Smoke Grenade",
+      "sp": 1,
+      "tags": {
+        "grenade": true,
+        "limited": 3
+      },
+      "actions": {
+        "gms_filter_action": {
+          "name": "Filter Smoke Grenade",
+          "type": "quick",
+          "range": {
+            "blast": [
+              5,
+              3
+            ]
+          },
+          "tags": {
+            "limited": 3,
+            "grenade": true
+          },
+          "text": "The blast area grants light cover to all within, friend or foe. Lasts until the end of the users next turn, then disperses"
+        }
+      },
+      "flavor": "The Pattern-A/SL is a cheap, reliable, and low-system-cost method of deploying eective cover in a highvelocity kinetic scenario. Mixed with a proprietary blend of cha, particulates, accelerants, and deladeenhancers, Pattern-A/SL smoke is eective at obscuring most all sensor suites.",
+      "text": "<Action id=\"gms_filter_action\" format=\"text\"/>",
+      "license": {}
+    },
+    {
+      "id": "gms_dummy_plug",
+      "name": "Companion/Concierge-Class Dummy Plug",
+      "sp": 2,
+      "tags": {
+        "unique": true,
+        "ai": true
+      },
+      "flavor": "The Companion/Concierge Class Dummy Plug conforms to galaxy wide standards for comp/con units. A Com/Con DP will pass even the most rigid Turing-Null classications and is cleared for operations even when the pilot is not present.",
+      "text": "Your mech has a basic companion/concierge unit installed in it, gaining the AI tag. It can speak to you and has a personality but is not truly capable of independent thought, as a true AI would be. It is obedient to you alone. When you hand over the controls, it can take actions and move on its own prerogative when not piloted, using its stats, but has no independent initiative (it must take and follow commands from you, or else takes no action other than to defend itself).\n\nDummy Plugs are not true AIs and thus cannot be unshackled.",
+      "license": {}
+    },
+    {
+      "id": "gms_shield_1",
+      "name": "Shield Type-I",
+      "sp": 2,
+      "tags": {
+        "unique": true,
+        "protocol": true,
+        "selfHeat": 1,
+        "shield": true
+      },
+      "actions": {
+        "gms_shield_1_action": {
+          "name": "GMS Shield Type-I",
+          "type": "free",
+          "tags": {
+            "unique": true,
+            "protocol": true,
+            "selfHeat": 1,
+            "shield": true
+          },
+          "text": "You can choose to activate this shield protocol at the start of your turn. Nominate an enemy you can see. All that enemys ranged or melee attacks against you are made at +2 difficulty until the start of your next turn, but your ranged or melee attacks against them also suer the same penalty"
+        }
+      },
+      "flavor": "The GMS Shield Type-I utilizes a projected, aggressive, anti-ballistic super-positional shield to trap and deny incoming solid and wave-based projectiles.",
+      "text": "<Action id=\"gms_shield_1_action\" format=\"text\"/>",
+      "license": {}
+    },
+    {
+      "id": "gms_shield_2",
+      "name": "Shield Type-II",
+      "sp": 3,
+      "tags": {
+        "unique": true,
+        "protocol": true,
+        "selfHeat": 3,
+        "shield": true
+      },
+      "actions": {
+        "gms_shield_2_action": {
+          "name": "GMS Shield Type-II",
+          "type": "free",
+          "tags": {
+            "unique": true,
+            "protocol": true,
+            "selfHeat": 3,
+            "shield": true
+          },
+          "text": "You can choose to activate this shield protocol at the start of your turn. Nominate up to two enemies you can see. All those enemys ranged or melee attacks against you are made at +2 difficulty until the start of your next turn, but your ranged or melee weapon attacks against them also suer the same penalty."
+        }
+      },
+      "flavor": "The GMS Shield Type-II Improves on the Type-I, bringing a larger powerplant and more wide-angle projectors for increased coverage. The Type-II, while providing enhanced protection, does run hot, and requires a core with heat sinks and frame space large enough to mount the system",
+      "text": "<Action id=\"gms_shield_2_action\" format=\"text\"/>",
+      "license": {}
+    },
+    {
+      "id": "gms_eva",
+      "name": "EVA Module",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "text": "Your mech counts as having a propulsion system in low or zero gravity and submarine environments (its not crippled while moving and can fly normally).",
+      "license": {}
+    },
+    {
+      "id": "gms_burst",
+      "name": "Burst Jump Jet System",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "text": "When your mech boosts, your mech can fly. However, your mech must end its turn on the ground or another surface, or else fall.",
+      "license": {}
+    },
+    {
+      "id": "gms_flight",
+      "name": "Type I Flight System",
+      "sp": 3,
+      "tags": {
+        "unique": true
+      },
+      "text": "When your mech moves or boosts, it can fly. However, at the end of each turn that you activated this module, generate heat equal to the size of your mech +1, rounding up.",
+      "license": {}
+    }
+  ],
+  "actions": [],
+  "statuses": [],
+  "tags": []
+}
