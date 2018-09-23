@@ -86,7 +86,7 @@
       "text": "* Vulnerable mechs roll +1 die on critical checks"
     }
   ],
-  "tags": [
+  "tagDefs": [
     {
       "id": "heatSelf",
       "name": "Heat (Self)",
