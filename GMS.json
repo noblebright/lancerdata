@@ -394,7 +394,7 @@
       "size": "heavy",
       "type": "cannon",
       "tags": {
-        "selfHeat": 2
+        "heatSelf": 2
       },
       "range": {
         "line": [
@@ -582,7 +582,7 @@
       "tags": {
         "unique": true,
         "protocol": true,
-        "selfHeat": 1,
+        "heatSelf": 1,
         "shield": true
       },
       "actions": {
@@ -592,7 +592,7 @@
           "tags": {
             "unique": true,
             "protocol": true,
-            "selfHeat": 1,
+            "heatSelf": 1,
             "shield": true
           },
           "text": "You can choose to activate this shield protocol at the start of your turn. Nominate an enemy you can see. All that enemys ranged or melee attacks against you are made at +2 difficulty until the start of your next turn, but your ranged or melee attacks against them also suer the same penalty"
@@ -609,7 +609,7 @@
       "tags": {
         "unique": true,
         "protocol": true,
-        "selfHeat": 3,
+        "heatSelf": 3,
         "shield": true
       },
       "actions": {
@@ -619,7 +619,7 @@
           "tags": {
             "unique": true,
             "protocol": true,
-            "selfHeat": 3,
+            "heatSelf": 3,
             "shield": true
           },
           "text": "You can choose to activate this shield protocol at the start of your turn. Nominate up to two enemies you can see. All those enemys ranged or melee attacks against you are made at +2 difficulty until the start of your next turn, but your ranged or melee weapon attacks against them also suer the same penalty."
