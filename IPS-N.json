@@ -112,8 +112,8 @@
               },
               "actions": [
                 {
-                  "id": "ips-n_aegis_shield_generator_action",
-                  "name": "Aegis Shield Generator",
+                  "id": "ips-n_bastion_siege_scales_action",
+                  "name": "\"BASTION\" Siege Scales",
                   "type": "free",
                   "tags": {
                     "unique": true,
