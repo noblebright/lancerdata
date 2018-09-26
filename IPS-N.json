@@ -74,6 +74,7 @@
                   "range": {
                     "target": 1
                   },
+                  "tags": {},
                   "damage": {
                     "kinetic": "1d6"
                   },
