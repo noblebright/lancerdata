@@ -56,8 +56,9 @@
       "flavor": "The Everest -- officially, the General Massive Systems Standard Pattern I -- is a plainly designed chassis. Simple lines. Functional grace. Sturdy bulk. Its use-name, Everest, comes from one of the names of the tallest mountain on Cradle. Of the surveyed, named mountains in known space, Mount Everest -- or Sagarmatha, or Chomolungma, as it has been called in Old Human tongues -- is neither the most prominent peak, nor the even the tallest in Cradles local star system; and yet, pilots the galaxy over learned to call their GMS-SPi's by that ancient name. Why?\n\nThe sentimental answer is that the Everest is called the Everest because it is a reminder of what was once the limit of human endurance, of what once was the peak of human achievement. To summit Everest was to stand atop the world, the culmination of months -- maybe years -- of training, investment, and effort, defying death and injury upon your quest to summit.\n\nThe real answer is probably much less intentional. Somewhere along the line, GMS's plain naming convention coupled with Unions anthropocentric emphasis lead a cadet, having graduated to a full pilot, to paint EVEREST across their GMS-SPi's flank. Maybe it was meant to be their callsign, or maybe it was meant to represent their success following grueling training, but either way the name stuck in the insular pilot culture. Other pilots adopted the name, and over five centuries it has grown to become the official-unofficial designation for all GMS-SPi chassis.\n\nVeteran pilots may never return to crew an Everest after they've moved on to other chassis, but they'll always remember when they reached that first summit, when they proved they were worthy of planting their own flag on the peak of the world.\n\nThe Everest may not be the most specialized chassis in the galaxy, but it is the backbone of the galaxy, and humanity steps to the stars from its shoulders.",
       "ultName": "GMS Hyperspec Fuel Injector",
       "ultPassive": "If you roll a 20 on your d20 for the first roll of any kind on your turn (the actual number 20 on the physical die, before modifiers, sometimes called a natural 20) you can make any quick action as a free action at any point before the end of your turn. This passive can only take effect once per turn, and only on your turn.",
-      "actions": {
-        "gms_everest_ult": {
+      "actions": [
+         {
+          "id": "gms_everest_ult",
           "name": "Power Up",
           "type": "free",
           "tags": {
@@ -66,7 +67,7 @@
           },
           "text": "This turn only, you can make an additional Full Action as a free action or 2 Quick actions as free actions."
         }
-      },
+      ],
       "ultActive": "**Power Up**  \n<Action id=\"gms_everest_ult\" format=\"text\">",
       "license": {}
     }
@@ -462,8 +463,9 @@
         "grenade": true,
         "limited": 2
       },
-      "actions": {
-        "gms_apple_action": {
+      "actions": [
+        {
+          "id": "gms_apple_action",
           "name": "Apple HE Grenade",
           "type": "quick",
           "range": {
@@ -481,7 +483,7 @@
           },
           "text": "Targets caught in the blast must pass an agility check or take 1d6 explosive damage"
         }
-      },
+      ],
       "flavor": "The GMS Pattern-A HEX Grenade is a pilots best friend in a tight spot. Inert until activation by its neurocoded welder, the Apple is guaranteed to neutralize any hard or soft target within its eective radius.",
       "text": "<Action id=\"gms_apple_action\" format=\"text\"/>",
       "license": {}
@@ -493,8 +495,9 @@
       "tags": {
         "deployable": true
       },
-      "actions": {
-        "gms_jericho_action": {
+      "actions": [
+         {
+          "id": "gms_jericho_action",
           "name": "Jericho Deployable Cover",
           "type": "quick",
           "tags": {
@@ -502,7 +505,7 @@
           },
           "text": "Using this system creates a Line 4 section of Light Cover adjacent to the user (in any orientation, as long as there is free space). Requires a full action to pick up. Reusable. The cover has 5 Evasion, 40 HP, and can be targeted and destroyed. A mech can spend 1 repair during a rest to repair it to full HP."
         }
-      },
+      ],
       "text": "<Action id=\"gms_jericho_action\" format=\"text\"/>",
       "license": {}
     },
@@ -514,8 +517,9 @@
         "mine": true,
         "limited": 23
       },
-      "actions": {
-        "gms_pancake_action": {
+      "actions": [
+        {
+          "id": "gms_pancake_action",
           "name": "Pancake Anti-Vehicular Mines",
           "type": "quick",
           "tags": {
@@ -530,7 +534,7 @@
           },
           "text": "This mine detonates when any target moves adjacent to it for a burst 1 attack, 1d6+3 explosive damage. A target can pass an agility check to halve this damage."
         }
-      },
+      ],
       "flavor": "Used primarily for area denial, the GMS AV Mine system has begun to see more oensive employment by GMS pilots in combat theaters.",
       "text": "<Action id=\"gms_jericho_action\" format=\"text\"/>",
       "license": {}
@@ -543,8 +547,9 @@
         "grenade": true,
         "limited": 3
       },
-      "actions": {
-        "gms_filter_action": {
+      "actions": [
+         {
+          "id":"gms_filter_action",
           "name": "Filter Smoke Grenade",
           "type": "quick",
           "range": {
@@ -559,7 +564,7 @@
           },
           "text": "The blast area grants light cover to all within, friend or foe. Lasts until the end of the users next turn, then disperses"
         }
-      },
+      ],
       "flavor": "The Pattern-A/SL is a cheap, reliable, and low-system-cost method of deploying eective cover in a highvelocity kinetic scenario. Mixed with a proprietary blend of cha, particulates, accelerants, and deladeenhancers, Pattern-A/SL smoke is eective at obscuring most all sensor suites.",
       "text": "<Action id=\"gms_filter_action\" format=\"text\"/>",
       "license": {}
@@ -586,8 +591,9 @@
         "heatSelf": 1,
         "shield": true
       },
-      "actions": {
-        "gms_shield_1_action": {
+      "actions": [
+         {
+          "id": "gms_shield_1_action",
           "name": "GMS Shield Type-I",
           "type": "free",
           "tags": {
@@ -598,7 +604,7 @@
           },
           "text": "You can choose to activate this shield protocol at the start of your turn. Nominate an enemy you can see. All that enemys ranged or melee attacks against you are made at +2 difficulty until the start of your next turn, but your ranged or melee attacks against them also suer the same penalty"
         }
-      },
+      ],
       "flavor": "The GMS Shield Type-I utilizes a projected, aggressive, anti-ballistic super-positional shield to trap and deny incoming solid and wave-based projectiles.",
       "text": "<Action id=\"gms_shield_1_action\" format=\"text\"/>",
       "license": {}
@@ -613,8 +619,9 @@
         "heatSelf": 3,
         "shield": true
       },
-      "actions": {
-        "gms_shield_2_action": {
+      "actions": [
+         {
+          "id": "gms_shield_2_action",
           "name": "GMS Shield Type-II",
           "type": "free",
           "tags": {
@@ -625,7 +632,7 @@
           },
           "text": "You can choose to activate this shield protocol at the start of your turn. Nominate up to two enemies you can see. All those enemys ranged or melee attacks against you are made at +2 difficulty until the start of your next turn, but your ranged or melee weapon attacks against them also suer the same penalty."
         }
-      },
+      ],
       "flavor": "The GMS Shield Type-II Improves on the Type-I, bringing a larger powerplant and more wide-angle projectors for increased coverage. The Type-II, while providing enhanced protection, does run hot, and requires a core with heat sinks and frame space large enough to mount the system",
       "text": "<Action id=\"gms_shield_2_action\" format=\"text\"/>",
       "license": {}
