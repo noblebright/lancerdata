@@ -122,7 +122,7 @@
                   "text": "When activated as a free action at the start of your tun, until the start of your next turn, your mech is immobilized, but you both count as in light cover, even out in the open, and provide light cover for allied mechs. You additionally gain resistance to all damage from blast, line, and cone attacks."
                 }
               ],
-              "text": "<Action id=\"ips-n_bastion_siege_scales\" format=\"text\"/>"
+              "text": "<Action id=\"ips-n_bastion_siege_scales_action\" format=\"text\"/>"
             },
             {
               "id": "ips-n_aegis_shield_generator",
