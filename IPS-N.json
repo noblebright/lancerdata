@@ -9,6 +9,7 @@
     "ips-n_drake": {
       "name": "IPS-N \"Drake\"",
       "summary": "Heavy Assault/Fire Support",
+      "flavor": "The IPS-N DRAKE is the backbone of any proactive trade security/anti-piracy force and represents the manufacturers first foray into military-grade mechs. It is a massive frame, simian in appearance, built around a single-cast bulkhead sloped and reinforced to handle sustained incoming and outgoing fire.\n\nA dense heavily armored chassis, the standard IPS-N DRAKE fleet license includes a high-velocity, highfragment assault cannon for suppressing and overwhelming their targets, and a heavy kinetic/ablative barrier shield for defense. More advanced models feature scaled-up weaponry and armor, including the notorious multi-barrel Leviathan cannon.",
       "levels": [
         {
           "weapons": [
@@ -68,7 +69,7 @@
               "weapons": [
                 {
                   "id": "ips-n_argonaut_shield",
-                  "name": "IPS-N Argunaut Shield",
+                  "name": "IPS-N Argonaut Shield",
                   "size": "main",
                   "type": "melee",
                   "range": {
@@ -207,7 +208,7 @@
               	}              	
               ],
               "flavor": "The Leviathan AC is a massive rotary autocannon, an enclosed multi-barrel automatic weapon fed by an external reservoir, usually dorsally mounted on the chassis carrying it. At its current chambering, the Leviathan should only be fired on automatic when absolutely necessary; IPS-N is currently working on a solution to meet the cannon’s needs remotely. IPS-N recommends outfitting willing squadmates with extra reservoirs, should their chassis have room to support it.",
-              "text": "Unlike other superheavies, this weapon can be fired as part of a skirmish action with its listed profile. <Action id=\"\" format=\"text\"/>"
+              "text": "Unlike other superheavies, this weapon can be fired as part of a skirmish action with its listed profile. <Action id=\"ips-n_leviathan_cannon_action\" format=\"text\"/>"
             }
           ]
         }
