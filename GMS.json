@@ -2,7 +2,7 @@
   "meta": {
     "name": "General Massive Systems",
     "corpId": "GMS",
-    "flavor": "From Cradle to the Stars, General Massive Systems did it rst and did it best. GMS: reliable quality, universal licensing, total coverage.",
+    "flavor": "From Cradle to the Stars, General Massive Systems did it first and did it best. GMS: reliable quality, universal licensing, total coverage.",
     "author": "Tom Parkinson-Morgan <ksbabbadon@gmail.com>"
   },
   "licenses": {
@@ -64,7 +64,7 @@
       "ultName": "GMS Hyperspec Fuel Injector",
       "ultPassive": "If you roll a 20 on your d20 for the first roll of any kind on your turn (the actual number 20 on the physical die, before modifiers, sometimes called a natural 20) you can make any quick action as a free action at any point before the end of your turn. This passive can only take effect once per turn, and only on your turn.",
       "actions": [
-         {
+        {
           "id": "gms_everest_ult",
           "name": "Power Up",
           "type": "free",
@@ -503,7 +503,7 @@
         "deployable": true
       },
       "actions": [
-         {
+        {
           "id": "gms_jericho_action",
           "name": "Jericho Deployable Cover",
           "type": "quick",
@@ -555,8 +555,8 @@
         "limited": 3
       },
       "actions": [
-         {
-          "id":"gms_filter_action",
+        {
+          "id": "gms_filter_action",
           "name": "Filter Smoke Grenade",
           "type": "quick",
           "range": {
@@ -599,7 +599,7 @@
         "shield": true
       },
       "actions": [
-         {
+        {
           "id": "gms_shield_1_action",
           "name": "Shield Type-I",
           "type": "free",
@@ -627,7 +627,7 @@
         "shield": true
       },
       "actions": [
-         {
+        {
           "id": "gms_shield_2_action",
           "name": "Shield Type-II",
           "type": "free",
