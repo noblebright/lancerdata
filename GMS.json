@@ -68,7 +68,7 @@
           "text": "This turn only, you can make an additional Full Action as a free action or 2 Quick actions as free actions."
         }
       ],
-      "ultActive": "**Power Up**  \n<Action id=\"gms_everest_ult\" format=\"text\">",
+      "ultActive": "**Power Up**  \n<Action id=\"gms_everest_ult\" format=\"text\"/>",
       "license": {}
     }
   ],
@@ -594,7 +594,7 @@
       "actions": [
          {
           "id": "gms_shield_1_action",
-          "name": "GMS Shield Type-I",
+          "name": "Shield Type-I",
           "type": "free",
           "tags": {
             "unique": true,
@@ -622,7 +622,7 @@
       "actions": [
          {
           "id": "gms_shield_2_action",
-          "name": "GMS Shield Type-II",
+          "name": "Shield Type-II",
           "type": "free",
           "tags": {
             "unique": true,

@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "name": "IPS-Northstar",
+    "corpId": "IPS-N",
+    "flavor": "Your Friend in an Unfriendly Sea",
+    "author": "Tom Parkinson-Morgan <ksbabbadon@gmail.com>"
+  },
+  "licenses": {
+    "ips-n_drake": {
+      "name": "IPS-N \"Drake\"",
+      "summary": "Heavy Assault/Fire Support",
+      "levels": [
+        {
+          "weapons": [
+            {
+              "id": "ips-n_assault_cannon",
+              "name": "Assault Cannon",
+              "flavor": "The IPS-N assault cannon is a deep-cooled autocannon, able to be fielded as a fixed weapon or manipulator-compatible platform. This autocannon can be fed by box-magazine or belt, is simple in its functionality, and is a mainstay among IPS-N chassis fleet orders.",
+              "size": "heavy",
+              "type": "cannon",
+              "tags": {
+                "heatSelf": 1,
+                "unreliable": true
+              },
+              "range": {
+                "target": 10
+              },
+              "damage": {
+                "kinetic": "2d6+2"
+              }
+            },
+            {
+              "id": "ips-n_concussion_missiles",
+              "name": "Concussion Missiles",
+              "size": "main",
+              "type": "launcher",
+              "range": {
+                "target": 8
+              },
+              "damage": {
+                "explosive": "1d3+1"
+              },
+              "text": "Targets struck by these missiles are knocked back 1 space and must pass a systems check or become <Status id=\"impaired\" format=\"link\"/> until the end of their next turn"
+            }
+          ]
+        },
+        {
+          "shells": [
+            {
+              "id": "ips-n_drake",
+              "name": "Drake",
+              "size": 2,
+              "armor": 3,
+              "sp": 5,
+              "stats": {
+                "hull": 1,
+                "agility": -2,
+                "engineering": -1
+              },
+              "mounts": [
+                "flexible",
+                "main",
+                "heavy"
+              ],
+              "flavor": "The IPS-N DRAKE is the backbone of any proactive trade security/anti-piracy force and represents the manufacturers first foray into military-grade mechs. It is a massive frame, simian in appearance, built around a single-cast bulkhead sloped and reinforced to handle sustained incoming and outgoing fire.\n\nA dense heavily armored chassis, the standard IPS-N DRAKE fleet license includes a high-velocity, highfragment assault cannon for suppressing and overwhelming their targets, and a heavy kinetic/ablative barrier shield for defense. More advanced models feature scaled-up weaponry and armor, including the notorious multi-barrel Leviathan cannon.",
+              "ultName": "IPS-N Argonaut Shield",
+              "ultPassive": "This huge, plated shield can be used to bash enemies. It counts as its own mount (doesn’t take mount space), cannot be modified, and has the following profile: <Weapon id=\"ips-n_argonaut_shield\" format=\"block\"/>",
+              "weapons": [
+                {
+                  "id": "ips-n_argonaut_shield",
+                  "name": "IPS-N Argunaut Shield",
+                  "size": "main",
+                  "type": "melee",
+                  "range": {
+                    "target": 1
+                  },
+                  "damage": {
+                    "kinetic": "1d6"
+                  },
+                  "license": {
+                    "shell": "ips-n_drake"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "id": "ips-n_argonaut_ult",
+                  "name": "FORTRESS",
+                  "type": "free",
+                  "tags": {
+                    "corePower": true,
+                    "protocol": true
+                  },
+                  "text": "When you activate this protocol, you plant your shield and deploy stabilizers, becoming more like a fortified emplacement than a mech. While this system is active, your mech is <Status id=\"immobilized\" format=\"link\"/>, though you can still rotate and aim in any direction. You are immune to being knocked back, rammed, grappled, or involuntarily moved by any reason. Two line 2 sections of heavy cover unfold, drawn from your mech in any direction. Your mech grants heavy cover for allied mechs while this system is active, has heavy cover itself, has resistance to damage from blast, line, and cone attacks, and also grants this resistance to any mechs making use of its cover. This system can be deactivated at the start of your turn but cannot be reactivated without more core power.",
+                  "license": {
+                    "shell": "ips-n_drake"
+                  }
+                }
+              ],
+              "ultActive": "**FORTRESS**  \n<Action id=\"ips-n_argonaut_ult\" format=\"text\"/>"
+            }
+          ],
+          "systems": [
+            {
+              "id": "ips-n_bastion_siege_scales",
+              "name": "\"BASTION\" Siege Scales",
+              "flavor": "This siege shield rolls over your mechs’ chassis like an ancient coat of chain mail, constricting its movement but stopping huge amounts of damage from blasts, shrapnel, and energy weapons.",
+              "sp": 2,
+              "tags": {
+                "unique": true,
+                "protocol": true
+              },
+              "actions": [
+                {
+                  "id": "ips-n_aegis_shield_generator_action",
+                  "name": "Aegis Shield Generator",
+                  "type": "free",
+                  "tags": {
+                    "unique": true,
+                    "protocol": true
+                  },
+                  "text": "When activated as a free action at the start of your tun, until the start of your next turn, your mech is immobilized, but you both count as in light cover, even out in the open, and provide light cover for allied mechs. You additionally gain resistance to all damage from blast, line, and cone attacks."
+                }
+              ],
+              "text": "<Action id=\"ips-n_bastion_siege_scales\" format=\"text\"/>"
+            },
+            {
+              "id": "ips-n_aegis_shield_generator",
+              "name": "Aegis Shield Generator",
+              "flavor": "The Aegis is a portable electromagnetic shield generator, a way to establish a momentary safezone to withstand an incoming bombardment or environmental hazard.",
+              "sp": 1,
+              "tags": {
+                "unique": true,
+                "limited": 1,
+                "shield": true,
+                "deployable": true
+              },
+              "actions": [
+                {
+                  "id": "ips-n_aegis_shield_generator_action",
+                  "name": "Aegis Shield Generator",
+                  "type": "quick",
+                  "tags": {
+                    "unique": true,
+                    "limited": 1,
+                    "shield": true,
+                    "deployable": true
+                  },
+                  "range": {
+                    "burst": 1
+                  },
+                  "text": "Once planted in a free adjacent space, this size 1 generator creates a burst 1 zone around it until the end of the current challenge. Inside the zone, all allied targets count as having 4 armor, even if their armor is less. The generator has 10 HP but benefits from its own armor bonus, and deactivates once used up."
+                }
+              ],
+              "text": "<Action id=\"ips-n_aegis_shield_generator_action\" format=\"text\"/>"
+            }
+          ]
+        },
+        {
+          "systems": [
+            {
+              "id": "ips-n_portable_bunker",
+              "name": "Portable Bunker",
+              "flavor": "A simple deployable, the “Portable Bunker” is actually a series of unfolding single-use printer sheets: flatpack pouches of inert non-newtonian fluid that, when deployed, are triggered into a rigid structure capable of withstanding incredible force.",
+              "sp": 2,
+              "tags": {
+                "limited": 2,
+                "deployable": true
+              },
+              "actions": [
+                {
+                  "id": "ips-n_portable_bunker_action",
+                  "name": "Portable Bunker",
+                  "type": "quick",
+                  "tags": {
+                    "limited": 2,
+                    "deployable": true
+                  },
+                  "text": "To activate this system, choose a clear 4x4 space adjacent to you and take a quick action. At the start of your next turn, this system unfolds into a fortified emplacement that grants heavy cover to anyone within the area from all directions, as long as they are fully covered by the area. The bunker is open topped and can be entered and exited at will. If attacked the bunker has evasion 5, 30 HP, and 3 armor. It cannot be moved or deactivated once deployed."
+                }
+              ],
+              "text": "<Action id=\"ips-n_portable_bunker_action\" format=\"text\"/>"
+            }
+          ],
+          "weapons": [
+            {
+              "id": "ips-n_leviathan_cannon",
+              "name": "IPS-N Leviathan Heavy Assault Cannon",
+              "size": "superheavy",
+              "type": "cannon",
+              "tags": { "heatSelf": 2 },
+              "range": {
+                "target": 8
+              },
+              "damage": {
+                "kinetic": "1d6"
+              },
+              "actions": [
+              	{
+              		"id": "ips-n_leviathan_cannon_action",
+              		"name": "Spin Up Leviathan Cannon",
+              		"type": "quick",
+              		"tags": {"reliable": 4},
+              		"damage": { "kinetic": "4d6+4"},
+              		"text": "As a quick action, you can spin up this weapon’s barrels. While this weapon’s barrels are spinning, your mech is <Status id=\"crippled\" format=\"link\"/>, but this weapon’s damage increases to 4d6+4 kinetic, it must be fired with a barrage action like a regular superheavy, and it gains Reliable 4. You can stop the spin-up as a free action at the start of your turn, but lose the increased damage until you spin the weapon up again."
+              	}              	
+              ],
+              "flavor": "The Leviathan AC is a massive rotary autocannon, an enclosed multi-barrel automatic weapon fed by an external reservoir, usually dorsally mounted on the chassis carrying it. At its current chambering, the Leviathan should only be fired on automatic when absolutely necessary; IPS-N is currently working on a solution to meet the cannon’s needs remotely. IPS-N recommends outfitting willing squadmates with extra reservoirs, should their chassis have room to support it.",
+              "text": "Unlike other superheavies, this weapon can be fired as part of a skirmish action with its listed profile. <Action id=\"\" format=\"text\"/>"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "coreBonuses": [
+    {
+      "id": "ips-n_briareos_frame_reinforcement",
+      "name": "BRIAREOS Frame Reinforcement",
+      "flavor": "The BRIAREOS is the newest development in IPS-N’s line of near-fail frame upgrades, templates designed to maximize what pilots can get out of frames before the need for a reprint or catastrophic failure. BRIAREOS fabricates a frame that is superlight, woven throughout with Goliath Weave meshing, to increase the resilience of all inorganic components.",
+      "text": "Your mech has resistance to all damage when it has 1 or less points of structure remaining."
+    },
+    {
+      "id": "ips-n_fomorian_frame_reinforcement",
+      "name": "FORMORIAN Frame Reinforcement",
+      "flavor": "The FOMORIAN is an up-scaled version of the stock IPS-N template, following guidelines suggested by long-haul Cosmopolitans in need of robust micro/macro-impact protection, as well as additional brachial/manipulator needs.",
+      "text": "Your mech gains +1 size, up to size 3. It gains +1 threat with melee weapons, and cannot be knocked <Status id=\"prone\" format=\"link\"/>, pulled, or pushed by targets smaller than itself (as part of a grapple, for example)"
+    },
+    {
+      "id": "ips-n_gyges_frame_reinforcement",
+      "name": "GYGES Frame Reinforcement",
+      "flavor": "Gyges is a frame upgrade built for combat, with finely tuned stabilizers and a robust suite of targeting software and hardware included at-fabrication.",
+      "text": "Your mech gains +1 accuracy on all hull checks"
+    },
+    {
+      "id": "ips-n_reinforced_frame",
+      "name": "Reinforced Frame",
+      "flavor": "The addition of redundant shock-absorption systems increases the survivability of a pilot in combat, flight, and kinetic situations.",
+      "text": "Your mech gains +5 HP"
+    },
+    {
+      "id": "ips-n_sloped_plating",
+      "name": "Sloped Plating",
+      "flavor": "A simple, common enough option among pilots with the necessary licensing, IPS-N’s armor integration fabrication reduces the plating coverage gaps in stock systems by a significant percentage.",
+      "text": "Your mech gains +1 armor, up to the maximum (+4)."
+    },
+    {
+      "id": "ips-n_titanomachy_mesh",
+      "name": "Titanomachy Mesh",
+      "flavor": "A doubled overlay of Goliath Weave, fabricated in identified stress points, as well as beefed-up specifications, dramatically improve the baseline functionality of this mech.",
+      "text": "When you successfully ram or grapple a mech, you can make an additional ram or grapple action as a free action. When you knock targets back, you knock them back 1 additional space."
+    }
+  ]
+}
