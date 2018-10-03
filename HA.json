@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "name": "Harrison Armory",
+    "corpId": "HA",
+    "flavor": "Superior By Design",
+    "author": "Tom Parkinson-Morgan <ksbabbadon@gmail.com>",
+    "contributor": "Johny"
+  },
+  "licenses": {
+    "ha_tokugawa": {
+      "name": "Tokugawa",
+      "summary": "Energy Melee",
+      "flavor": "HA’s TOKUGAWA chassis is a relative newcomer on the market, popular in core systems for security and CQB/ breach applications. The TOKUGAWA is a large, imposing mech, a sturdy platform from which the recommended kit can draw the necessary power it needs in order to perform within optimum parameters.",
+      "levels": [
+        {
+          "systems": [
+            {
+              "id": "ha_external_batteries",
+              "name": "External Batteries",
+              "flavor": "External batteries are by no means a Harrison Armory exclusive, but HA literature will ensure you that HA-Brand POWERALL cells are the longest lasting, fastest cycling, and highest capacity solid state cells available. A consequence of their high capacity is a proportionate increase in volatility if the system should ever be damaged, but pilots looking to utilize HA technology agree through continued use to absolve HA from all liability.",
+              "sp": 2,
+              "tags": {
+                "unique": true
+              },
+              "text": "Your ranged weapons that deal energy damage gain +5 range, and your melee weapons that deal energy damage gain +1 threat. If you overheat, it explodes, dealing 3 AP explosive damage to your mech. This damage can’t be prevented in any way."
+            }
+          ],
+          "weapons": [
+            {
+              "id": "ha_annihilator",
+              "name": "Annihilator",
+              "size": "Main",
+              "type": "CQB",
+              "tags": {
+                "heatSelf": 2,
+                "AP": true
+              },
+              "range": {
+                "cone": 5
+              },
+              "damage": {
+                "energy": "1d3+1"
+              },
+              "flavor": "HA specializes in conventional and unconventional arms development; solutions to tactical problems are designed both in the lab and in the field, often the latter outperforming the former in combat situations. The Annihilator takes its name from pilots’ slang for a field-rigged weapon developed during the Bradbury Rebellion, when desperate resistance pilots machined a way of shunting the incredible waste heat of their core’s reactor into a directed blast."
+            }
+          ]
+        },
+        {
+          "shells": [
+            {
+              "id": "ha_tokugawa",
+              "name": "Tokugawa",
+              "size": 1,
+              "armor": 0,
+              "sp": 6,
+              "stats": {
+                "heat capacity": 1,
+                "engineering": 1
+              },
+              "mounts": [
+                "flexible",
+                "main",
+                "main"
+              ],
+              "flavor": "HA’s TOKUGAWA chassis is a relative newcomer on the market, popular in core systems for security and CQB/ breach applications. The TOKUGAWA is a large, imposing mech, a sturdy platform from which the recommended kit can draw the necessary power it needs in order to perform within optimum parameters.",
+              "ultName": "Superheated Reactor Feed",
+              "ultPassive": "While your mech is in the Danger Zone you deal +2 Burn on the first hit with any attack on your turn.",
+              "actions": [
+                {
+                  "id": "ha_radiance",
+                  "name": "Radiance",
+                  "type": "free",
+                  "tags": {
+                    "corePower": true,
+                    "protocol": true
+                  },
+                  "text": "Choose 1 energy weapon your mech is wielding. If it is a ranged weapon, its range increases by 5, if it is a melee weapon, its threat increases by +1. For the rest of this combat, this weapon also deals +1d6 Burn damage (roll on each attack). However, each time you fire this weapon, you gain +3 heat.",
+                  "license": {
+                    "shell": "ha_tokugawa"
+                  }
+                }
+              ],
+              "ultActive": "**Radiance**  \n<Action id=\"ha_radiance\" format=\"text\"/>",
+              "ultFlavour": "A certain breed of pilot rides the very edge of catastrophe, swinging between an equal chance of success and failure each moment. Tokugawa pilots are familiar with the howl of their chassis’s heat warning, the warbling siren a song of destruction: with a superheated reactor feed, Tok pilots ramp their heat debt to the max in order to supercharge their energy weapons. This allows them to churn out damage and make no friends in the engineering bay, should they not melt into a ball of slag before they make it back from the line."
+            }
+          ],
+          "systems": [
+            {
+              "id": "ha_experimental_heat_sync",
+              "name": "Experimental heat sync",
+              "flavor": "The Harrison Armory DEEP WELL system is a part of their VANGUARD line of equipment available to licensed HA beta testers. Though a complicated and delicate weave of heat exchangers, Harrison Armor’s DEEP WELL system attempts to recycle the heat generated by a chassis’ systems into useable energy. While the system works well, the delicate nature of the exchange renders the DEEP WELL highly volatile.",
+              "sp": 2,
+              "tags": {
+                "unique": true
+              },
+              "text": "You can re-roll the first overheating check you make a turn, but must accept the second result (even if it is worse)."
+            }
+          ],
+          "weapons": [
+            {
+              "id": "ha_plasma_lash",
+              "name": "Plasma lash",
+              "size": "Main",
+              "type": "Melee or CQB",
+              "tags": {
+                "heatSelf": 1
+              },
+              "range": {
+                "target": 5
+              },
+              "threat": 3,
+              "damage": {
+                "kinetic": "1 Energy Damage",
+                "burn": 3
+              },
+              "flavor": "A threat at multiple ranges, the Lash was designed following the Armory’s review of data collected from the Hercynian Crisis. After-action reports noted the efficacy of thermal and thermobaric weapons against hardened targets, but made constant reference to the limitations placed upon conventional thermal weapons: the need for atmosphere-specific fuel, the impact of prevailing weather conditions, the necessity of atmosphere.\n Enter the Plasma Lash, an early development into plasma weaponry. Firing an excited toroid of plasma, the Lash can be used as a ranged weapon with a delayed-detonation, or, essentially, a point-blank melee weapon; if used at point blank range, the toroid is detonated inside of its launcher, directing an intense thermal blast directly at its target."
+            }
+          ]
+        },
+        {
+          "systems": [
+            {
+              "id": "ha_amaterasu-class_ai",
+              "name": "Amaterasu-class AI",
+              "flavor": "AMATERASU came to prominence in the Armory NHP think tank after its repeated victories in war thought-games. AMATERASU is characterized by its brash, enthusiastic personality, often expressing frustration with timid pilots who have it in their employ; however, this bombastic personality hides a calculating, brilliant tactical mind that feeds information to pilots often faster then they can process it. AMATERASU’s combat doctrine demands action and impetus, a chaotic blend of reckless maneuvering and aggressive offense that keeps defenders beleaguered and unable to respond with any great efficacy. Pilots willing to partner with AMATERASU should be aware that this attack style often leaves their cores vulnerable to counterattack, and that this NHP enjoys what it calls “good-natured ribbing”.",
+              "sp": 3,
+              "tags": {
+                "unique": true,
+                "protocol": true,
+                "ai": true,
+                "heatSelf": "1d3+3"
+              },
+              "actions": [
+                {
+                  "id": "ha_amaterasu_protocol",
+                  "name": "AMATERASU protocol",
+                  "type": "free",
+                  "tags": {
+                    "protocol": true,
+                    "ai": true,
+                    "heatSelf": "1d3+3"
+
+                  },
+                  "text": "Increase the bonus damage on hit of your next ranged or melee attack this turn, melee or ranged, by your current heat after activating this protocol. The chosen weapon must deal at least partly energy damage."
+                }
+              ],
+              "text": "<Action id=\"ha_amaterasu_protocol\" format=\"text\"/>"
+            }
+          ],
+          "weapons": [
+            {
+              "id": "ha_torch",
+              "name": "Torch",
+              "size": "Main",
+              "type": "melee",
+              "tags": {
+                "heatSelf": 1
+              },
+              "range": {
+                "target": 1
+              },
+              "damage": {
+                "kinetic": "1d6",
+                "burn": 2
+              },
+              "flavor": "The Armory’s TORCH is a backbone core weapon: a heavy, two-handed, dual crescent-bladed plasma torch. The melee weapon is powered by its wielder’s reactor, connected by both powerlines and inert cabling; it can be separated into two torch-axes, and its plasma blades are capable of being tuned into new shapes. A common sight in CQB situations, the torch has of late become a status symbol among pilot officers, many preferring to carry them alongside a smaller auxiliary weapon."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "coreBonuses": [
+    {
+      "id": "ha_armory_sculpted",
+      "name": "Armoury sculpted",
+      "flavor": "Rather than simply queuing a stock chassis like any other pilot, you’ve used your reputation, contacts, or status in the Armory’s hierarchy to requisition a chassis that is designed, tested, and tuned by a master fabricator.",
+      "text": "Your mech takes +1 Accuracy to all engineering checks"
+    },
+    {
+      "id": "ha_heatfall_coolant_system",
+      "name": "Heatfall coolant system",
+      "flavor": "The HEATFALL system comes packaged with a stable COLDCORE power core of Armory make; when paired together, this suite makes for an incredibly low-tax powerplant.",
+      "text": "The heat cost for overcharging your mech never exceeds 1d6"
+    },
+    {
+      "id": "ha_integrated_ammo_feeds",
+      "name": "Integrated ammo feeds",
+      "flavor": "By streamlining and better integrating all automated ordinance loading modules, your chassis’ time-to-target minimums are greatly improved. As an added bonus, your overall carrying capacity has been increased, allowing you to field more ordinance than design specifications suggest.",
+      "text": "Your mech gains +1 use to all limited systems or deployables"
+    },
+    {
+      "id": "ha_redundant_repair_systems",
+      "name": "Redundant repair systems",
+      "flavor": "All Armory chassis are engineered to have multiple failsafe systems: yours has been over-engineered to make SURE you won’t go down fast. Your chassis comes with a ream of single-item print sheets to be applied to any scoring damage or hull breaches.",
+      "text": "You can now spend 3 repairs as part of a Stabilize action in combat to repair 1 reactor stress and cool your mech, or regain 1 structure and heal your mech to full."
+    },
+    {
+      "id": "ha_statis_shielding",
+      "name": "Stasis shielding",
+      "flavor": "A Think-Tank exercise in extending stasis beyond the capabilities of civilian utility, stasis shielding is a cutting edge Armory system that identifies critical systems and blankets them in HOLDFAST stasis lock, preventing further degradation for a limited period of time until repairs can be made.",
+      "text": "Your mech gains +2 repair capacity. Repairing a destroyed weapon or system during a rest nowcosts 0 repairs (only the time to rest)."
+    },
+    {
+      "id": "ha_superior_by_design",
+      "name": "Superior by design",
+      "flavor": "Even the entry-level Armory chassis are designed to be better than the competition. By flexing the sheer amount of resources they have at their disposal, the Armory can out design and out produce other smaller, boutique engineers and fabricators. Where there is resistance, the answer is simple: buy them out, or stamp them out. You, pilot, benefit from this -- so why worry?",
+      "text": "Your mech is immune to the impaired condition and gains +1 heat capacity"
+    }
+  ]
+}
