@@ -596,7 +596,7 @@
         },
         {
           "name": "Unstoppable Force",
-          "text": "1/round, when you take the boost action, you can choose to supercharge your mech’s servos. Take 1d3+3 heat, but if you move in a straight line your maximum speed, gain the following benefits:\n* You can freely pass through enemies and obstacles smaller than your mech. Normal obstacles are punched through, destroyed, or otherwise smashed out of the way. If you pass through an obstacle larger than yourself, it counts as dangerous terrain. If there’s something especially hardy (a starship hull, for example), it’s GM discretion whether you can punch through it at all.\n* You ignore difficult terrain\n* Your movement does not provoke reactions and ignores engagement \n* Any targets your mech passes directly through must pass an hull skill check or be knocked <Status id=\"prone\" format=\"link\"/>"
+          "text": "1/round, when you take the boost action, you can choose to supercharge your mech’s servos. Take 1d3+3 heat, but if you move in a straight line your maximum speed, gain the following benefits:\n\n* You can freely pass through enemies and obstacles smaller than your mech. Normal obstacles are punched through, destroyed, or otherwise smashed out of the way. If you pass through an obstacle larger than yourself, it counts as dangerous terrain. If there’s something especially hardy (a starship hull, for example), it’s GM discretion whether you can punch through it at all.\n* You ignore difficult terrain\n* Your movement does not provoke reactions and ignores engagement \n* Any targets your mech passes directly through must pass an hull skill check or be knocked <Status id=\"prone\" format=\"link\"/>"
         }
       ]
     },
