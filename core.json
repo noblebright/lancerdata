@@ -308,11 +308,11 @@
       "levels": [
         {
           "name": "Stable, Steady",
-          "text": "At the start of your turn, you can choose to steady your aim as a Free Action. If you do, you are <Status id=\"immobilized\" format=\"link\"/> until the start of your next turn, but gain +1 Accuracy on all your rifle attack rolls."
+          "text": "At the start of your turn, you can choose to steady your aim as a Free Action. If you do, you are <Status id=\"immobilized\" format=\"link\"/>  until the start of your next turn, but gain +1 Accuracy on all your rifle attack rolls."
         },
         {
           "name": "Accurate and Precise",
-          "text": "While wielding a rifle and steading your aim, if you score a critical hit, you can force your target to pass a hull check with 1 difficulty or additionally suffer one of the following (choose):\n\n* **Headshot**: Your target takes +4 bonus damage and is <Status id=\"impaired\" format=\"link\"/> until the start of your next turn\n* **Legshot**: Your target is <Status id=\"immobilized\" format=\"link\"/> until the end of their next turn.\n* **Bodyshot**: Your target is knocked <Status id=\"prone\" format=\"link\"/>."
+          "text": "While wielding a rifle and steading your aim, if you score a critical hit, you can force your target to pass a hull check with 1 difficulty or additionally suffer one of the following (choose):\n\n* **Headshot**: Your target takes +4 bonus damage and is <Status id=\"impaired\" format=\"link\"/>  until the start of your next turn\n* **Legshot**: Your target is <Status id=\"immobilized\" format=\"link\"/>  until the end of their next turn.\n* **Bodyshot**: Your target is knocked <Status id=\"prone\" format=\"link\"/> ."
         },
         {
           "name": "Watch This",
@@ -350,7 +350,7 @@
         },
         {
           "name": "Blademaster",
-          "text": "Once per round, you can take 1 Difficulty on any melee attack roll to gain one of the following benefits:\n* **Guard:** Until the start of your next turn, the next melee attack against you is made with +2 Difficulty\n* **Feint:** On hit, until the start of your next turn, your movement doesn't provoke reactions and ignores engagement from your target\n* **Lunge:** Your threat increases by 2 for this attack only\n* **Trip:** On hit, the target must succeed on an agility check with 1 difficulty or fall prone"
+          "text": "Once per round, you can take 1 Difficulty on any melee attack roll to gain one of the following benefits:\n\n* **Guard:** Until the start of your next turn, the next melee attack against you is made with +2 Difficulty\n* **Feint:** On hit, until the start of your next turn, your movement doesn't provoke reactions and ignores engagement from your target\n* **Lunge:** Your threat increases by 2 for this attack only\n* **Trip:** On hit, the target must succeed on an agility check with 1 difficulty or fall prone"
         },
         {
           "name": "Unstoppable",
@@ -365,11 +365,11 @@
       "levels": [
         {
           "name": "Hivemaster",
-          "text": " 1/round when you consume Lock On with an attack from a drone system or nexus weapon, on hit, your target is also <Status id=\"impaired\" format=\"link\"/> until the end of its next turn."
+          "text": " 1/round when you consume Lock On with an attack from a drone system or nexus weapon, on hit, your target is also <Status id=\"impaired\" format=\"link\"/>   until the end of its next turn."
         },
         {
           "name": "Memories of Hercynia",
-          "text": "Your deployed systems with the <Tag id=\"drone\" format=\"link\"/> tag gain +10 HP. In addition, at the start of your turn, you can move one of your deployed drones up to 5 spaces as a free action."
+          "text": "Your deployed systems with the <Tag id=\"drone\" format=\"link\"/>   tag gain +10 HP. In addition, at the start of your turn, you can move one of your deployed drones up to 5 spaces as a free action."
         },
         {
           "name": "Energized Swarm",
@@ -384,7 +384,7 @@
       "levels": [
         {
           "name": "Spark",
-          "text": "On a full repair, you can, with some trial and error, install a prototype weapon system on your mech. It has the following profile -- the specifics you may choose upon installation. Roll the <Tag id=\"limited\" format=\"link\"/> property each full repair. You can change the profile of this weapon each time you full repair.\n\n<Weapon id=\"engineer1_weapon\" format=\"block\"/>\n\nThis weapon does not take a mount to add to your mech, and counts as its own mount.",
+          "text": "On a full repair, you can, with some trial and error, install a prototype weapon system on your mech. It has the following profile -- the specifics you may choose upon installation. Roll the <Tag id=\"limited\" format=\"link\"/>  property each full repair. You can change the profile of this weapon each time you full repair.\n\n<Weapon id=\"engineer1_weapon\" format=\"block\"/> \n\nThis weapon does not take a mount to add to your mech, and counts as its own mount.",
           "weapons": [
             {
               "id": "engineer1_weapon",
@@ -406,7 +406,7 @@
         },
         {
           "name": "Updated Plans",
-          "text": "On a full repair, you can remove and tweak essential components of your system in order to increase the effectiveness of your prototype weapon.  Choose 1 of the following:\n* **Tweak optics:** You always fire your prototype weapon with +1 Accuracy.\n* **Tweak Computer:** Your prototype weapon gains the <Tag id=\"smart\" format=\"link\"/> property.\n* **Removing reactor shielding:** Your prototype weapon can fire as a cone 3 weapon, a line 5 weapon, or a blast 1 weapon (choose when you fire), but costs 2 heat to fire"
+          "text": "On a full repair, you can remove and tweak essential components of your system in order to increase the effectiveness of your prototype weapon.  Choose 1 of the following:\n\n* **Tweak optics:** You always fire your prototype weapon with +1 Accuracy.\n* **Tweak Computer:** Your prototype weapon gains the <Tag id=\"smart\" format=\"link\"/>  property.\n* **Removing reactor shielding:** Your prototype weapon can fire as a cone 3 weapon, a line 5 weapon, or a blast 1 weapon (choose when you fire), but costs 2 heat to fire"
         },
         {
           "name": "Final Draft",
@@ -525,7 +525,7 @@
         },
         {
           "name": "Safe_Cracker",
-          "text": " Gain the following options when attempting Invasion on a mech:\n* **Jam Cockpit:** <Action id=\"hacker2_jam_cockpit\" format=\"text\"/>\n* **Disable Life Support:** <Action id=\"hacker2_disable_life_support\" format=\"text\"/>\n* **Hack./Slash:** <Action id=\"hacker2_hack_slash\" format=\"text\"/>",
+          "text": " Gain the following options when attempting Invasion on a mech:\n\n* **Jam Cockpit:** <Action id=\"hacker2_jam_cockpit\" format=\"text\"/>\n* **Disable Life Support:** <Action id=\"hacker2_disable_life_support\" format=\"text\"/>\n* **Hack./Slash:** <Action id=\"hacker2_hack_slash\" format=\"text\"/>",
           "actions": [
             {
               "id": "hacker2_jam_cockpit",
@@ -558,7 +558,7 @@
         },
         {
           "name": "Last Argument of Kings",
-          "text": "Any target that overheats as a direct result of your tech attacks rolls twice on their overheating check and chooses the lowest result, then gains the <Status id=\"volatile\" format=\"link\"/> property for the rest of this challenge."
+          "text": "Any target that overheats as a direct result of your tech attacks rolls twice on their overheating check and chooses the lowest result, then gains the <Status id=\"volatile\" format=\"link\"/>  property for the rest of this challenge."
         }
       ]
     },
@@ -569,15 +569,15 @@
       "levels": [
         {
           "name": "Defilade Navigator",
-          "text": "When you start your turn <Status id=\"hidden\" format=\"link\"/>, your first attack roll (melee, ranged, or tech) you make from hidden gains +2 Accuracy"
+          "text": "When you start your turn <Status id=\"hidden\" format=\"link\"/> , your first attack roll (melee, ranged, or tech) you make from hidden gains +2 Accuracy"
         },
         {
           "name": "Dummy Switch",
-          "text": "Your mech has a special reserve power mode. When it would be shut down (voluntarily or otherwise), it can instead go into reserve power (you can still shut down your mech normally otherwise). It’s not detectable by conventional electronic systems and can only be seen with the naked eye.\n\nWhile in reserve power mode, your evasion is 5, your mech is crippled, and you cannot use any systems that cause you to gain heat. Your mech is totally immune to all tech actions and attacks, but cannot take or benefit from tech actions. Weapons with the <Tag id=\"smart\" format=\"link\"/>, <Tag id=\"drone\" format=\"link\"/>, or <Tag id=\"nexus\" format=\"link\"/> tags cannot target it. In addition, any system attacks or conditions caused by tech actions currently affecting you end immediately. You can enter this mode by taking the shutdown action, remain in this mode indefinitely, and can exit it as a Free Action."
+          "text": "Your mech has a special reserve power mode. When it would be shut down (voluntarily or otherwise), it can instead go into reserve power (you can still shut down your mech normally otherwise). It’s not detectable by conventional electronic systems and can only be seen with the naked eye.\n\nWhile in reserve power mode, your evasion is 5, your mech is crippled, and you cannot use any systems that cause you to gain heat. Your mech is totally immune to all tech actions and attacks, but cannot take or benefit from tech actions. Weapons with the <Tag id=\"smart\" format=\"link\"/> , <Tag id=\"drone\" format=\"link\"/> , or <Tag id=\"nexus\" format=\"link\"/>  tags cannot target it. In addition, any system attacks or conditions caused by tech actions currently affecting you end immediately. You can enter this mode by taking the shutdown action, remain in this mode indefinitely, and can exit it as a Free Action."
         },
         {
           "name": "Steel Assassin",
-          "text": "When you start your turn <Status id=\"hidden\" format=\"link\"/>, your first ranged or melee attack you make from hidden deals +10 bonus damage on critical hit."
+          "text": "When you start your turn <Status id=\"hidden\" format=\"link\"/> , your first ranged or melee attack you make from hidden deals +10 bonus damage on critical hit."
         }
       ]
     },
@@ -619,7 +619,7 @@
         },
         {
           "name": "Open Channels",
-          "text": "Gain 2 more leadership dice, and you can now <Action id=\"leader1_command\" format=\"link\"/> as a reaction at the start of another player’s turn. You can only issue one per other player’s turn, but any number per round."
+          "text": "Gain 2 more leadership dice, and you can now <Action id=\"leader1_command\" format=\"link\"/>  as a reaction at the start of another player’s turn. You can only issue one per other player’s turn, but any number per round."
         },
         {
           "name": "Inspiring Presence",
@@ -672,7 +672,7 @@
       "levels": [
         {
           "name": "Select Fire Gunner",
-          "text": "Once per round, while attacking with a cannon weapon, you can choose the following firing modes, taking +1 difficulty on the attack roll. \n* **Saturation Fire:** Your weapon fires as a cone (3) \n* **Suppressive Fire:** The next ranged attack made by targets hit by your attack is made with +1 Difficulty \n* **Shock:** Your target must succeed on an engineering check or become <Status id=\"crippled\" format=\"link\"/> until the start of your next turn"
+          "text": "Once per round, while attacking with a cannon weapon, you can choose the following firing modes, taking +1 difficulty on the attack roll. \n\n* **Saturation Fire:** Your weapon fires as a cone (3) \n* **Suppressive Fire:** The next ranged attack made by targets hit by your attack is made with +1 Difficulty \n* **Shock:** Your target must succeed on an engineering check or become <Status id=\"crippled\" format=\"link\"/>  until the start of your next turn"
         },
         {
           "name": "Jackhammer",
@@ -743,7 +743,7 @@
                 "limited": 6,
                 "unique": true
               },
-              "text": "You have 6 charges in this system.  You can spend one of the charges from this system as a quick action to do one of the following:\n* **Thunderous Discharge:** <Action id=\"stormbringer2_thunderous_discharge\" format=\"text\"/>\n* **Concussive Burst:** <Action id=\"stormbringer2_concussive_burst\" format=\"text\"/>",
+              "text": "You have 6 charges in this system.  You can spend one of the charges from this system as a quick action to do one of the following:\n\n* **Thunderous Discharge:** <Action id=\"stormbringer2_thunderous_discharge\" format=\"text\"/>\n* **Concussive Burst:** <Action id=\"stormbringer2_concussive_burst\" format=\"text\"/>",
               "actions": [
                 {
                   "id": "stormbringer2_thunderous_discharge",
@@ -771,7 +771,7 @@
           ]
         },
         {
-          "text": "When your die for your missile system is 1, you can spend it to dump the remaining magazine in a massive attack, targeting a single enemy within range 15. That enemy must pass an agility check with 1 difficulty or take 3d6 explosive damage and become <Status id=\"stunned\" format=\"link\"/>, knocked back 3 spaces, and knocked <Status id=\"prone\" format=\"link\"/>. If they succeed on the check, they are not knocked <Status id=\"prone\" format=\"link\"/> or <Status id=\"stunned\" format=\"link\"/>, but they are still knocked back and take half damage."
+          "text": "When your die for your missile system is 1, you can spend it to dump the remaining magazine in a massive attack, targeting a single enemy within range 15. That enemy must pass an agility check with 1 difficulty or take 3d6 explosive damage and become <Status id=\"stunned\" format=\"link\"/> , knocked back 3 spaces, and knocked <Status id=\"prone\" format=\"link\"/>. If they succeed on the check, they are not knocked <Status id=\"prone\" format=\"link\"/>  or <Status id=\"stunned\" format=\"link\"/>, but they are still knocked back and take half damage."
         }
       ]
     },
