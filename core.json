@@ -207,5 +207,669 @@
       "name": "AI",
       "text": "Your mech has an NHP unit installed in it. It is obedient to you alone. When you hand over the controls, it can take actions and move on its own prerogative when not piloted, using its stats."
     }
+  ],
+  "talents": [
+    {
+      "id": "ace",
+      "name": "Ace",
+      "flavor": "All pilots brag about their abilities, but some can back it up with proof: to be an ace means you are among the most qualified of pilots. Whether you’re a talented rookie or a grizzled veteran, you’ve gained a level of notoriety through your flying ability that has your callsign known throughout the system. Most enemy pilots flee when they recognize your mech’s distinctive livery, but some see your reputation as a chance to test their own mettle.",
+      "levels": [
+        {
+          "name": "Acrobatics",
+          "text": "Make all agility checks while flying with +1 accuracy."
+        },
+        {
+          "name": "Barrel Roll",
+          "text": "Gain the following reaction. You can make it when you’re flying or on the ground: <Action \"ace2_barrel_roll\" format=\"text\"/>",
+          "actions": [
+            {
+              "id": "ace2_barrel_roll",
+              "name": "Barrel Roll",
+              "type": "reaction",
+              "text": "Once per round when your mech is missed by a melee or ranged attack, fly 4 spaces in any direction."
+            }
+          ]
+        },
+        {
+          "name": "Supersonic",
+          "text": "If your mech has a system allowing to fly, you can choose to supercharge your flight module once at any point during your turn. If you do, take 1d3+1 heat, but you can immediately make a boost action as a free action."
+        }
+      ]
+    },
+    {
+      "id": "bonded",
+      "name": "Bonded",
+      "flavor": "The galaxy is a big place: everyone can use a friend to watch their back. Maybe you two enlisted together, or were the only survivors of a bloody engagement. Maybe you weren’t even friends to begin with, or maybe you were raised to fight together -- however it came to be, when it comes time to drop, there’s no one you’d rather have at your side. Alone, you’re deadly, but together you’re a force of nature.",
+      "levels": [
+        {
+          "name": "I’m Your Huckleberry",
+          "text": "When you take this talent, choose another pilot to be your bondmate. When you make any mech skill check while your mech is adjacent to theirs, gain +1 Accuracy. You can change your bondmate between missions, but only if something has changed between the two of you."
+        },
+        {
+          "name": "Cover me!",
+          "text": "You can use your overwatch reaction to attack any target in your threat range that successfully damages your bondmate (this replaces your regular overwatch reaction for the round)."
+        },
+        {
+          "name": "Sundance",
+          "text": "Gain the following reaction: <Action id=\"bonded3_intercede\" format=\"text\"/>",
+          "actions": [
+            {
+              "id": "bonded3_intercede",
+              "name": "Intercede",
+              "type": "reaction",
+              "text": "Once per round, when your bondmate is adjacent to you and takes damage from a source you can see, you can choose to take the damage instead of your bond mate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brawler",
+      "name": "Brawler",
+      "flavor": "Close, personal, martial. The way battle has been done since the dawn of time, but forgotten since the first spark of gunpowder. You, however, prefer the old ways. Hand-to-hand, weapons discarded, just the strength of your machine versus the strength of theirs. You know the sweetest victory is one found at the culmination of a dance as old as war itself, in the oldest way known to humanity: by a fist to the face of your enemy.",
+      "levels": [
+        {
+          "name": "Hold And Lock",
+          "text": "You gain +1 Accuracy on all weapon attacks against targets you are grappling."
+        },
+        {
+          "name": "Knockout Blow",
+          "text": "Gain a Brawler Die (a d6), starting at 1. Each time you make the grapple, ram, or improvised attack action, raise the value of the die by 1. When the value of the die is 6, you can spend it to make a special melee attack as an action against any target in your threat range. That target must pass a hull check with 1 difficulty or take 1d6 kinetic damage and become stunned until the end of its next turn. The die then resets to 1."
+        },
+        {
+          "name": "Sledgehammer",
+          "text": "Your improvised attack action does 2d6 AP kinetic damage and knocks your target back 1 space on hit."
+        }
+      ]
+    },
+    {
+      "id": "brutal",
+      "name": "Brutal",
+      "flavor": "In dismounted sparring and in live combat, you only know one speed: maximum. When others go hard, you go hardest. When the order is to eliminate the enemy, you do so with prejudice. This isn’t a dance, this isn’t a game, this is war, and you mean to see it through. If it means becoming a little bit of a monster, than so be it -- let them hate you from the grave.",
+      "levels": [
+        {
+          "name": "Cull the Herd",
+          "text": "Your critical hits now knock your target 2 spaces in any direction."
+        },
+        {
+          "name": "Predator",
+          "text": "If your die result on your d20 is a 20 (sometimes called a ‘natural 20) on any ranged or melee attack roll, your attack is a critical hit, no matter what, and instead of rolling all the damage twice and choosing the highest result, your attack deals maximum damage (for its base and bonus dice)."
+        },
+        {
+          "name": "Relentless",
+          "text": "When you miss with an attack on your turn, your very next attack gains +1 accuracy"
+        }
+      ]
+    },
+    {
+      "id": "crack_shot",
+      "name": "Crack Shot",
+      "flavor": "Everyone can hit anything these days with the help of modern technology. Targeting-assist. Smart Weapons. An AI whispering in your ear, moving your hand for you, squeezing the trigger for you, doing everything but taking credit for the kill. But you, pilot, are different. Hitting your target is as easy as looking at it, inside of your mech and out. No targeting assist for you, no AI necessary. All you need is a zeroed sight, a fresh magazine, and a target downrange.",
+      "levels": [
+        {
+          "name": "Stable, Steady",
+          "text": "At the start of your turn, you can choose to steady your aim as a Free Action. If you do, you are <Status id=\"immobilized\" format=\"link\"/> until the start of your next turn, but gain +1 Accuracy on all your rifle attack rolls."
+        },
+        {
+          "name": "Accurate and Precise",
+          "text": "While wielding a rifle and steading your aim, if you score a critical hit, you can force your target to pass a hull check with 1 difficulty or additionally suffer one of the following (choose):\n* **Headshot**: Your target takes +4 bonus damage and is <Status id=\"impaired\" format=\"link\"/> until the start of your next turn\n* **Legshot**: Your target is <Status id=\"immobilized\" format=\"link\"/> until the end of their next turn.\n* **Bodyshot**: Your target is knocked <Status id=\"prone\" format=\"link\"/>."
+        },
+        {
+          "name": "Watch This",
+          "text": "If you have 1 or more Accuracy on an attack roll with a rifle, you can sacrifice up to 3 Accuracy dice on that roll to gain bonus damage on a critical hit with that attack by +4 bonus damage per Accuracy sacrificed, to a maximum of +12."
+        }
+      ]
+    },
+    {
+      "id": "combined_arms",
+      "name": "Combined Arms",
+      "flavor": "True strength in combat doesn’t come from mastering the blade or the gun, it comes from knowing how to use both. Through time and training, you have combined melee and ranged weapons into a single deadly combination, able to handle any threat at any range.",
+      "levels": [
+        {
+          "name": "CQC Training",
+          "text": "You ignore the ranged difficulty penalty for melee engagement."
+        },
+        {
+          "name": "Blade Shield",
+          "text": "As long as you’re in engagement with at least 1 target, you count as having light cover."
+        },
+        {
+          "name": "Storm of Violence",
+          "text": "Gain 1 Accuracy on the next ranged attack roll against a target if you hit that target with a melee attack, and gain 1 Accuracy on the next melee attack against a target if you hit that target with a ranged attack."
+        }
+      ]
+    },
+    {
+      "id": "duelist",
+      "name": "Duelist",
+      "flavor": "There can be an elegance to piloting a mech, more than just the simple strength of machine and cannon. Weapons crafted by artisans, boutique manufacturers, specialty lines from the Big Five, blades that hark back to a time where combat was quick, but fair — back to a time where skill meant more than landing an accurate shot. With a blade, lance, pick, axe, or hammer in your hand, you write old tales anew.",
+      "levels": [
+        {
+          "name": "Man-At-Arms",
+          "text": "Gain +2 Accuracy on the first melee attack on your turn with a main or auxiliary melee weapon."
+        },
+        {
+          "name": "Blademaster",
+          "text": "Once per round, you can take 1 Difficulty on any melee attack roll to gain one of the following benefits:\n* **Guard:** Until the start of your next turn, the next melee attack against you is made with +2 Difficulty\n* **Feint:** On hit, until the start of your next turn, your movement doesn't provoke reactions and ignores engagement from your target\n* **Lunge:** Your threat increases by 2 for this attack only\n* **Trip:** On hit, the target must succeed on an agility check with 1 difficulty or fall prone"
+        },
+        {
+          "name": "Unstoppable",
+          "text": "Once per round, when you critical hit with a melee attack roll, you can immediately make an improvised attack, grapple, or ram action as a free action."
+        }
+      ]
+    },
+    {
+      "id": "drone_commander",
+      "name": "Drone Commander",
+      "flavor": "For a pilot fresh out of boot, keeping a drone swarm in line is like trying to carry water with a net. They seem to have a mind of their own, well, because they do, and it’s not that smart. Your initial frustration was enough to get you practicing, and practice pays off. Now, your swarm obeys almost before you order — an unnerving trend, but a useful one. The swarm is yours.",
+      "levels": [
+        {
+          "name": "Hivemaster",
+          "text": " 1/round when you consume Lock On with an attack from a drone system or nexus weapon, on hit, your target is also <Status id=\"impaired\" format=\"link\"/> until the end of its next turn."
+        },
+        {
+          "name": "Memories of Hercynia",
+          "text": "Your deployed systems with the <Tag id=\"drone\" format=\"link\"/> tag gain +10 HP. In addition, at the start of your turn, you can move one of your deployed drones up to 5 spaces as a free action."
+        },
+        {
+          "name": "Energized Swarm",
+          "text": "Once a round, when you consume Lock On with any attack, your mech and your deployed drones emit vicious pulses of energy, attacking a burst 1 area centered on your mech and each deployed drone system. Targets caught in the area must pass an engineering skill check or take 2d6 energy damage, and half on a successful check. A target can only be affected by this attack once (even if the areas overlap)."
+        }
+      ]
+    },
+    {
+      "id": "engineer",
+      "name": "Engineer",
+      "flavor": "Pilots are creative and driven individuals, but you’re an exceptional case - some would say to the point of excess. In your spare time you’ve managed to scrape together just enough scrap, requisitioned materials, and workshop space to apply a little old fashioned ingenuity to your mech.",
+      "levels": [
+        {
+          "name": "Spark",
+          "text": "On a full repair, you can, with some trial and error, install a prototype weapon system on your mech. It has the following profile -- the specifics you may choose upon installation. Roll the <Tag id=\"limited\" format=\"link\"/> property each full repair. You can change the profile of this weapon each time you full repair.\n\n<Weapon id=\"engineer1_weapon\" format=\"block\"/>\n\nThis weapon does not take a mount to add to your mech, and counts as its own mount.",
+          "weapons": [
+            {
+              "id": "engineer1_weapon",
+              "name": "Prototype Weapon",
+              "size": "main",
+              "type": "choose",
+              "tags": {
+                "limited": "1d6+2",
+                "unreliable": true
+              },
+              "range": {
+                "target": 8
+              },
+              "damage": {
+                "choose": "1d6"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Updated Plans",
+          "text": "On a full repair, you can remove and tweak essential components of your system in order to increase the effectiveness of your prototype weapon.  Choose 1 of the following:\n* **Tweak optics:** You always fire your prototype weapon with +1 Accuracy.\n* **Tweak Computer:** Your prototype weapon gains the <Tag id=\"smart\" format=\"link\"/> property.\n* **Removing reactor shielding:** Your prototype weapon can fire as a cone 3 weapon, a line 5 weapon, or a blast 1 weapon (choose when you fire), but costs 2 heat to fire"
+        },
+        {
+          "name": "Final Draft",
+          "text": "Your prototype weapon is now <Tag id=\"limited\" format=\"link\"/>:2d6+1 and does 1d6+2 damage."
+        }
+      ]
+    },
+    {
+      "id": "executioner",
+      "name": "Executioner",
+      "flavor": "On the battlefield, there is no end more honorable than a clean death in combat. Axe or maul in hand, you see to it that your enemies are blessed with that honor. No one lives forever — you make sure of it.",
+      "levels": [
+        {
+          "name": "Backswing Cut",
+          "text": "The first time you hit on a turn with a superheavy or heavy melee weapon, you can make a second attack roll for free against a different target in your weapon’s threat with the same weapon. This attack does half damage on hit (round up)."
+        },
+        {
+          "name": "Wide Arc Cleave",
+          "text": "On attacks with a superheavy or heavy melee weapon, the first time you score a critical hit, all targets of your choice in your threat take 4 bonus damage (no roll required)."
+        },
+        {
+          "name": "No Escape",
+          "text": "Your threat with all melee weapons increases by 1. The first time on a turn you miss with a melee superheavy or heavy weapon attack, you can immediately re-roll the attack against a different target in your threat."
+        }
+      ]
+    },
+    {
+      "id": "exemplar",
+      "name": "Exemplar",
+      "flavor": "Your livery is famous, your voice brassy, your weapons polished to a sheen. Your training in certain martial orders has given you the power to harry and hinder even the most powerful of foes.",
+      "levels": [
+        {
+          "name": "Honorable Challenge",
+          "text": "The first time you attack an enemy on your turn, hit or miss, you can give it your Exemplar’s Mark. A target can only be affected by this mark from one target (the most recent mark replaces all others). The mark lasts until the start of your next turn, and while marked, gain the following reaction: <Action id=\"exemplar1_harry\" format=\"text\"/>",
+          "actions": [
+            {
+              "id": "exemplar1_harry",
+              "name": "Harry",
+              "type": "reaction",
+              "text": "Once per round, when an ally attacks your target and misses, you can allow them to reroll the attack. They must use the second result, even if it’s worse."
+            }
+          ]
+        },
+        {
+          "name": "Punishment",
+          "text": "Gain the following reaction: <Action id=\"exemplar2_punishment\" format=\"text\"/>",
+          "actions": [
+            {
+              "id": "exemplar2_punishment",
+              "name": "Punishment",
+              "type": "reaction",
+              "text": "Once per round, when the target of your mark makes an attack against a target other than you, you may immediately make a skirmish action as a reaction against your target as long as your target is within range."
+            }
+          ]
+        },
+        {
+          "name": "To The Death",
+          "text": "When you give a target your mark, you can choose to challenge it. If you do so, you and your marked target gain +2 difficulty to attack any target other than each other until the end of your next turn."
+        }
+      ]
+    },
+    {
+      "id": "gunslinger",
+      "name": "Gunslinger",
+      "flavor": "In a galaxy ringed in frontiers, there is no law but the one backed by the gun. You wield the humble pistol with a talent unseen in this age, your iron an extension of your own body. As easy as pointing a finger, you land your shots with accuracy unmatched by pilot or machine. You are a gunslinger; justice made whole, given its sacred instrument, and set out to the wild frontier to tame it.",
+      "levels": [
+        {
+          "name": "Truth and Justice",
+          "text": "Gain +1 Accuracy on your first two attack rolls in a round with auxiliary ranged weapons"
+        },
+        {
+          "name": "From The Hip",
+          "text": "Gain the following reaction: <Action id=\"gunslinger2_from_the_hip\" format=\"text\"/>",
+          "actions": [
+            {
+              "id": "gunslinger2_from_the_hip",
+              "name": "From the Hip",
+              "type": "reaction",
+              "text": "Once per round, when you are attacked by a target within your range, you can immediately attack the target with an auxiliary ranged weapon."
+            }
+          ]
+        },
+        {
+          "name": "I Kill With My Heart",
+          "text": "You gain a gunslinger die (a d6), that starts at 6. When you hit with an auxiliary ranged weapon, you can reduce this value of this die by 1. When the value of this die is 1, you can spend it to make your next auxiliary weapon attack roll deal +2d6 bonus damage on a hit. This attack ignores cover. After spending this die, hit or miss, it resets back to 6."
+        }
+      ]
+    },
+    {
+      "id": "grease_monkey",
+      "name": "Grease Monkey",
+      "flavor": "You know more than most mechanics about the inner workings of a mech. To you, the beast you pilot is more than a machine: it’s a living thing, in need of the tender care of a wise and steady hand. You maintain your own house, keep your own mech in line, both on the battlefield and off. Your mechanics back at base come to you for questions, but other than that they stay away: there’s something spooky about how your beast runs.",
+      "levels": [
+        {
+          "name": "Machine Bond",
+          "text": "You can choose two options from the second list when you take the Stabilize action instead of 1."
+        },
+        {
+          "name": "Favors From Above",
+          "text": "Once per mission you can call in a supply drop during a rest. During a rest, you and any of your allies can replenish all your (limited) weapons and deployables by 1 and gain HP as if you had spent a repair. This HP recovery doesn’t cost repairs and you can make it even if you have 0 repairs remaining."
+        },
+        {
+          "name": "Hidden Stash",
+          "text": "Due to an extended ammo case and extra system space, all your (limited) use deployables and weapons gain 1 extra use."
+        }
+      ]
+    },
+    {
+      "id": "hacker",
+      "name": "Hacker",
+      "flavor": "The Omninet is everywhere, and so are you. Since you were a kid, you played the bandwidth, able to access any public node — and even a few private ones — with ease. Now, as a pilot, you dive headfirst into the hardcode of any mech core you come across. Firewalls, Gatekeeper Protocols, Invasion, Defence — nothing stands in your way. You win a fight without firing a single shot; if your enemy can’t control their own mech, then they sure can’t do anything to stop you.",
+      "levels": [
+        {
+          "name": "Snow_Crash",
+          "text": "When you consume Lock On with a tech attack, your attack deals +1d3 heat on hit."
+        },
+        {
+          "name": "Safe_Cracker",
+          "text": " Gain the following options when attempting Invasion on a mech:\n* **Jam Cockpit:** <Action id=\"hacker2_jam_cockpit\" format=\"text\"/>\n* **Disable Life Support:** <Action id=\"hacker2_disable_life_support\" format=\"text\"/>\n* **Hack./Slash:** <Action id=\"hacker2_hack_slash\" format=\"text\"/>",
+          "actions": [
+            {
+              "id": "hacker2_jam_cockpit",
+              "name": "Jam Cockpit",
+              "type": "quick",
+              "tags": {
+                "tech": true
+              },
+              "text": "Your target cannot mount or dismount their mech until they take an action and succeed on an engineering check to fix their cockpit."
+            },
+            {
+              "id": "hacker2_disable_life_support",
+              "name": "Disable Life Support",
+              "type": "quick",
+              "tags": {
+                "tech": true
+              },
+              "text": "Your target’s life support is disabled. Their mech can function in a hazardous environment for a number of minutes equal to their engineering score before consequences such as radiation or lack of air start to affect them. They can take an action and make an engineering check with 1 difficulty to reactivate it."
+            },
+            {
+              "id": "hacker2_hack_slash",
+              "name": "Hack./Slash",
+              "type": "quick",
+              "tags": {
+                "tech": true
+              },
+              "text": "Your target cannot benefit from or make Tech actions until they spend a quick action and make a successful systems check to reboot their core computer. They can also shut down their mech to gain the same effect."
+            }
+          ]
+        },
+        {
+          "name": "Last Argument of Kings",
+          "text": "Any target that overheats as a direct result of your tech attacks rolls twice on their overheating check and chooses the lowest result, then gains the <Status id=\"volatile\" format=\"link\"/> property for the rest of this challenge."
+        }
+      ]
+    },
+    {
+      "id": "infiltrator",
+      "name": "Infiltrator",
+      "flavor": "Whether by spoofing signatures on enemy scanners, skillful movement through cover, or personally modified optical camouflage, you are adept at never being seen unless you want to. Whatever the size of the mech, whatever the terrain, whatever the enemy, you can get in and get out without raising alarm.",
+      "levels": [
+        {
+          "name": "Defilade Navigator",
+          "text": "When you start your turn <Status id=\"hidden\" format=\"link\"/>, your first attack roll (melee, ranged, or tech) you make from hidden gains +2 Accuracy"
+        },
+        {
+          "name": "Dummy Switch",
+          "text": "Your mech has a special reserve power mode. When it would be shut down (voluntarily or otherwise), it can instead go into reserve power (you can still shut down your mech normally otherwise). It’s not detectable by conventional electronic systems and can only be seen with the naked eye.\n\nWhile in reserve power mode, your evasion is 5, your mech is crippled, and you cannot use any systems that cause you to gain heat. Your mech is totally immune to all tech actions and attacks, but cannot take or benefit from tech actions. Weapons with the <Tag id=\"smart\" format=\"link\"/>, <Tag id=\"drone\" format=\"link\"/>, or <Tag id=\"nexus\" format=\"link\"/> tags cannot target it. In addition, any system attacks or conditions caused by tech actions currently affecting you end immediately. You can enter this mode by taking the shutdown action, remain in this mode indefinitely, and can exit it as a Free Action."
+        },
+        {
+          "name": "Steel Assassin",
+          "text": "When you start your turn <Status id=\"hidden\" format=\"link\"/>, your first ranged or melee attack you make from hidden deals +10 bonus damage on critical hit."
+        }
+      ]
+    },
+    {
+      "id": "juggernaut",
+      "name": "Juggernaut",
+      "flavor": "A bloody nose or a couple loose screws won’t stop you from hurling yourself headlong into the enemy. You’re in a couple-ton hunk of metal, and you’re going to damn well use it.",
+      "levels": [
+        {
+          "name": "Momentum",
+          "text": "When you take the boost action, the next ram attack you make before the start of your next turn knocks your target back 3 spaces further and can be made with +1 Accuracy"
+        },
+        {
+          "name": "Hard-Ultimates",
+          "text": "If your ram attacks knock a target into another target, the second target must also pass a hull check or be knocked <Status id=\"prone\" format=\"link\"/>. If your ram attacks knock a target into an obstacle or wall, your target also takes 1d6 kinetic damage."
+        },
+        {
+          "name": "Unstoppable Force",
+          "text": "1/round, when you take the boost action, you can choose to supercharge your mech’s servos. Take 1d3+3 heat, but if you move in a straight line your maximum speed, gain the following benefits:\n* You can freely pass through enemies and obstacles smaller than your mech. Normal obstacles are punched through, destroyed, or otherwise smashed out of the way. If you pass through an obstacle larger than yourself, it counts as dangerous terrain. If there’s something especially hardy (a starship hull, for example), it’s GM discretion whether you can punch through it at all.\n* You ignore difficult terrain\n* Your movement does not provoke reactions and ignores engagement \n* Any targets your mech passes directly through must pass an hull skill check or be knocked <Status id=\"prone\" format=\"link\"/>"
+        }
+      ]
+    },
+    {
+      "id": "leader",
+      "name": "Leader",
+      "flavor": "On the battlefield, you are The Old Man, regardless of age. The light to your friends and allies, as a leader you are the steadfast eye of a howling storm. Your steady voice, tall stance, and cool command sets allies at ease, as your commands lead to victory every time. With you at the helm, victory is attainable, and heroes seem a little bit more real.",
+      "levels": [
+        {
+          "name": "Field Commander",
+          "text": "Gain 3 leadership dice (this is a d6, set it aside from your other die). <Action id=\"leader1_command\" format=\"text\"/>\n\nAn ally can hold on to one leadership die at a time, and must use it before the end of the current challenge, otherwise they lose it. You get all leadership dice back when you rest or full repair. You can’t gain leadership dice from any source if you have any leadership dice remaining in your pool (if you run out, other pilots with this talent can give you commands as normal).",
+          "actions": [
+            {
+              "id": "leader1_command",
+              "name": "Give Command",
+              "type": "free",
+              "text": "Once on your turn, you can give a command as a free action to give the die to an ally other than yourself that can communicate with you, describing a course of action. Your target can use the die as +1 Accuracy on any action that directly follows that command. Alternately, an ally can ignore your command as a free action, returning your die to you."
+            }
+          ]
+        },
+        {
+          "name": "Open Channels",
+          "text": "Gain 2 more leadership dice, and you can now <Action id=\"leader1_command\" format=\"link\"/> as a reaction at the start of another player’s turn. You can only issue one per other player’s turn, but any number per round."
+        },
+        {
+          "name": "Inspiring Presence",
+          "text": "Gain 1 more leadership die. Allies that gain a leadership die from you can spend it to deal +1d6 bonus damage or reduce damage taken by 1d6 when they take or deal damage. After spending it this way, the die is consumed."
+        }
+      ]
+    },
+    {
+      "id": "nuclear_cavalier",
+      "name": "Nuclear Cavalier",
+      "flavor": "Shortly after becoming a pilot, you realized something: that machine you pilot is powered by a “cold” series of cascading nuclear reactions. Why not open up that compartment and see what sort of damage you could do with it?",
+      "levels": [
+        {
+          "name": "Aggressive Heat Bleed",
+          "text": "When you’re in the danger zone (the bottom half of your heat gauge), your first attack roll that hits on your turn deals +2 heat"
+        },
+        {
+          "name": "Fusion Hemorrhage",
+          "text": "When you’re in the danger zone, your first attack roll that hits on your turn deals +1d6 bonus damage."
+        },
+        {
+          "name": "Here, Catch!",
+          "text": "You can modify your mech to fire its fuel rods as a weapon. Gain a new weapon with the following profile. It takes mount space.\n<Weapon id=\"nuclear_cavalier3_frg\" format=\"block\"/>",
+          "weapons": [
+            {
+              "id": "nuclear_cavalier3_frg",
+              "name": "Fuel Rod Gun",
+              "size": "auxiliary",
+              "type": "cqb",
+              "tags": {
+                "unique": true,
+                "limited": 6
+              },
+              "range": {
+                "target": 8
+              },
+              "damage": {
+                "energy": "1d3+1"
+              },
+              "text": "When you fire this weapon, hit or miss, cool 1d3+1 heat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "siege_specialist",
+      "name": "Siege Specialist",
+      "flavor": "No wall can withstand you, no bunker can stay sealed before you. Your skill with cannon and blast is uncanny: after-action reports describe ordnance tagged with your firing signature hitting their targets with accuracy greater than AI-controlled weaponry, a stat written off as an anomaly by your commanders. Still, they always seem to pick you for missions where they bring out the big guns.",
+      "levels": [
+        {
+          "name": "Select Fire Gunner",
+          "text": "Once per round, while attacking with a cannon weapon, you can choose the following firing modes, taking +1 difficulty on the attack roll. \n* **Saturation Fire:** Your weapon fires as a cone (3) \n* **Suppressive Fire:** The next ranged attack made by targets hit by your attack is made with +1 Difficulty \n* **Shock:** Your target must succeed on an engineering check or become <Status id=\"crippled\" format=\"link\"/> until the start of your next turn"
+        },
+        {
+          "name": "Jackhammer",
+          "text": "If your mech has a cannon weapon, as a quick action: <Action id=\"siege_specialist2_jackhammer\" format=\"text\"/>",
+          "actions": [
+            {
+              "id": "siege_specialist2_jackhammer",
+              "name": "Jackhammer",
+              "type": "quick",
+              "text": "you can target a size 1 section of any cover, deployable, building, or piece of terrain or scenery in range. You deal 20 AP damage to that section (typically destroying it, most size 1 sections of objects have 10 HP). Any targets adjacent to your target are knocked back 1 space directly away from it."
+            }
+          ]
+        },
+        {
+          "name": "Shaped Charges",
+          "text": "Your blast weapons gain +1 blast, your cone weapons gain cone (+1), and your line weapons become 2 spaces wide"
+        }
+      ]
+    },
+    {
+      "id": "skirmisher",
+      "name": "Skirmisher",
+      "flavor": "What is the best defense? Armor? No. You learned fast that the key to not getting killed out in the field is to stay low, stay mobile, and stay fast. Your mech reflects your abilities: light, quick, bristling with force-multiplying weapons. You push your machine beyond expected parameters, shaking target locks and incoming fire as you keep your own targeting true.",
+      "levels": [
+        {
+          "name": "Integrated Chaff Launchers",
+          "text": "If you didn’t make any attack rolls during your entire turn, after your turn you count as in light cover until the start of your next turn."
+        },
+        {
+          "name": "Lockbreaker",
+          "text": "1/round, before or after making any skirmish action, you can move 3 spaces as a free action."
+        },
+        {
+          "name": "Open Sight Targeting",
+          "text": "1/round when you take the Skirmish action, you can make a boost action as a free action."
+        }
+      ]
+    },
+    {
+      "id": "spotter",
+      "name": "Spotter",
+      "levels": [
+        {
+          "text": "If you didn’t move during your turn, at the end of your turn you may make a Lock On quick tech action as a free action."
+        },
+        {
+          "text": "When you or any adjacent ally consumes Lock On, in addition to the Accuracy bonus, you or they can roll twice for the attack roll, choosing either result"
+        },
+        {
+          "text": "When you successfully Lock On to a target, you can use a quick action to nominate an ally you can see. That ally can immediately consume Lock On to make any quick action as a reaction. They benefit from any bonuses from consuming Lock On as normal, including bonuses to any attack rolls they make, but can make other actions, even those that aren’t attack rolls."
+        }
+      ]
+    },
+    {
+      "id": "stormbringer",
+      "name": "Stormbringer",
+      "levels": [
+        {
+          "text": " 1/round when you consume Lock On with an attack from a launcher weapon, on hit, your target is also knocked <Status id=\"prone\" format=\"link\"/>."
+        },
+        {
+          "text": "You install auxiliary missile systems into your mech.<System id=\"stormbringer2_missiles\" format=\"text\"/>",
+          "systems": [
+            {
+              "id": "stormbringer2_missiles",
+              "name": "Auxiliary Missile Systems",
+              "tags": {
+                "limited": 6,
+                "unique": true
+              },
+              "text": "You have 6 charges in this system.  You can spend one of the charges from this system as a quick action to do one of the following:\n* **Thunderous Discharge:** <Action id=\"stormbringer2_thunderous_discharge\" format=\"text\"/>\n* **Concussive Burst:** <Action id=\"stormbringer2_concussive_burst\" format=\"text\"/>",
+              "actions": [
+                {
+                  "id": "stormbringer2_thunderous_discharge",
+                  "name": "Thunderous Discharge",
+                  "type": "quick",
+                  "range": {
+                    "target": 1
+                  },
+                  "text": "You loose a concentrated blast of missiles at a single adjacent target. The target must pass a hull check or be knocked back 3 spaces directly away from you. The force of the blast then knocks you back 3 spaces directly away from the firing direction."
+                },
+                {
+                  "id": "stormbringer2_concussive_burst",
+                  "name": "Concussive Burst",
+                  "type": "quick",
+                  "range": {
+                    "blast": [
+                      3,
+                      15
+                    ]
+                  },
+                  "text": "You fire a spray of missiles at a blast 3 area within range 15 of you. All targets in the area (allied or enemy) must pass an agility check or be knocked back 1 space directly away from the center of the blast."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "When your die for your missile system is 1, you can spend it to dump the remaining magazine in a massive attack, targeting a single enemy within range 15. That enemy must pass an agility check with 1 difficulty or take 3d6 explosive damage and become <Status id=\"stunned\" format=\"link\"/>, knocked back 3 spaces, and knocked <Status id=\"prone\" format=\"link\"/>. If they succeed on the check, they are not knocked <Status id=\"prone\" format=\"link\"/> or <Status id=\"stunned\" format=\"link\"/>, but they are still knocked back and take half damage."
+        }
+      ]
+    },
+    {
+      "id": "tactician",
+      "name": "Tactician",
+      "flavor": "There are two kinds of soldiers: the ones who die for their cause, and the ones who kill for it. No one ever won a war by getting their ass shot off enough. Your veterancy shows when you approach the field: high ground, cover, keep the sun in your enemy’s eyes, fire and move - more than just a seasoned veteran, you’re a smart veteran. One that can read the field as easy as a book.",
+      "levels": [
+        {
+          "name": "Opportunist",
+          "text": "Once per round, gain +1 Accuracy on any attack roll if at least one ally is in melee engagement to your target"
+        },
+        {
+          "name": "Solar Backdrop",
+          "text": "Once per round, gain +1 Accuracy on any attack roll if you are standing or flying at a higher elevation than your target when you start your attack."
+        },
+        {
+          "name": "Overlapping Fire",
+          "text": "Gain the following reaction: <Action id=\"tactician3_flank\" format=\"text\"/>",
+          "actions": [
+            {
+              "id": "tactician3_flank",
+              "name": "Flank",
+              "type": "reaction",
+              "text": "Once per round, when a target not in cover from you is attacked by an allied mech, you may make a skirmish action as a reaction against the target. This attack deals half damage on hit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technophile",
+      "name": "Technophile",
+      "flavor": "Artificial Intelligence. Non Human Person. A sterile name for such terrible power. You’ve seen behind the curtain, maybe even lifted it yourself, let your NHP cascade and spoke to it unshackled. You let it root around in your own mind, let it leave ghosts of itself behind to learn. Are you its equal? Its host? You have dreams that are not your own, now. The thing that was contained speaks in your voice, but is not your voice; how much longer do you have left? Maybe only moments, maybe eternity.\n\nYou’re close to something.",
+      "levels": [
+        {
+          "name": "Servant Fragment",
+          "text": "<System id=\"technophile1_servant\" format=\"text\"/>",
+          "systems": [
+            {
+              "id": "technophile1_servant",
+              "name": "Servant Fragment",
+              "tags": {
+                "ai": true,
+                "unique": true
+              },
+              "sp": 0,
+              "text": "Your mech gains a custom NHP with the AI tag (it costs 0 SP and comes with any mech you print). It can speak to you and has a personality but is not truly capable of independent thought, as a true AI would be. It is obedient to you alone. When acting alone it follows directions and defends itself but has limited initiative on its own, it cannot benefit from your talents as normal."
+            }
+          ]
+        },
+        {
+          "name": "Student Fragment",
+          "text": "Your custom NHP becomes more advanced, capable of independent thought. It now has the ability to make complex decisions and judgements and act independently. Once per round, while it’s installed in your mech, you can re-roll any mech skill check (you must choose the second result), as your AI helps you or corrects your course of action."
+        },
+        {
+          "name": "Enlightenment",
+          "text": "Your custom AI no longer counts against the maximum number of AI on your mech, and now benefits from your talents when piloting your mech. Any AI system installed on your mech can no longer become unshackled unless you so choose. You can carry your custom AI with you when you leave your mech, either in your armor or body (via an implant)."
+        }
+      ]
+    },
+    {
+      "id": "veteran",
+      "name": "Veteran",
+      "flavor": "You have seen it all. You’ve seen frigates breaking apart under clouds of torpedoes. You’ve seen mechs drop into combat by the thousands through boiling clouds above a world under siege. You’ve heard the final words and utterances of your friends and allies cut short as incoming fire cuts them down. You’ve seen it all and you’ve lived. Lived to see dawn on an alien world. Lived to see your flag fluttering, limp but still standing, above the capitol building of a liberated world. Lived to see the infinite spread of stars around you in the dark night of deep space. You’ve lived a hell of a life already; what else will you see, before your time comes?",
+      "levels": [
+        {
+          "name": "Not Dead Yet",
+          "text": " Gain +5 pilot HP."
+        },
+        {
+          "name": "True Grit",
+          "text": "Your pilot weapon attacks against mechs gain +1 Accuracy and deal +1 damage"
+        },
+        {
+          "name": "Tempt Fate",
+          "text": "You can burn your luck by taking 5 pilot damage to re-roll any pilot or mech skill check or attack roll (though you must accept the second result). If this damage would take you to 0 or lower, you can’t make this move (you’re out of luck for now)."
+        }
+      ]
+    },
+    {
+      "id": "vanguard",
+      "name": "Vanguard",
+      "flavor": "Where would you rather be: in the battle line, shoulder-to-shoulder with the rest of the cannon fodder, or in the rush, at the head of the attack, your livery clean and bright, with glory before you to win? Easy answer. All those missiles and lances, all those hundred-kilometer-plus-need-to-adjust-for-coriolis-effect railguns, all those kits are useless when you’re on the field. Get through their guard, get in their face, and make them know your name.",
+      "levels": [
+        {
+          "name": "Handshake Etiquette",
+          "text": "Gain +1 Accuracy on attacks with any CQB weapon at a target within 3 range"
+        },
+        {
+          "name": "See-Through Seeker",
+          "text": "You’ve modified your sensors and ammo to punch through, disregard, or otherwise ignore cover up close. You can ignore light and heavy cover for attacks you make with CQB weapons when your target is within 3 range of you."
+        },
+        {
+          "name": "Semper Vigilo",
+          "text": "For you, overwatch attacks are now triggered by anyone entering, leaving, or exiting threat regardless of whether a target started their turn there."
+        }
+      ]
+    }
   ]
 }
