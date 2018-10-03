@@ -220,7 +220,7 @@
         },
         {
           "name": "Barrel Roll",
-          "text": "Gain the following reaction. You can make it when you’re flying or on the ground: <Action \"ace2_barrel_roll\" format=\"text\"/>",
+          "text": "Gain the following reaction. You can make it when you’re flying or on the ground: <Action id=\"ace2_barrel_roll\" format=\"text\"/>",
           "actions": [
             {
               "id": "ace2_barrel_roll",
