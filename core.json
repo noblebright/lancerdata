@@ -312,7 +312,7 @@
         },
         {
           "name": "Accurate and Precise",
-          "text": "While wielding a rifle and steading your aim, if you score a critical hit, you can force your target to pass a hull check with 1 difficulty or additionally suffer one of the following (choose):\n* **Headshot**: Your target takes +4 bonus damage and is <Status id=\"impaired\" format=\"link\"/> until the start of your next turn\n* **Legshot**: Your target is <Status id=\"immobilized\" format=\"link\"/> until the end of their next turn.\n* **Bodyshot**: Your target is knocked <Status id=\"prone\" format=\"link\"/>."
+          "text": "While wielding a rifle and steading your aim, if you score a critical hit, you can force your target to pass a hull check with 1 difficulty or additionally suffer one of the following (choose):\n\n* **Headshot**: Your target takes +4 bonus damage and is <Status id=\"impaired\" format=\"link\"/> until the start of your next turn\n* **Legshot**: Your target is <Status id=\"immobilized\" format=\"link\"/> until the end of their next turn.\n* **Bodyshot**: Your target is knocked <Status id=\"prone\" format=\"link\"/>."
         },
         {
           "name": "Watch This",
