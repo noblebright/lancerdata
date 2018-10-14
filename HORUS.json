@@ -1084,7 +1084,7 @@
           "text": "Until the start of your next turn, targets in your sensor range of you cannot hide from you, cannot benefit from invisibility against you, and you can receive information from one target in that range as if you had scanned them. Other targets still see them as invisible and hidden."
         }
       ],
-      "text": "",
+      "text": "<Action id=\"horus_eye_action\" format=\"text\"/>",
       "license": {
         "line": "horus_pegasus",
         "level": 3
