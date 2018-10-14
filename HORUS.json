@@ -410,7 +410,7 @@
           "text": "Choose a friendly target in sensor range. You link systems with that target. From hereon, you can count that target’s sensor range as your sensor range for the purposes of tech actions, etc. In addition, you can make system skill checks for your target as a reaction, using your systems score. However, you both suffer the effects from any failed check (heat, statuses, etc). You can only link systems with one target at a time, and the effect ends if your target moves out of your sensor range."
         }
       ],
-      "text": "Gain the following quick tech option:\n  **Link:** <Action id=\"horus_metahook_action\" format=\"text\"/>",
+      "text": "Gain the following quick tech option:\n\n**Link:** <Action id=\"horus_metahook_action\" format=\"text\"/>",
       "license": {
         "line": "horus_goblin",
         "level": 1
@@ -434,7 +434,7 @@
           "text": "Choose a target in range and make a tech attack. If your attack is successful, until the end of that target’s next turn, it cannot benefit from any Accuracy bonuses of any kind."
         }
       ],
-      "text": "Gain the following quick tech option: \n  **Baleful Purge:** <Action id=\"horus_mongoose_action\" format=\"text\"/>",
+      "text": "Gain the following quick tech option: \n\n  **Baleful Purge:** <Action id=\"horus_mongoose_action\" format=\"text\"/>",
       "license": {
         "line": "horus_goblin",
         "level": 2
@@ -470,7 +470,7 @@
           "text": "Make a tech attack against a target in your sensor range with +2 difficulty. On hit, The target takes 1d6+1 heat."
         }
       ],
-      "text": "Gain the following full tech options:  \n* **Erasure Logic:** <Action id=\"horus_os_erasure_logic\" format=\"text\"/>\n* **Celestial Paradigm Shift:** <Action id=\"horus_os_paradigm_shift\" format=\"text\"/>",
+      "text": "Gain the following full tech options:  \n\n* **Erasure Logic:** <Action id=\"horus_os_erasure_logic\" format=\"text\"/>\n* **Celestial Paradigm Shift:** <Action id=\"horus_os_paradigm_shift\" format=\"text\"/>",
       "license": {
         "line": "horus_goblin",
         "level": 3
@@ -523,7 +523,7 @@
           "text": "Make a tech attack against a target in your sensor range. On hit, Your target cannot use systems or weapons with the Drone, Nexus or <Tag id=\"smart\" format=\"link\"/></Tag> tags until the start of your next turn."
         }
       ],
-      "text": "Gain the following quick tech option:  \n* **Fractal Logic:** <Action id=\"horus_puppetmaster_action\" format=\"text\"/>",
+      "text": "Gain the following quick tech option:  \n\n* **Fractal Logic:** <Action id=\"horus_puppetmaster_action\" format=\"text\"/>",
       "license": {
         "line": "horus_hydra",
         "level": 1
@@ -847,7 +847,7 @@
           "text": "On activation, your mech is <Status id=\"stunned\" format=\"link\"></Status> until the end of your next turn. All affected targets (allied and enemy) that don’t have the biological tag in the affected area around your mech make an engineering check with +2 difficulty. On a failure, they are <Status id=\"stunned\" format=\"link\"></Status> until the end of their following turns and take 1d6 heat."
         }
       ],
-      "text": "",
+      "text": "<Action id=\"horus_em_pulse_action\" format=\"text\"/>",
       "license": {
         "line": "horus_manticore",
         "level": 3
@@ -887,7 +887,7 @@
           "text": "Choose a blast 2 area within sensor range. All targets in the area (allied or enemy) must pass a systems check or become <Status id=\"crippled\" format=\"link\"></Status> until the end of your next turn."
         }
       ],
-      "text": "Gain the following quick tech action:  \n* **Logic Bomb:** <Action id=\"horus_viral_logic\" format=\"text\"/>",
+      "text": "Gain the following quick tech action:  \n\n* **Logic Bomb:** <Action id=\"horus_viral_logic\" format=\"text\"/>",
       "license": {
         "line": "horus_minotaur",
         "level": 1
@@ -966,7 +966,7 @@
           "text": "Make a tech attack against a target in your sensor range. On a hit, for the rest of combat, if your target moves adjacent to a target allied to them or starts their turn adjacent to such a target, both targets take 1d6 heat immediately. Only one target can be affected by this at once."
         }
       ],
-      "text": "Gain the following full tech options:  \n* **Chains of Prometheus:** <Action id=\"horus_chains_of_prometheus\" format=\"text\"/>\n* **Excommunicate:** <Action id=\"horus_excommunicate\" format=\"text\"/>",
+      "text": "Gain the following full tech options:  \n\n* **Chains of Prometheus:** <Action id=\"horus_chains_of_prometheus\" format=\"text\"/>\n* **Excommunicate:** <Action id=\"horus_excommunicate\" format=\"text\"/>",
       "license": {
         "line": "horus_minotaur",
         "level": 2
@@ -1024,7 +1024,7 @@
           "text": "Make a tech attack against a target in your sensor range. On hit, the targeted mech immediately takes one of the following actions of your choice as a reaction with you controlling the action: Boost, Stabilize, Improvised Attack, Grapple. A friendly mech can be targeted with this action."
         }
       ],
-      "text": "Gain the following full tech options:  \n* **Predator/Prey Concepts:** <Action id=\"horus_predator_prey\" format=\"text\"/>\n* **Slave Systems:** <Action id=\"horus_excommunicate\" format=\"text\"/>",
+      "text": "Gain the following full tech options:  \n\n* **Predator/Prey Concepts:** <Action id=\"horus_predator_prey\" format=\"text\"/>\n* **Slave Systems:** <Action id=\"horus_excommunicate\" format=\"text\"/>",
       "license": {
         "line": "horus_minotaur",
         "level": 3
