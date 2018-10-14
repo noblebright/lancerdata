@@ -1,0 +1,1369 @@
+{
+  "meta": {
+    "name": "Horus",
+    "corpId": "HORUS",
+    "flavor": "“CONGRATULATIONS, PILOT.  \nYOU HAVE BEEN CHOSEN.  \nACCESS IS YOURS,  \nAS LONG AS YOU CAN KEEP IT.”\n\nHorus-branded mechs and pattern-groups are an odd bunch. Experimental, built to be overclocked, and hard-wired to be omninet and electronic warfare projectors, Horus SHELLs and pattern groups are licensed only to pilots that meet their esoteric, strict requirements.\n\nHorus is not a traditional corporation. Rather, they’re a decentralized supplier, an entity only in the Omninet. Their licenses are limited and highly coveted, opening up only on the corporeal death of a license holder. Rumors abound as to Horus’s nature -- some say it’s the dream of an unshackled AI -- RA -- or a hacker collective dedicated to open-source manufacturing, the proving ground for GMS’s R&D departments, or an alien entity -- but as of yet no one has been able to trace their lineage. All that is known about Horus is that they’re everywhere the Omninet is.\n\nHorus mechs are best for players that want to dive deep into the control and support roles. They’re not the best for kinetic damage or for holding the line, but they’re wizards at electronic warfare. If you want to shut down your enemies without firing a shot -- though they can do that as well -- find a way to acquire a Horus license.",
+    "author": "Tom Parkinson-Morgan <ksbabbadon@gmail.com>"
+  },
+  "licenses": {
+    "horus_balor": {
+      "name": "Balor",
+      "summary": "Nanobot Swarm Host/Frontline Assault",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "horus_goblin": {
+      "name": "Goblin",
+      "summary": "Technical/Enlightenment/Hacking",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "horus_hydra": {
+      "name": "Hydra",
+      "summary": "Drone Mech",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "horus_gorgon": {
+      "name": "Gorgon",
+      "summary": "Overwatch/Electronic Defense",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "horus_manticore": {
+      "name": "Manticore",
+      "summary": "EMP",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "horus_minotaur": {
+      "name": "Minotaur",
+      "summary": "Technical/Enlightenment/Hacking",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "horus_pegasus": {
+      "name": "Pegasus",
+      "summary": "Mobile Smart Gun platform",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    }
+  },
+  "weapons": [
+    {
+      "name": "Nanobot Whip",
+      "size": "heavy",
+      "type": "melee",
+      "tags": {
+        "2 sp": true
+      },
+      "range": {
+        "melee": true
+      },
+      "threat": 1,
+      "damage": {
+        "kinetic": "2d6"
+      },
+      "text": "On a critical hit (20+), the target must pass a systems check to scramble the nanites or be pulled to any free adjacent space to your mech (or be pulled as far as possible while obeying obstrutions)",
+      "license": {
+        "line": "horus_balor",
+        "level": 3
+      },
+      "sp": 2,
+      "id": "horus_nanobot_whip"
+    },
+    {
+      "name": "Seeker Swarm Nexus",
+      "size": "main",
+      "type": "nexus",
+      "tags": {
+        "smart": true,
+        "seeking": true
+      },
+      "range": {
+        "target": 10
+      },
+      "damage": {
+        "kinetic": 1,
+        "burn": 2
+      },
+      "license": {
+        "line": "horus_balor",
+        "level": 3
+      },
+      "id": "horus_seeker_swarm_nexus"
+    },
+    {
+      "name": "Autopod",
+      "size": "auxiliary",
+      "type": "launcher",
+      "tags": {
+        "unique": true,
+        "seeking": true
+      },
+      "range": {
+        "target": 10
+      },
+      "damage": {
+        "kinetic": 2
+      },
+      "text": "This gun cannot be fired normally. Instead, whenever a Lock On is consumed within range, whether you or an ally does so, this gun automatically fires at the target as a reaction. This can be done any number of times per round.",
+      "license": {
+        "line": "horus_goblin",
+        "level": 2
+      },
+      "id": "horus_autopod"
+    },
+    {
+      "name": "Ghoul Nexus",
+      "size": "main",
+      "type": "nexus",
+      "tags": {
+        "smart": true
+      },
+      "range": {
+        "target": 15
+      },
+      "damage": {
+        "choose": "1d3+1"
+      },
+      "text": "Choose damage type when attacking.",
+      "license": {
+        "line": "horus_hydra",
+        "level": 1
+      },
+      "id": "horus_ghoul_nexus"
+    },
+    {
+      "name": "GHAST Drone Nexus",
+      "size": "heavy",
+      "type": "nexus",
+      "tags": {
+        "smart": true
+      },
+      "range": {
+        "target": 15
+      },
+      "damage": {
+        "explosive": "1d6+3"
+      },
+      "license": {
+        "line": "horus_hydra",
+        "level": 2
+      },
+      "id": "horus_ghast_drone_nexus"
+    },
+    {
+      "name": "Vorpal Gun",
+      "size": "main",
+      "type": "cannon",
+      "tags": {},
+      "range": {
+        "target": 5
+      },
+      "damage": {
+        "kinetic": "2d6"
+      },
+      "text": "This weapon cannot be fired normally. Instead, it can only be fired 1/round as a reaction to an ally taking damage from a target within its range.",
+      "license": {
+        "line": "horus_gorgon",
+        "level": 3
+      },
+      "id": "horus_vorpal_gun"
+    },
+    {
+      "name": "Arc Projector",
+      "size": "main",
+      "type": "cqb",
+      "tags": {
+        "heatSelf": 2
+      },
+      "range": {
+        "cone": 5
+      },
+      "damage": {
+        "heat": "1d3+1"
+      },
+      "license": {
+        "line": "horus_manticore",
+        "level": 1
+      },
+      "id": "horus_arc_projector"
+    },
+    {
+      "name": "Autogun",
+      "size": "main",
+      "type": "cannon",
+      "tags": {},
+      "range": {
+        "target": 20
+      },
+      "damage": {
+        "kinetic": "3"
+      },
+      "text": "This weapon can fire itself as a Free Action at the end of round, using your mechs bonuses.",
+      "license": {
+        "line": "horus_pegasus",
+        "level": 1
+      },
+      "sp": 1,
+      "id": "horus_autogun"
+    },
+    {
+      "name": "Smart Gun",
+      "size": "main",
+      "type": "rifle",
+      "tags": {
+        "smart": true,
+        "seeking": true,
+        "accurate": true
+      },
+      "range": {
+        "target": 20
+      },
+      "damage": {
+        "kinetic": 4
+      },
+      "license": {
+        "line": "horus_pegasus",
+        "level": 2
+      },
+      "sp": 2,
+      "id": "horus_smart_gun"
+    },
+    {
+      "name": "Mimic Gun",
+      "size": "heavy",
+      "type": "special",
+      "tags": {},
+      "range": {
+        "special": true
+      },
+      "damage": {
+        "special": true
+      },
+      "text": "At the start of your turn, roll 1d20. This gun has range equal to the number rolled, and damage equal to half that number(rounded up) +1. If the roll is odd, it deals energy damage, if even, then explosive.",
+      "license": {
+        "line": "horus_pegasus",
+        "level": 3
+      },
+      "id": "horus_mimic_gun"
+    }
+  ],
+  "systems": [
+    {
+      "name": "Scanner Swarm",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "text": "Your Tech actions against targets in melee engagement with you gain +2 Accuracy.",
+      "license": {
+        "line": "horus_balor",
+        "level": 1
+      },
+      "id": "horus_scanner_swarm"
+    },
+    {
+      "name": "Hive Drone",
+      "sp": 2,
+      "tags": {
+        "drone": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_hive_drone_action",
+          "name": "Deploy Hive Drone",
+          "type": "quick",
+          "damage": {
+            "kinetic": 1
+          },
+          "tags": {
+            "ap": true,
+            "drone": true
+          },
+          "text": "You can fire this drone to an empty space as a quick action. While it’s active, it emits a burst 1 area around it that grants light cover to any allied mech at least partially covered by the zone (it benefits from its own cover). In addition, any hostile target that starts its turn in the area or enters it for the first time on their turn takes 1 AP kinetic damage. You can move it to a different space in your sensor range by repeating this action."
+        }
+      ],
+      "text": "<Action id=\"horus_hive_drone_action\" format=\"text\"/>",
+      "license": {
+        "line": "horus_balor",
+        "level": 1
+      },
+      "id": "horus_hive_drone"
+    },
+    {
+      "name": "Boost Swarm",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_boost_swarm_action",
+          "type": "full",
+          "tags": {
+            "tech": true
+          },
+          "name": "Nanotech",
+          "text": "Gain a new full tech option: Nanoboost (Full Tech): Make a systems check. On success, another allied mech in sensor range can immediately end the <Status id=\"Impaired\" format=\"link\"></Status> and <Status id=\"Jammed\" format=\"link\"></Status> statuses on itself and repair your systems score in HP."
+        }
+      ],
+      "text": "<Action id=\"horus_boost_swarm_action\" format=\"text\"/>",
+      "license": {
+        "line": "horus_balor",
+        "level": 2
+      },
+      "id": "horus_boost_swarm"
+    },
+    {
+      "name": "Nanite Ammo Mod",
+      "sp": 2,
+      "tags": {
+        "ammo": true,
+        "unique": true
+      },
+      "text": "Choose 1 ranged weapon. You fire a swarm of nanobots instead of regular ammo. The weapon gains the <Tag id=\"smart\" format=\"text\"></Tag> and <Tag id=\"seeking\" format=\"text\"></Tag> properties.",
+      "license": {
+        "line": "horus_balor",
+        "level": 2
+      },
+      "id": "horus_nanite_ammo_mod"
+    },
+    {
+      "name": "H0r_OS System Upgrade I",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_os_puppet",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Puppet System",
+          "text": "Make a tech attack against a target in your sensor range. On hit, your target immediately moves in a direction of your choice as a reaction up to its maximum speed. This could carry it into hazardous areas, obstacles, etc, but it still obeys difficult terrain and other rules of movement."
+        },
+        {
+          "id": "horus_os_eject_cores",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Eject Power Cores",
+          "text": "Make a tech attack against a target in your sensor range. On hit,  your target becomes <Status id=\"jammed\" format=\"link\"></Status> until the end of its next turn, ejecting ammo magazines and temporarily disrupting its computer. A target can only be affected by this effect once per combat."
+        }
+      ],
+      "text": "Gain the following quick tech options:\n\n* **Puppet system:** <Action id=\"horus_os_puppet\" format=\"text\"/>\n* **Eject Power Cores:** <Action id=\"horus_os_eject_cores\" format=\"text\"/>",
+      "license": {
+        "line": "horus_goblin",
+        "level": 1
+      },
+      "id": "horus_h0ros_system_upgrade_i"
+    },
+    {
+      "name": "HORUS Meta-hook",
+      "sp": 1,
+      "tags": {
+        "quick tech": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_metahook_action",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Link",
+          "text": "Choose a friendly target in sensor range. You link systems with that target. From hereon, you can count that target’s sensor range as your sensor range for the purposes of tech actions, etc. In addition, you can make system skill checks for your target as a reaction, using your systems score. However, you both suffer the effects from any failed check (heat, statuses, etc). You can only link systems with one target at a time, and the effect ends if your target moves out of your sensor range."
+        }
+      ],
+      "text": "Gain the following quick tech option:\n  **Link:** <Action id=\"horus_metahook_action\" format=\"text\"/>",
+      "license": {
+        "line": "horus_goblin",
+        "level": 1
+      },
+      "id": "horus_horus_metahook"
+    },
+    {
+      "name": "//MONGOOSE v. 3.4",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_mongoose_action",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Baleful Purge",
+          "text": "Choose a target in range and make a tech attack. If your attack is successful, until the end of that target’s next turn, it cannot benefit from any Accuracy bonuses of any kind."
+        }
+      ],
+      "text": "Gain the following quick tech option: \n  **Baleful Purge:** <Action id=\"horus_mongoose_action\" format=\"text\"/>",
+      "license": {
+        "line": "horus_goblin",
+        "level": 2
+      },
+      "id": "horus_mongoose_v_34"
+    },
+    {
+      "name": "H0r_OS System Upgrade II",
+      "sp": 3,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_os_erasure_logic",
+          "type": "full",
+          "tags": {
+            "tech": true
+          },
+          "name": "Erasure Logic",
+          "text": "Make a tech attack against a target in your sensor range. On hit, the target must pass a system skill check or be stunned until the end of its next turn. It can only be affected by this option once per combat."
+        },
+        {
+          "id": "horus_os_paradigm_shift",
+          "type": "full",
+          "tags": {
+            "tech": true
+          },
+          "name": "Celestial Paradigm Shift",
+          "damage": {
+            "heat": "1d6+1"
+          },
+          "text": "Make a tech attack against a target in your sensor range with +2 difficulty. On hit, The target takes 1d6+1 heat."
+        }
+      ],
+      "text": "Gain the following full tech options:  \n* **Erasure Logic:** <Action id=\"horus_os_erasure_logic\" format=\"text\"/>\n* **Celestial Paradigm Shift:** <Action id=\"horus_os_paradigm_shift\" format=\"text\"/>",
+      "license": {
+        "line": "horus_goblin",
+        "level": 3
+      },
+      "id": "horus_h0ros_system_upgrade_ii"
+    },
+    {
+      "name": "OSIRIS-Class NHP",
+      "sp": 3,
+      "tags": {
+        "ai": true,
+        "unique": true,
+        "heatSelf": "1d3+2"
+      },
+      "actions": [
+        {
+          "id": "horus_osiris_action",
+          "type": "free",
+          "tags": {
+            "tech": true,
+            "ai": true,
+            "protocol": true,
+            "heatSelf": "1d3+2"
+          },
+          "name": "OSIRIS Action",
+          "text": "This turn only, you can make any quick tech action as a free action."
+        }
+      ],
+      "text": "Your mech gains the AI property and the OSIRIS protocol: Protocol 1d3+2 heat (self). <Action id=\"horus_osiris_action\" format=\"text\"/>",
+      "license": {
+        "line": "horus_goblin",
+        "level": 3
+      },
+      "id": "horus_osiris"
+    },
+    {
+      "name": "Puppetmaster",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_puppetmaster_action",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Fractal Logic",
+          "text": "Make a tech attack against a target in your sensor range. On hit, Your target cannot use systems or weapons with the Drone, Nexus or <Tag id=\"smart\" format=\"link\"/></Tag> tags until the start of your next turn."
+        }
+      ],
+      "text": "Gain the following quick tech option:  \n* **Fractal Logic:** <Action id=\"horus_puppetmaster_action\" format=\"text\"/>",
+      "license": {
+        "line": "horus_hydra",
+        "level": 1
+      },
+      "id": "horus_puppetmaster"
+    },
+    {
+      "name": "Turret Drone Nexus",
+      "sp": 2,
+      "tags": {
+        "limited": 4,
+        "drone": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_turret_drone_nexus_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Deploy Turret Drone Nexus",
+          "text": "This system fires a turret drone that attaches to any friendly mech or surface within sensor range."
+        },
+        {
+          "id": "horus_turret_drone_nexus_reaction",
+          "type": "reaction",
+          "tags": {},
+          "name": "Turret Attack",
+          "damage": {
+            "kinetic": 2
+          },
+          "range": {
+            "target": 15
+          },
+          "text": "Trigger: An allied mech hits with an attack within range 15 of the turret. Deal 2 kinetic damage to that target. The turret can be attacked and damage as normal, like any other deployable drone"
+        }
+      ],
+      "text": "<Action id=\"horus_turret_drone_nexus_action\" format=\"text\"/>. While attached, you gain the following reaction once for each turret you have deployed. Turret Attack: <Action id=\"horus_turret_drone_nexus_reaction\" format=\"text\"/>",
+      "license": {
+        "line": "horus_hydra",
+        "level": 2
+      },
+      "id": "horus_turret_drone_nexus"
+    },
+    {
+      "name": "Assassin Drone Nexus",
+      "sp": 2,
+      "tags": {
+        "drone": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_assassin_drone_nexus_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Deploy Assassin Drone",
+          "text": "As a quick action, you may deploy this drone in an adjacent space, target a blast 2 area within sensor range"
+        },
+        {
+          "id": "horus_assassin_drone_nexus_reaction",
+          "type": "reaction",
+          "tags": {},
+          "name": "Assassin Drone",
+          "damage": {
+            "kinetic": "1d6"
+          },
+          "range": {
+            "target": 2
+          },
+          "text": "Trigger: A hostile target starts its turn in that area or enters it for the first time on their turn.\n\nMake a targeting vs evasion attack, using your mech’s targeting. On a hit, deal 1d6 kinetic damage. The drone and the area it targets persists until the end of the current challenge. You can recall it, move it to another area in sensor range, or retarget the area with another quick action."
+        }
+      ],
+      "text": "<Action id=\"horus_assassin_drone_nexus_action\" format=\"text\"/>. You gain the following reaction once for each turret you have deployed. Assassin Drone: <Action id=\"horus_turret_drone_nexus_reaction\" format=\"text\"/>",
+      "license": {
+        "line": "horus_hydra",
+        "level": 3
+      },
+      "id": "horus_assassin_drone_nexus"
+    },
+    {
+      "name": "Tempest Drone Nexus",
+      "sp": 2,
+      "tags": {
+        "drone": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_tempest_drone_nexus_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Deploy Tempest Drone",
+          "text": "You fire a large shielded drone to an empty space within sensor range. You can move the drone to a new space within sensor range as a quick action."
+        }
+      ],
+      "text": "<Action id=\"horus_tempest_drone_nexus_action\" format=\"text\"/>Any target that starts their turn adjacent to the drone or moves their for the first time on their turn must pass an engineering check or take 1d6 energy damage, then get knocked back 3 spaces directly away from the drone. The drone persists until recalled. The drone can be targeted and destroyed as normal, but has resistance to all damage",
+      "license": {
+        "line": "horus_hydra",
+        "level": 3
+      },
+      "id": "horus_tempest_drone_nexus"
+    },
+    {
+      "name": "Sentinel Drone Nexus",
+      "sp": 2,
+      "tags": {
+        "drone": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_sentinel_drone_nexus_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Deploy Sentinel Drone",
+          "text": "You fire this drone as a quick action at a free space in sensor range, creating a burst 2 area centered on the drone. It can be attacked and destroyed as normal. You can move the area the drone effects (and the drone itself) by taking this action again."
+        }
+      ],
+      "text": "<Action id=\"horus_sentinel_drone_nexus_action\" format=\"text\"></Action> While the drone is active, any hostile target that attacks in that area takes 1 kinetic damage before they attack as the drone shoots them (no check or attack roll required).",
+      "license": {
+        "line": "horus_gorgon",
+        "level": 1
+      },
+      "id": "horus_sentinel_drone_nexus"
+    },
+    {
+      "name": "Point Defense Weapon",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_pdw_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Prime PDW",
+          "text": "You can prime your PDW by taking a quick action. Roll 1d3, and gain that many charges. You lose these charges at the start of your next turn."
+        },
+        {
+          "id": "horus_pdw_rection",
+          "type": "reaction",
+          "tags": {},
+          "name": "PDW Reaction",
+          "text": "You can use a reaction while you have charges to spend 1 charge when any mech in your sensor range is attacked by a weapon with the <Tag id=\"smart\" format=\"link\"></Tag>, nexus, or launcher tag to completely nullify that attack (it automatically misses)."
+        }
+      ],
+      "text": "<Action id=\"horus_pdw_action\" format=\"text\"></Action> <Action id=\"horus_pdw_rection\" format=\"text\"></Action>",
+      "license": {
+        "line": "horus_gorgon",
+        "level": 1
+      },
+      "id": "horus_point_defense_weapon"
+    },
+    {
+      "name": "MONITOR Module",
+      "sp": 2,
+      "tags": {
+        "quick action": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_monitor_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Activate MONITOR",
+          "text": "When you take this quick action, choose an ally and roll a 1d3 to gain that many charges. You lose these charges at the start of your next turn."
+        },
+        {
+          "id": "horus_monitor_rection",
+          "type": "reaction",
+          "tags": {},
+          "name": "MONITOR Reaction",
+          "text": "Until the start of your next turn, when that ally is attacked by a hostile target, you can spend a charge to attack that target if they are in range as a reaction, with +1 difficulty."
+        }
+      ],
+      "text": "<Action id=\"horus_monitor_action\" format=\"text\"></Action> <Action id=\"horus_monitor_rection\" format=\"text\"></Action>",
+      "license": {
+        "line": "horus_gorgon",
+        "level": 2
+      },
+      "id": "horus_monitor_module"
+    },
+    {
+      "name": "//SCORPION v. 70.1",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "text": "If any hostile tech action or attack attempt on you or any adjacent ally misses, you may choose one of the following results for the attacker:  \n1. The attacker is <Status id=\"impaired\" format=\"link\"></Status> until the end of its next turn.\n2. The attacker is <Status id=\"jammed\" format=\"link\"></Status> until the end of its next turn.\n3. The attacker takes 3 heat.",
+      "license": {
+        "line": "horus_gorgon",
+        "level": 2
+      },
+      "id": "horus_scorpion_v_701"
+    },
+    {
+      "name": "SCYLLA-class NHP",
+      "sp": 3,
+      "tags": {
+        "ai": true,
+        "protocol": true,
+        "unique": true,
+        "heatSelf": 3
+      },
+      "actions": [
+        {
+          "id": "horus_scylla_action",
+          "type": "free",
+          "tags": {
+            "ai": true,
+            "protocol": true,
+            "heatSelf": 3
+          },
+          "name": "Scylla Activation",
+          "text": "Until the start of your next turn, you gain 2 reactions. <Action id=\"horus_monitor_reaction\" format=\"text\"/>"
+        },
+        {
+          "id": "horus_scylla_reaction",
+          "type": "reaction",
+          "tags": {
+            "ai": true
+          },
+          "name": "Scylla Reaction",
+          "text": "These reactions can be used to make a skirmish action as a reaction with +2 difficulty. You set the trigger for these reactions from the following list:  \n1. An enemy attacks you or an allied target you can see.\n2. An enemy attempts to interact with an object in the environment (not held, worn, or part of a mech) of your choosing."
+        }
+      ],
+      "text": "Your mech gainst the AI property and the SCYLLA Protocol: 3 heat (self). <Action id=\"horus_scylla_action\" format=\"text\"></Action> <Action id=\"horus_scylla_reaction\" format=\"text\"></Action>",
+      "license": {
+        "line": "horus_gorgon",
+        "level": 3
+      },
+      "id": "horus_scylla"
+    },
+    {
+      "name": "EMP Mine",
+      "sp": 1,
+      "tags": {
+        "limited": 2,
+        "mine": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_emp_mine_action",
+          "name": "EMP Mines",
+          "type": "quick",
+          "tags": {
+            "mine": true,
+            "limited": 2
+          },
+          "range": {
+            "burst": 1
+          },
+          "damage": {
+            "heat": "1d6"
+          },
+          "text": "Once planted, EMP charges can be detonated remotely as an action, or activate normally like a mine. All affected mechs in a burst 1 area around the charge when it activates must pass a systems check with 1 difficulty or take 1d6 heat, or half on successful check."
+        }
+      ],
+      "text": "<Action id=\"horus_emp_mine_action\" format=\"text\"></Action>",
+      "license": {
+        "line": "horus_manticore",
+        "level": 1
+      },
+      "id": "horus_emp_mine"
+    },
+    {
+      "name": "Haywire Ammo",
+      "sp": 1,
+      "tags": {
+        "ammo": true,
+        "unique": true
+      },
+      "text": "Choose 1 ranged weapon - On a hit, the next Tech action against that target is made with +1 Accuracy.",
+      "license": {
+        "line": "horus_manticore",
+        "level": 2
+      },
+      "id": "horus_haywire_ammo"
+    },
+    {
+      "name": "Ram Drive",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "damage": {
+        "energy": "1d3"
+      },
+      "text": "While you are in the Danger Zone (the bottom half of your heat gauge), all adjacent targets to you, allied or enemy, take 1d3 energy damage if they begin their turn next to you or move there during the course of their turn.",
+      "license": {
+        "line": "horus_manticore",
+        "level": 2
+      },
+      "id": "horus_ram_drive"
+    },
+    {
+      "name": "EM Pulse",
+      "sp": 2,
+      "tags": {
+        "limited": 1,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_em_pulse_action",
+          "name": "EM Pulse",
+          "type": "full",
+          "tags": {
+            "mine": true,
+            "limited": 2
+          },
+          "range": {
+            "burst": 3
+          },
+          "damage": {
+            "heat": "1d6"
+          },
+          "text": "On activation, your mech is <Status id=\"stunned\" format=\"link\"></Status> until the end of your next turn. All affected targets (allied and enemy) that don’t have the biological tag in the affected area around your mech make an engineering check with +2 difficulty. On a failure, they are <Status id=\"stunned\" format=\"link\"></Status> until the end of their following turns and take 1d6 heat."
+        }
+      ],
+      "text": "",
+      "license": {
+        "line": "horus_manticore",
+        "level": 3
+      },
+      "id": "horus_em_pulse"
+    },
+    {
+      "name": "Lightning Generator",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "damage": {
+        "energy": "1d3"
+      },
+      "text": "At the start of your turn, you can take 1 heat (self) to deal 1d3 energy damage to all targets adjacent to you, no roll required.",
+      "license": {
+        "line": "horus_manticore",
+        "level": 3
+      },
+      "id": "horus_lightning_generator"
+    },
+    {
+      "name": "Viral Logic",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_viral_logic",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Logic Bomb",
+          "text": "Choose a blast 2 area within sensor range. All targets in the area (allied or enemy) must pass a systems check or become <Status id=\"crippled\" format=\"link\"></Status> until the end of your next turn."
+        }
+      ],
+      "text": "Gain the following quick tech action:  \n* **Logic Bomb:** <Action id=\"horus_viral_logic\" format=\"text\"/>",
+      "license": {
+        "line": "horus_minotaur",
+        "level": 1
+      },
+      "id": "horus_viral_logic"
+    },
+    {
+      "name": "Localized Maze",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "text": "Targets that become engaged with you must pass a systems skill check or become <Status id=\"immobilized\" format=\"link\"></Status> until the start of their next turn.",
+      "license": {
+        "line": "horus_minotaur",
+        "level": 1
+      },
+      "id": "horus_localized_maze"
+    },
+    {
+      "name": "Mesmer Mine",
+      "sp": 1,
+      "tags": {
+        "limited": 2,
+        "mine": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_mesmer_mine_action",
+          "name": "EMP Mines",
+          "type": "quick",
+          "tags": {
+            "mine": true,
+            "limited": 2
+          },
+          "range": {
+            "burst": 1
+          },
+          "text": "This mine activates for a burst 1 area centered on itself. All targets caught in that area, allied or enemy, must pass a systems check or become <Status id=\"immobilized\" format=\"link\"></Status> until the end of their next turn."
+        }
+      ],
+      "text": "<Action id=\"horus_mesmer_mine_action\" format=\"text\"></Action>",
+      "license": {
+        "line": "horus_minotaur",
+        "level": 2
+      },
+      "id": "horus_mesmer_mine"
+    },
+    {
+      "name": "Aggressive System Sync",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_chains_of_prometheus",
+          "type": "full",
+          "tags": {
+            "tech": true
+          },
+          "name": "Chains of Prometheus",
+          "text": "Make a tech attack against a target in your sensor range. On hit, your target must end its turn within range 5 of you until the rest of this challenge. Otherwise it takes 3 heat at the end of its turn."
+        },
+        {
+          "id": "horus_excommunicate",
+          "type": "full",
+          "tags": {
+            "tech": true
+          },
+          "name": "Excommunicate",
+          "damage": {
+            "heat": "1d6+1"
+          },
+          "text": "Make a tech attack against a target in your sensor range. On a hit, for the rest of combat, if your target moves adjacent to a target allied to them or starts their turn adjacent to such a target, both targets take 1d6 heat immediately. Only one target can be affected by this at once."
+        }
+      ],
+      "text": "Gain the following full tech options:  \n* **Chains of Prometheus:** <Action id=\"horus_chains_of_prometheus\" format=\"text\"/>\n* **Excommunicate:** <Action id=\"horus_excommunicate\" format=\"text\"/>",
+      "license": {
+        "line": "horus_minotaur",
+        "level": 2
+      },
+      "id": "horus_aggressive_system_sync"
+    },
+    {
+      "name": "Interdictor Field",
+      "sp": 3,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_interdictor_field_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Interdictor Field",
+          "text": "You can activate or deactivate this field as a quick action. Once activated, at the start of your next turn, it creates a burst 3 area around your mech that becomes both dangerous and difficult terrain for hostile targets (requires a systems check to navigate or they take 5 kinetic damage). Your mech is <Status id=\"immobilized\" format=\"link\"></Status> while this field is active, and the field and immobilization remains until you take a quick action to deactivate it. Allied targets are not affected."
+        }
+      ],
+      "text": "",
+      "license": {
+        "line": "horus_minotaur",
+        "level": 3
+      },
+      "id": "horus_interdictor_field"
+    },
+    {
+      "name": "LAW OF BLADES",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_predator_prey",
+          "type": "full",
+          "tags": {
+            "tech": true
+          },
+          "name": "Predator/Prey Concepts",
+          "text": "Make a tech attack against a target in your sensor range. On hit, Targeted mech immediately fires a single weapon at a target of your choice that is within its range. It gets +1 difficulty on this roll but otherwise benefits from other bonuses to accuracy."
+        },
+        {
+          "id": "horus_slave_systems",
+          "type": "full",
+          "tags": {
+            "tech": true
+          },
+          "name": "Slave Systems",
+          "damage": {
+            "heat": "1d6+1"
+          },
+          "text": "Make a tech attack against a target in your sensor range. On hit, the targeted mech immediately takes one of the following actions of your choice as a reaction with you controlling the action: Boost, Stabilize, Improvised Attack, Grapple. A friendly mech can be targeted with this action."
+        }
+      ],
+      "text": "Gain the following full tech options:  \n* **Predator/Prey Concepts:** <Action id=\"horus_predator_prey\" format=\"text\"/>\n* **Slave Systems:** <Action id=\"horus_excommunicate\" format=\"text\"/>",
+      "license": {
+        "line": "horus_minotaur",
+        "level": 3
+      },
+      "id": "horus_law_of_blades"
+    },
+    {
+      "name": "Hunter Lock",
+      "sp": 2,
+      "tags": {
+        "protocol": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_hunter_lock_action",
+          "type": "free",
+          "tags": {
+            "protocol": true
+          },
+          "name": "Hunter Lock",
+          "text": "Nominate a target in your sensor range. Your first attack that hits that target per round deals +3 bonus damage. You cannot nominate a new target until your nominated target is destroyed or the current challenge ends."
+        }
+      ],
+      "text": "<Action id=\"horus_hunter_lock_action\" format=\"text\"/>",
+      "license": {
+        "line": "horus_pegasus",
+        "level": 1
+      },
+      "id": "horus_hunter_lock"
+    },
+    {
+      "name": "Smart Weapon Modification",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "text": "Choose 1 ranged or melee weapon. It gains the <Tag id=\"smart\" format=\"link\"></Tag> property, as advanced sub-sentient AI routines and targeting guide its attacks.",
+      "license": {
+        "line": "horus_pegasus",
+        "level": 2
+      },
+      "id": "horus_smart_weapon_modification"
+    },
+    {
+      "name": "Eye of HORUS",
+      "sp": 3,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "horus_eye_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Eye of HORUS",
+          "text": "Until the start of your next turn, targets in your sensor range of you cannot hide from you, cannot benefit from invisibility against you, and you can receive information from one target in that range as if you had scanned them. Other targets still see them as invisible and hidden."
+        }
+      ],
+      "text": "",
+      "license": {
+        "line": "horus_pegasus",
+        "level": 3
+      },
+      "id": "horus_eye_of_horus"
+    }
+  ],
+  "coreBonuses": [
+    {
+      "id": "horus_disbelief",
+      "name": "The Lesson of Disbelief",
+      "text": "Deal +1 heat when inflicting heat."
+    },
+    {
+      "id": "horus_open_door",
+      "name": "The Lesson of The Open Door",
+      "text": "Your mech gains +1 e-defense and +5 sensor range."
+    },
+    {
+      "id": "horus_held_image",
+      "name": "The Lesson of The Held Image",
+      "actions": [
+        {
+            "id": "horus_held_image_reaction",
+            "name": "Held Image Reaction",
+            "type": "reaction",
+            "text": "Once a round, at the start of any ally’s turn, your mech can make a Lock On tech action as a reaction"
+        }
+      ],
+      "text": "<Action id=\"horus_held_image_reaction\" format=\"text\">"
+    },
+    {
+      "id": "horus_transubstantiation",
+      "name": "The Lesson of Transubstantiation",
+      "text": "Gain +1 Accuracy on all systems checks"
+    },
+    {
+      "id": "horus_thinking_tomorrow",
+      "name": "The Lesson of Thinking-Tomorrow’s-Thought",
+      "text": "The first ranged or melee attack you make per turn has the Smart tag and deals +2 heat on hit"
+    },
+    {
+      "id": "horus_shaping",
+      "name": "The Lesson of Shaping",
+      "text": "You can now install up to 2 AI systems in your mech (you still can’t duplicate AIs). If one becomes unshackled, the other gains control automatically"
+    }
+  ],
+  "shells": [
+    {
+      "id": "horus_balor",
+      "name": "Balor",
+      "size": 2,
+      "armor": 1,
+      "sp": 7,
+      "stats": {
+        "systems": 1,
+        "hp": 1
+      },
+      "mounts": [
+        "main",
+        "spinal"
+      ],
+      "flavor": "Like most all HORUS mech cores, the BALOR classification is less an indicator of a recognizable silhouette than a general classification of intended combat role. A BALOR-rigged mech core is only stable on a larger platform, necessitating a robust frame with multiple redundancies to prevent catastrophic system failure. The BALOR’s neurologically synced hellswarm nanites form an undulating shroud that can pour out of its chassis at a moment’s notice, whipping around its form defensively until weaponized.",
+      "ultName": "Hellswarm",
+      "ultPassive": "Any target grappled by your mech or that starts their turn adjacent to your mech takes 2 kinetic damage at the start of your turn.",
+      "actions": [
+        {
+          "id": "horus_balor_ult",
+          "name": "Hive Frenzy",
+          "type": "free",
+          "tags": {
+            "corePower": true,
+            "protocol": true
+          },
+          "text": "Your swarm goes into a hyper-active mode. You can set your swarm to one of three modes, and swap at the start of your turn as a free action:  \n* **Hive Shield:** 1/round as a reaction, you can gain resistance to all the damage from any one attack that just hit you.\n* **Hive Repulse:** While this mode is active, you have resistance to all damage from Smart, Nexus, and Drone weapons and systems and hostile tech actions are made at +1 difficulty against you\n* **Hive Scour:** While this mode is active, the damage from your passive increases to 3 AP kinetic damage"
+        }
+      ],
+      "ultActive": "**Hive Frenzy**  \n<Action id=\"horus_balor_ult\" format=\"text\"/>",
+      "license": { "line": "horus_balor", "level": 2}
+    },
+    {
+      "id": "horus_goblin",
+      "name": "Goblin",
+      "size": 0.5,
+      "armor": 0,
+      "sp": 8,
+      "stats": {
+        "hull": -2,
+        "agility": 1,
+        "systems": 2,
+        "eDefense": 2
+      },
+      "mounts": [
+        "flexible"
+      ],
+      "flavor": "The GOBLIN is HORUS’s legacy mech core. Its leak into the Omninet in 4900 marks the widely accepted foundation day of HORUS; since then, there has been a new core, protocol, or system released by the collective every decade. The GOBLIN is a small mech, little bigger than a hardsuit, but it packs an interesting recursive processing weave that allows for it to engage in electronic warfare well beyond theoretical parameters. GMS technicians are still, more than a hundred years after the GOBLIN’s introduction, attempting to reverse engineer the processing weave: it appears to employ technology consistent with hieroglyphic inscriptions noted on LRA.7726235-B.",
+      "ultName": "Devouring Code",
+      "ultPassive": "Get +1 Accuracy on all tech attacks",
+      "actions": [
+        {
+          "id": "horus_goblin_ult",
+          "name": "Devour",
+          "type": "full",
+          "tags": {
+            "corePower": true
+          },
+          "text": "Your mech targets another adjacent NPC mech the same size or larger that is shut down or destroyed. The targeted mech cannot have the Ultra or Elite tags. Your mech clamps on to that mech and retracts its core systems, becoming like a vestigial blister on that mech. The mech immediately heals to full HP, clears 1 point of stress and structure damage, and clears all heat, though it retains any other damage it has already taken.\n\nYour mech’s systems completely consume the other mech’s core systems for a time, granting you total control of your target, even if the other mech’s pilot is still alive. While you control your target, you take action as that NPC would, counting as a friendly NPC that has already acted in the turn you take control.\n\nWhile controlling your target, your GOBLIN can be targeted and damaged separate from the mech it’s controlling. It benefits from light cover while attached. If you take 1 point of structure damage, your mech detaches and control is immediately lost. Otherwise you can control the target up to a maximum of a ten minutes, when your target is destroyed, or when you deactivate this system. You can even control your target if the other pilot is missing or dead."
+        }
+      ],
+      "ultActive": "**Devour**  \n<Action id=\"horus_goblin_ult\" format=\"text\"/>",
+      "license": { "line": "horus_goblin", "level": 2}
+    },
+    {
+      "id": "horus_hydra",
+      "name": "Hydra",
+      "size": 2,
+      "armor": 0,
+      "sp": 7,
+      "stats": {
+        "hull": 1,
+        "engineering": -1,
+        "systems": 1
+      },
+      "mounts": [
+        "flexible",
+        "main",
+        "spinal"
+      ],
+      "flavor": "The HYDRA is another large-format protocol classification; like other, newer HORUS mechs, the HYDRA isn’t a standardized pattern, but a title given to a mech core that meets the HYDRA specifications as designated by HORUS’s collective. This method of classification makes HORUS mechs particularly dangerous in the field: as there is no recognizable model-specific silhouette, adversaries won’t know what they’re facing until the first shots are fired. The HYDRA is capable of tactically dismembering itself, an unnerving phenomenon utilized to deadly effect.",
+      "ultName": "OROCHI Disarticulation",
+      "ultPassive": "Your NHP partitions itself into many cloned personalities that can help you with maintaining your mech. Once per round, you can re-roll any systems or engineering check of your choice, but must keep the second result.",
+      "actions": [
+        {
+          "id": "horus_hydra_ult",
+          "name": "OROCHI Mode",
+          "type": "quick",
+          "tags": {
+            "corePower": true
+          },
+          "text": "Your mech has been heavily modified, and a large number of its subsystems and structure are controlled by semi-autonomous drones. Choose up to 3 weapons or systems on your mech. As an action, these parts of your mech can split off and become autonomous units. They are size 1, have evasion equal to your evasion, have hp equal to your HP, 1 structure, 1 stress, and heat capacity equal to your heat capacity. They inherit your speed and other mech stats. On your turn, they can move, take the activate system and skirmish actions, but no other actions. If they overheat or go to 0 HP, they are destroyed, and if they are destroyed, the associate weapon or system is also destroyed (it can be repaired as normal during a rest). You can re-unite any parts of your mech as an action, but inherit any heat they currently have, and cannot deploy them again without taking the special action as part of this system."
+        }
+      ],
+      "ultActive": "**OROCHI Mode**  \n<Action id=\"horus_hydra_ult\" format=\"text\"/>",
+      "license": { "line": "horus_hydra", "level": 2}
+    },
+    {
+      "id": "horus_gorgon",
+      "name": "Gorgon",
+      "size": 2,
+      "armor": 0,
+      "sp": 7,
+      "stats": {
+        "engineering": 1,
+        "systems": 1
+      },
+      "mounts": [
+        "flexible",
+        "auxiliary",
+        "main"
+      ],
+      "flavor": "The GORGON is unique among HORUS mech core parameters in that the classification describes a defensive rigging of weapons and systems meant to ensure personal and allied survival. The typical GORGON mounts multiple weapon systems meant to intercept and neutralize incoming fire and is widely feared for its ability to extrude a horrifying ‘basilisk’, a projected pattern of impossible visual data so toxic to logical thought that it causes massive failure in NHPs and can cause mild brain damage in humans.",
+      "ultName": "Harnessed Basilisk",
+      "ultPassive": "Any attacker that rolls a 1 or 2 on their d20 roll to attack you is automatically <Status id=\"stunned\" format=\"link\"></Status> until the end of their next turn (their attack also automatically misses).",
+      "actions": [
+        {
+          "id": "horus_gorgon_ult",
+          "name": "Meta-state Paralysis",
+          "type": "quick",
+          "tags": {
+            "corePower": true
+          },
+          "text": "Your mech projects a horrifying Basilisk pattern, incredibly harmful to NHPs, software, and hard to look at even for humans (typically causes 3-5 hours of headaches and intense subdermal bleeding, can often cause blood vessels to pop in the eye). Until the end of the current combat, any target (mech, human, or biological) that attacks either you or any ally within range 5 of you must first pass a systems (or GRIT) check or be <Status id=\"stunned\" format=\"link\"></Status> until the end of their next turn. A target can only be stunned once by this effect per combat."
+        }
+      ],
+      "ultActive": "**Meta-state Paralysis**  \n<Action id=\"horus_gorgon_ult\" format=\"text\"/>",
+      "license": { "line": "horus_gorgon", "level": 2 }
+    },
+    {
+      "id": "horus_minotaur",
+      "name": "Minotaur",
+      "size": 1,
+      "armor": 2,
+      "sp": 6,
+      "stats": {
+        "engineering": 1,
+        "systems": 1
+      },
+      "mounts": [
+        "flexible",
+        "spinal"
+      ],
+      "flavor": "The MANTICORE pattern-group is an experiment in HORUS//COREBREAK combat doctrine. Using focused, projected electromagnetics, MANTICORE pattern-group mechs attempt to neutralize enemy cores without conventional ammunition. A fully charged MANTICORE is an impressive sight, wreathed in brightly glowing nets of glowing plasma that lash out at nearby targets. The MANTICORE pattern-group is a relatively new p-g on the Omninet, and its combat efficacy has prompted the rest of the Big Five to scramble for a response.",
+      "ultName": "Charged Exoskeleton",
+      "ultPassive": " When you take heat damage from any source, one target in range 3 of you takes 1 energy damage.",
+      "actions": [
+        {
+          "id": "horus_minotaur_ult",
+          "name": "Charged Exoskeleton",
+          "type": "free",
+          "tags": {
+            "corePower": true,
+            "protocol": true
+          },
+          "text": "Your mech crackles with energy. For the rest of this combat your mech has resistance to heat from any source (round up). Set aside a charge die, starting at 1. When you take heat (from any source, even self), increase the die by 1, to a maximum of 6. You can discharge the accumulated energy in a burst 2 area around you by taking an action to do so. This deals 1d6 energy damage to all targets caught inside, allied or enemy, per charge on the die, and affected mechs can pass a system check to halve the damage. This system then deactivates for the remainder of combat, including its passive."
+        }
+      ],
+      "ultActive": "**Charged Exoskeleton**  \n<Action id=\"horus_minotaur_ult\" format=\"text\"/>",
+      "license": { "line": "horus_minotaur", "level": 2 }
+    },
+    {
+      "id": "horus_minotaur",
+      "name": "Minotaur",
+      "size": 1,
+      "armor": 0,
+      "sp": 8,
+      "stats": {
+        "systems": 2
+      },
+      "mounts": [
+        "flexible",
+        "heavy"
+      ],
+      "flavor": "The MINOTAUR pattern-group marks HORUS‘s first expedition into pattern-grouping; prior to the MINOTAUR, HORUS released complete sets and cores with easily identifiable silhouettes. As HORUS evolved as a decentralized entity, so too did their designs. The birth of the pattern-group followed, and the first p-g released was the MINOTAUR, a p-g designed to bring all of HORUS‘s most potent invasion systems and weaponry to the field.\n\nThe MINOTAUR is an interdictor, a formidable shell meant to lock down and punish fast moving targets by overloading their systems. Union disassembly of Minotaur p-g mechs have found that they extrude an enormous amount of interior systems that take up up to five times the physical space that should be actually possible given the size of their frame.",
+      "ultName": "Metafold Maze",
+      "ultPassive": " You can spend a quick action after any successful hostile tech action to cripple your target until the start of your next turn. If your target is already <Status id=\"crippled\" format=\"link\"></Status>, they become <Status id=\"immobilized\" format=\"link\"></Status>. If they are already immobilized, they are <Status id=\"stunned\" format=\"link\"></Status> until the end of your next turn. This passive can only stun the same target once per combat, but cripple or immobilize them any number of times.",
+      "actions": [
+        {
+          "id": "horus_minotaur_ult",
+          "name": "Maze",
+          "type": "full",
+          "tags": {
+            "corePower": true
+          },
+          "text": "You hurl an opposing mech’s systems into a metaphysical information trap so tangled that it can do nothing but try and escape it. Choose a target of your choice that can be affected by tech actions within your sensor range. That target must pass a systems check with 4 difficulty or become <Status id=\"stunned\" format=\"link\"></Status> as its systems start to figure out the trap you have thrown it in. At the start of its next turn (and on subsequent turns), it can repeat this check, this time with only 3 difficulty, ending the stun on itself on a success. It gains +1 accuracy on its check each time it repeats this check until it is successful. Otherwise it remains stunned."
+        }
+      ],
+      "ultActive": "**Maze**  \n<Action id=\"horus_minotaur_ult\" format=\"text\"/>",
+      "license": { "line": "horus_minotaur", "level": 2 }
+    },
+    {
+      "id": "horus_pegasus",
+      "name": "Pegasus",
+      "size": 1,
+      "armor": 0,
+      "sp": 7,
+      "stats": {
+        "systems": 1,
+        "hull": -1
+      },
+      "mounts": [
+        "flexible",
+        "flexible",
+        "heavy"
+      ],
+      "flavor": "PEGASUS marks HORUS‘s concern with a need for efficient kinetic combat. By marrying the best targeting systems, subroutines, and weapon hardware, HORUS has developed a pattern-group that boasts a tremendously low IFF/TTK ratio in all theaters kinetic weaponry is viable. The PEGASUS p-g is known for mounting the Ushabti, a device classified as an extreme/existential threat level paracausal weapon by Union law due to its complete ignorance of even the most theoretical understandings of physics.",
+      "ultName": "Ushabti Omnigun",
+      "ultPassive": "Your mech mounts an omnigun, a weapon and piece of experimental hardware so advanced that it does not classify as any weapon weight or type (so it cannot be modified or benefit from talents). It also doesn’t take a mount. <Action id=\"horus_pegasus_passive\" format=\"text\"></Action>",
+      "actions": [
+        {
+            "id": "horus_pegasus_passive",
+            "name": "Ushabti Omnigun",
+            "type": "free",
+            "range": { "target": 30 },
+            "damage": { "kinetic": 1 },
+            "tags": { "ap": true },
+            "text": "Once, at any point during your turn, you can hit a valid target in line of sight at range 30 with the omnigun as a Free Action, dealing 1 AP kinetic damage. This does not count as an attack, cannot miss, ignores cover, and this damage cannot be reduced by any means. It can even kill grunts."
+        },
+        {
+          "id": "horus_pegasus_ult",
+          "name": "Unshackle Ushabti",
+          "type": "free",
+          "tags": {
+            "corePower": true
+          },
+          "text": "For the rest of this combat, you can fire your omnigun up to 3 times per turn instead of just once."
+        }
+      ],
+      "ultActive": "**Ushabti Omnigun**  \n<Action id=\"horus_pegasus_ult\" format=\"text\"/>",
+      "license": { "line": "horus_pegasus", "level": 2 }
+    }
+  ]
+}
