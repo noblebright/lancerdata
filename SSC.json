@@ -1,0 +1,1270 @@
+{
+  "meta": {
+    "name": "Smith-Shimano Corpro",
+    "corpId": "SSC",
+    "flavor": "",
+    "author": "Tom Parkinson-Morgan <ksbabbadon@gmail.com>"
+  },
+  "licenses": {
+    "ssc_swallowtail": {
+      "name": "Balor",
+      "summary": "Nanobot Swarm Host/Frontline Assault",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "ssc_monarch": {
+      "name": "Goblin",
+      "summary": "Technical/Enlightenment/Hacking",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "ssc_mourning_cloak": {
+      "name": "Hydra",
+      "summary": "Drone Mech",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "ssc_deaths_head": {
+      "name": "Gorgon",
+      "summary": "Overwatch/Electronic Defense",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "ssc_dusk_wing": {
+      "name": "Manticore",
+      "summary": "EMP",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "ssc_metalmark": {
+      "name": "MetalMark",
+      "summary": "Tactical Superiority/Stealth",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "ssc_black_witch": {
+      "name": "Black Witch",
+      "summary": "Magnetic Control",
+      "flavor": "",
+      "levels": [
+        {},
+        {},
+        {}
+      ]
+    }
+  },
+  "weapons": [
+    {
+      "name": "ORACLE Light Machine Gun",
+      "size": "auxiliary",
+      "type": "rifle",
+      "tags": {
+        "arcing": true,
+        "accurate": true
+      },
+      "range": {
+        "target": 15
+      },
+      "damage": {
+        "kinetic": "1d3"
+      },
+      "text": "-",
+      "license": {
+        "line": "ssc_swallowtail",
+        "level": 1
+      },
+      "sp": 1,
+      "id": "ssc_oracle_light_machine_gun"
+    },
+    {
+      "name": "Markerlight",
+      "size": "main",
+      "type": "rifle",
+      "tags": {},
+      "range": {
+        "target": 20
+      },
+      "damage": {},
+      "text": "This weapon deals no damage and cannot deal damage (from talents or otherwise), but on hit, it inflict Lock On on your target at the end of your turn.",
+      "license": {
+        "line": "ssc_swallowtail",
+        "level": 2
+      },
+      "id": "ssc_markerlight"
+    },
+    {
+      "name": "Sharanga Missiles",
+      "size": "main",
+      "type": "launcher",
+      "tags": {
+        "arcing": true
+      },
+      "range": {
+        "target": 15
+      },
+      "damage": {
+        "explosive": 3
+      },
+      "text": "When you fire this weapon, you can choose one or two targets in range and line of sight, making attack rolls for reach.",
+      "license": {
+        "line": "ssc_monarch",
+        "level": 1
+      },
+      "id": "ssc_sharanga_missiles"
+    },
+    {
+      "name": "Gandiva Missiles",
+      "size": "heavy",
+      "type": "launcher",
+      "tags": {
+        "smart": true,
+        "seeking": true,
+        "accurate": true
+      },
+      "range": {
+        "target": 15
+      },
+      "damage": {
+        "energy": "1d6+1"
+      },
+      "license": {
+        "line": "ssc_monarch",
+        "level": 2
+      },
+      "sp": 1,
+      "id": "ssc_gandiva_missiles"
+    },
+    {
+      "name": "Pinaka Missiles",
+      "size": "superheavy",
+      "type": "launcher",
+      "tags": {
+        "arcing": true,
+        "heatSelf": 2
+      },
+      "range": {
+        "blast": [
+          30,
+          2
+        ]
+      },
+      "damage": {
+        "explosive": "2d6+4"
+      },
+      "text": "When this weapon is fired, it choses one or two Blast 2 areas within range to attack. These areas cannot overlap.",
+      "license": {
+        "line": "ssc_monarch",
+        "level": 3
+      },
+      "id": "ssc_pinaka_missiles"
+    },
+    {
+      "name": "Vijaya Rockets",
+      "size": "auxiliary",
+      "type": "launcher",
+      "tags": {
+        "accurate": true
+      },
+      "range": {
+        "target": 5
+      },
+      "damage": {
+        "explosive": "1d3"
+      },
+      "license": {
+        "line": "ssc_mourning_cloak",
+        "level": 1
+      },
+      "id": "ssc_vijaya_rockets"
+    },
+    {
+      "name": "Variable Knife",
+      "size": "auxiliary",
+      "type": "melee",
+      "tags": {
+        "ap": true,
+        "accurate": true
+      },
+      "range": {
+        "melee": true
+      },
+      "threat": 1,
+      "damage": {
+        "kinetic": 2
+      },
+      "license": {
+        "line": "ssc_mourning_cloak",
+        "level": 1
+      },
+      "id": "ssc_variable_knife"
+    },
+    {
+      "name": "Variable Sword",
+      "size": "main",
+      "type": "melee",
+      "tags": {
+        "ap": true,
+        "accurate": true,
+        "unique": true
+      },
+      "range": {
+        "melee": true
+      },
+      "threat": 1,
+      "damage": {
+        "kinetic": 4
+      },
+      "license": {
+        "line": "ssc_mourning_cloak",
+        "level": 3
+      },
+      "id": "ssc_variable_sword"
+    },
+    {
+      "name": "Kodandam Missiles",
+      "size": "auxiliary",
+      "type": "launcher",
+      "tags": {
+        "limited": 3
+      },
+      "range": {
+        "blast": [
+          20,
+          1
+        ]
+      },
+      "damage": {
+        "explosive": "1d6"
+      },
+      "license": {
+        "line": "ssc_deaths_head",
+        "level": 2
+      },
+      "id": "ssc_kodandam_missiles"
+    },
+    {
+      "name": "Railgun",
+      "size": "heavy",
+      "type": "rifle",
+      "tags": {
+        "ap": true,
+        "ordnance": true
+      },
+      "range": {
+        "line": 20
+      },
+      "damage": {
+        "kinetic": "1d6+3"
+      },
+      "license": {
+        "line": "ssc_deaths_head",
+        "level": 3
+      },
+      "id": "ssc_railgun"
+    },
+    {
+      "name": "Vulture Battle Rifle",
+      "size": "main",
+      "type": "rifle",
+      "tags": {
+        "unreliable": true,
+        "accurate": true
+      },
+      "range": {
+        "target": 15
+      },
+      "damage": {
+        "kinetic": "1d6+1"
+      },
+      "license": {
+        "line": "ssc_dusk_wing",
+        "level": 1
+      },
+      "id": "ssc_vulture_battle_rifle"
+    },
+    {
+      "name": "Burst Launcher",
+      "size": "main",
+      "type": "launcher",
+      "tags": {
+        "arcing": true
+      },
+      "range": {
+        "target": 10
+      },
+      "damage": {
+        "heat": "1d3"
+      },
+      "text": "On a critical hit, a target struck by this weapon must pass an engineering skill check or become <Status id=\"impaired\" format=\"link\"></Status> until the start of your next turn.",
+      "license": {
+        "line": "ssc_dusk_wing",
+        "level": 2
+      },
+      "id": "ssc_burst_launcher"
+    },
+    {
+      "name": "Rail Rifle",
+      "size": "main",
+      "type": "rifle",
+      "tags": {},
+      "range": {
+        "line": 10
+      },
+      "damage": {
+        "kinetic": "1d6"
+      },
+      "license": {
+        "line": "ssc_metalmark",
+        "level": 2
+      },
+      "id": "ssc_rail_rifle"
+    },
+    {
+      "name": "Shock Knife",
+      "size": "auxiliary",
+      "type": "melee",
+      "tags": {
+        "heatSelf": 1
+      },
+      "range": {
+        "melee": true
+      },
+      "threat": 1,
+      "damage": {
+        "energy": 1,
+        "burn": 2
+      },
+      "license": {
+        "line": "ssc_metalmark",
+        "level": 3
+      },
+      "id": "ssc_shock_knife"
+    },
+    {
+      "name": "Mag Cannon",
+      "size": "main",
+      "type": "cannon",
+      "tags": {},
+      "range": {
+        "line": 8
+      },
+      "damage": {
+        "heat": "1d3+1"
+      },
+      "license": {
+        "line": "ssc_black_witch",
+        "level": 1
+      },
+      "id": "ssc_mag_cannon"
+    }
+  ],
+  "systems": [
+    {
+      "name": "Scout Drone Nexus",
+      "sp": 2,
+      "tags": {
+        "drone": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_scout_drone_nexus_action",
+          "type": "quick",
+          "tags": {},
+          "range": {
+            "burst": 2
+          },
+          "name": "Deploy Scout Drone Nexus",
+          "text": "When you use this system, you can deploy your drone to an area in sensor range. It can be recalled or redeployed by taking this action again."
+        }
+      ],
+      "text": "<Action id=\"ssc_scout_drone_nexus_action\" format=\"text\"/>. The drone then emits a burst 2 area around it that grants the following benefits: Gain perfect vision of that area until the end of your next turn. Hostile targets that end their turn in the area immediately lose <Status id=\"invisibility\" format=\"link\"></Status> or <Status id=\"hiding\" format=\"link\"></Status>. Reveal current HP and heat levels of targets in that area The drone can be attacked and targeted as normal, but it is also permanently invisible.",
+      "license": {
+        "line": "ssc_swallowtail",
+        "level": 1
+      },
+      "id": "ssc_scout_drone_nexus"
+    },
+    {
+      "name": "Low Profile",
+      "sp": 2,
+      "tags": {
+        "protocol": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_low_profile_action",
+          "type": "free",
+          "tags": {
+            "protocol": true
+          },
+          "name": "Low Profile",
+          "text": "Your mech can retract its major systems to reduce its profile. You can activate this protocol at the start of your turn. While active:\n\n* Rolls to find your mech while hidden are made at +1 Difficulty\n* All ranged and tech attacks against you are made at +1 Difficulty\n* Your mech cannot take the Boost action or make ranged, melee, or tech attacks"
+        }
+      ],
+      "text": "<Action id=\"ssc_low_profile_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_swallowtail",
+        "level": 2
+      },
+      "id": "ssc_low_profile"
+    },
+    {
+      "name": "ATHENA-class NHP",
+      "sp": 3,
+      "tags": {
+        "ai": true,
+        "protocol": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_athena_action",
+          "type": "free",
+          "tags": {
+            "ai": true,
+            "protocol": true,
+            "heatSelf": 3
+          },
+          "range": {
+            "blast": [
+              "1 mile",
+              4
+            ]
+          },
+          "name": "ATHENA Scan",
+          "text": "Choose a blast 4 area within 1 mile of you. Your AI constructs a perfect, real-time, 3d model of this are that you can rotate and interact with, including actors that move in and out of that area, and extreme detail. Moving the area requires activating this protocol again, but it lasts until the end of the current challenge (or about 10 minutes in narrative time). Your mech gains perfect line of sight in this area and can relay this to allies, letting any attacks from yourself or allies in the area ignore light and heavy cover. Hostile targets that end their turn in this area lose invisibility or hiding, and you can see the current heat and HP levels of all targets in the area."
+        }
+      ],
+      "text": "Your mech gains the AI property and gains the ATHENA protocol: ATHENA protocol Quick Action 3 heat (self). <Action id=\"ssc_athena_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_swallowtail",
+        "level": 3
+      },
+      "id": "ssc_athenaclass_nhp"
+    },
+    {
+      "name": "Cloaking Field",
+      "sp": 4,
+      "tags": {
+        "heatSelf": 2,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_cloaking_field_action",
+          "type": "quick",
+          "tags": {},
+          "range": {
+            "burst": 3
+          },
+          "name": "Cloaking Field",
+          "text": "You can activate or deactivate the light bending properties of this module as a quick action. It lasts until the end your next turn. When you activate this module, your mech and all allied targets within a burst 3 area centered on you become invisible while they remain in the area. This area moves when you move, and remains centered on you. If you make an overheating check or take damage, this module immediately becomes inactive."
+        }
+      ],
+      "text": "<Action id=\"ssc_cloaking_field\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_swallowtail",
+        "level": 3
+      },
+      "id": "ssc_cloaking_field"
+    },
+    {
+      "name": "Companion Gun",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "damage": {
+        "explosive": 2
+      },
+      "range": {
+        "target": 5
+      },
+      "text": "Whenever you score a critical hit against a target, this shoulder-mounted gun can calibrate and rapidly fires a projectile that also deals 2 explosive damage to a different target within range 5 of your primary target, no attack roll required (as long as the target is in line of sight)",
+      "license": {
+        "line": "ssc_monarch",
+        "level": 1
+      },
+      "id": "ssc_companion_gun"
+    },
+    {
+      "name": "Stabilizer Weapon Mod",
+      "sp": 1,
+      "tags": {
+        "mod": true,
+        "unique": true
+      },
+      "text": "Choose 1 launcher or cannon weapon. Increase its base range by 5.",
+      "license": {
+        "line": "ssc_monarch",
+        "level": 2
+      },
+      "id": "ssc_stabilizer_weapon_mod"
+    },
+    {
+      "name": "TLALOC-class NHP",
+      "sp": 3,
+      "tags": {
+        "ai": true,
+        "protocol": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_tlaloc_action",
+          "type": "free",
+          "tags": {
+            "ai": true,
+            "protocol": true,
+            "heatSelf": 2
+          },
+          "name": "TLALOC protocol",
+          "text": "Your mech is capable of rapidly firing and re-targeting your weapons, far faster than you can think. When you activate this protocol, your mech is immobilized until the start of your next turn, but if you miss any weapon attack, you can immediately re-roll the attack as long as you target a different target in range or area of effect (if the attack was blast, line, or cone). You can take this re-roll only once for each attack (if the second attack misses you don’t get to keep making it), and a target already hit by this attack (from a re-roll or otherwise) cannot be targeted again."
+        }
+      ],
+      "text": "Your mech gains the AI property and the TLALOC protocol. TLALOC protocol Protocol 2 heat (self). <Action id=\"ssc_tlaloc_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_monarch",
+        "level": 3
+      },
+      "id": "ssc_tlalocclass_nhp"
+    },
+    {
+      "name": "Exposed Singularity",
+      "sp": 2,
+      "tags": {
+        "reaction": true,
+        "unique": true
+      },
+      "text": "Once per round, when your mech takes damage, you can immediately teleport up to 1d6 spaces as a reaction in a direction of your choosing (though if this teleport would put you inside an obstacle or other mech you take damage as normal and the teleport fails).",
+      "license": {
+        "line": "ssc_mourning_cloak",
+        "level": 2
+      },
+      "id": "ssc_exposed_singularity"
+    },
+    {
+      "name": "Hunter Cloak",
+      "sp": 2,
+      "tags": {
+        "quick tech": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_hunter_cloak_action",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Hunt",
+          "text": "Choose a target in your sensor range. Your systems infect the target with a viral logic that wipes your image from their sensors. Until you are damaged by that target, they count you as invisible. This system can only affect one target at a time (other targets still count you as visible and can see you normally)."
+        }
+      ],
+      "text": "Gain the following quick tech option: Hunt: <Action id=\"ssc_hunter_cloak_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_mourning_cloak",
+        "level": 2
+      },
+      "id": "ssc_hunter_cloak"
+    },
+    {
+      "name": "FADE Cloak",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_fade_cloak_action",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "range": {
+            "burst": 3
+          },
+          "name": "FADE",
+          "text": "Choose a target in your sensor range. Your systems infect the target with a viral logic that wipes your image from their sensors. Until you are damaged by that target, they count you as invisible. This system can only affect one target at a time (other targets still count you as visible and can see you normally)."
+        }
+      ],
+      "text": "<Action id=\"ssc_fade_cloak_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_mourning_cloak",
+        "level": 3
+      },
+      "id": "ssc_fade_cloak"
+    },
+    {
+      "name": "Hi-Stress Mag Clamps",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "text": "Choose one ranged weapon. You can fire a tracer round from it instead of a normal shot. It deals 0 damage maximum, but on a hit, your next attack roll against the same target gains +2 Accuracy and ignores invisibility.",
+      "license": {
+        "line": "ssc_deaths_head",
+        "level": 1
+      },
+      "id": "ssc_histress_mag_clamps"
+    },
+    {
+      "name": "Tracking Drone",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_tracking_drone_action",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Tracking Drone",
+          "text": "Make a tech attack against a target in your sensor range. On a hit, you know the target’s exact location, HP, Structure, Heat, and speed, and it cannot hide or benefit from invisibility from you until the drone is removed from them. It takes a quick action and a successful engineering check from the targeted mech to remove a tracking drone."
+        }
+      ],
+      "text": "Gain the following quick tech action: Tracking Drone: <Action id=\"ssc_tracking_drone_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_deaths_head",
+        "level": 1
+      },
+      "id": "ssc_tracking_drone"
+    },
+    {
+      "name": "Veil Generator",
+      "sp": 1,
+      "tags": {
+        "limited": 1,
+        "deployable": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_veil_generator_action",
+          "type": "quick",
+          "tags": {
+            "deployable": true,
+            "limited": 1
+          },
+          "name": "Tracking Drone",
+          "range": {
+            "burst": 3
+          },
+          "text": "Once deployed in a free adjacent space as a quick action, this size 1 generator creates a weak cloaking field. It creates a burst 3 zone around in until the end of the current challenge. This zone doesn’t move, but allied mechs inside count as in light cover and are immune to all tech actions (even friendly ones). Once deployed, this generator continues to run until out of charge and cannot be re-used or re-deployed. It benefits from its own field and has 2 armor."
+        }
+      ],
+      "text": "<Action id=\"ssc_veil_generator_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_deaths_head",
+        "level": 2
+      },
+      "id": "ssc_veil_generator"
+    },
+    {
+      "name": "Kinetic Compensator",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "text": "When you miss with any ranged attack roll, your next ranged attack roll gains +1 Accuracy",
+      "license": {
+        "line": "ssc_deaths_head",
+        "level": 3
+      },
+      "id": "ssc_kinetic_compensator"
+    },
+    {
+      "name": "Core Siphon",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "text": "At the beginning of your turn, you can give the first attack roll of your turn +1 accuracy. If you do, any additional attack rolls until the end of your turn gain +1 difficulty.",
+      "license": {
+        "line": "ssc_dusk_wing",
+        "level": 1
+      },
+      "id": "ssc_core_siphon"
+    },
+    {
+      "name": "SSC Neurospike Mk1",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_shrike_code",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Shrike Code",
+          "text": "Make a tech attack against a target in your sensor range with +1 difficulty. On hit, until the end of your next turn, each time your target makes an attack roll, it first takes 1 heat."
+        },
+        {
+          "id": "ssc_mirage",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "Mirage",
+          "text": "Make a tech attack against a target in your sensor range. On hit, choose yourself or a friendly mech you can see. Your target’s systems relay illusory duplicates of that mech that confuse your target’s systems. That friendly mech (or your mech) counts as invisible to your target until the end of your next turn."
+        }
+      ],
+      "text": "Gain the following quick tech options:\n\n* **Shrike Code:** <Action id=\"ssc_shrike_code\" format=\"text\"/>\n* **Mirage:** <Action id=\"ssc_mirage\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_dusk_wing",
+        "level": 2
+      },
+      "id": "ssc_ssc_neurospike_mk1"
+    },
+    {
+      "name": "StunCrown",
+      "sp": 2,
+      "tags": {
+        "limited": 2,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_stuncrown_action",
+          "type": "quick",
+          "tags": {
+            "tech": true
+          },
+          "name": "StunCrown",
+          "text": "All hostile targets in a burst 10 area centered on your mech that can see your mech must pass an agility check or become Jammed, and a systems check or become Impaired. Both effects last until the start of your next turn. Allied mechs are not affected."
+        }
+      ],
+      "text": "<Action id=\"ssc_stuncrown_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_dusk_wing",
+        "level": 3
+      },
+      "id": "ssc_stuncrown"
+    },
+    {
+      "name": "Flicker Field",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "text": "When you move or boost, you project a holographic pattern around your mech that leaves dazzling afterimages, making it hard to discern your mech’s location. After moving or boosting you count as having invisibility against the very next attack roll against you. The field disperses after this attack, hit or miss. You can only gain the effect of this field once (you can’t ‘stack’ up several instances of it).",
+      "license": {
+        "line": "ssc_dusk_wing",
+        "level": 3
+      },
+      "id": "ssc_flicker_field"
+    },
+    {
+      "name": "Shock Wreath",
+      "sp": 2,
+      "tags": {
+        "mod": true,
+        "unique": true
+      },
+      "text": "Choose 1 melee weapon. It gains Burn depending on its size (Aux 1, Main 2, Heavy or larger: 3). If it already has Burn, increase the burn it deals by the same amount.",
+      "license": {
+        "line": "ssc_metalmark",
+        "level": 1
+      },
+      "id": "ssc_shock_wreath"
+    },
+    {
+      "name": "Reactive Weave",
+      "sp": 1,
+      "tags": {
+        "unique": true
+      },
+      "text": "When you Brace, your mech can immediately move its speed as a reaction and also gains invisibility until the end of its next turn.",
+      "license": {
+        "line": "ssc_metalmark",
+        "level": 1
+      },
+      "id": "ssc_reactive_weave"
+    },
+    {
+      "name": "Armor-Piercing Mod",
+      "sp": 2,
+      "tags": {
+        "mod": true,
+        "unique": true
+      },
+      "text": "Choose one ranged or melee weapon. It gains the AP tag.",
+      "license": {
+        "line": "ssc_metalmark",
+        "level": 2
+      },
+      "id": "ssc_armorpiercing_mod"
+    },
+    {
+      "name": "Active Camo",
+      "sp": 2,
+      "tags": {
+        "heatSelf": 2,
+        "protocol": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_active_camo_action",
+          "type": "free",
+          "tags": {
+            "heatSelf": 2,
+            "protocol": true
+          },
+          "name": "Active Camo",
+          "text": "You can activate or deactivate the light bending properties of this module at the start of your turn. It lasts until the start of your next turn. While this module is active, you are invisible. If you take damage or make an overheating roll, this module deactivates."
+        }
+      ],
+      "text": "<Action id=\"ssc_active_camo_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_metalmark",
+        "level": 3
+      },
+      "id": "ssc_active_camo"
+    },
+    {
+      "name": "Ferrous Lash",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_ferrous_lash_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Ferrous Lash",
+          "text": "A target of your choice in Range 10 must pass an agility check with 1 difficulty. On a failure, it is pulled 5 in a direction of your choice. This movement must obey obstructions, terrain, etc, but doesn't provoke reactions and ignores engagement. If it collides with an obstacle or another mech, it is additionally knocked prone."
+        }
+      ],
+      "text": "<Action id=\"ssc_ferrous_lash_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_black_witch",
+        "level": 1
+      },
+      "id": "ssc_ferrous_lash"
+    },
+    {
+      "name": "ICEOUT Drone",
+      "sp": 2,
+      "tags": {
+        "limited": 2,
+        "drone": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_iceout_drone_action",
+          "type": "quick",
+          "tags": {},
+          "name": "ICEOUT Drone",
+          "text": "You fire an ICEOUT drone at a point within range 10 of you, where it hovers in place. The drone is invisible. Once fired, the drone creates a burst 2 zone around itself. Any target at least partially covered by the zone, allied or enemy, is immune to all tech actions (even beneficial ones), and cannot make or benefit from any tech actions. Any negative statuses caused by tech actions immediately end. Targets inside the zone don’t show up on any electronic sensors and are only visible to the naked eye or optics. The drone deactivates at the end of the current challenge or when destroyed, and cannot be re-used. You can move it again as a quick action."
+        }
+      ],
+      "text": "<Action id=\"ssc_iceout_drone_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_black_witch",
+        "level": 2
+      },
+      "id": "ssc_iceout_drone"
+    },
+    {
+      "name": "Mag Deployer",
+      "sp": 2,
+      "tags": {
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_mag_deployer_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Mag Deployer",
+          "text": "You flash-print a heavy metal plate that takes up a 2x2 free space in range 5 of you. It is flat and doesn’t obstruct movement. You can set the system to one of two settings when you create it:\n\n* **Repulse:** Any hostile target that enters the space must pass an hull check or be pushed in a direction of your choice 3 spaces. If this causes them to collide with an obstruction (terrain, a mech, etc) it is additionally knocked prone. An allied target that enters the space can fly 3 in any direction as a free action.\n* **Attract:** Any target, allied or enemy, that enters the space, must pass a hull check or become immobilized. It can end this status by taking a quick action and repeating this check successfully to free itself. The deployer can be attacked - it has evasion 5, 20 hp, and 2 armor, and it lasts until the end of the current challenge or around an hour outside. You can only deploy one at at time. If you create a new deployer, the old one disintegrates and is destroyed."
+        }
+      ],
+      "text": "",
+      "license": {
+        "line": "ssc_black_witch",
+        "level": 2
+      },
+      "id": "ssc_mag_deployer"
+    },
+    {
+      "name": "Black ICE Module",
+      "sp": 3,
+      "tags": {
+        "unique": true
+      },
+      "text": "Hostile tech actions or system attacks against your mech any adjacent ally are made at +1 Difficulty. Successive attacks in the same combat from any target are made with an additional +1 Difficulty (cumulative). This difficulty has a maximum of +4, and resets when it would hit +5 back to +1 as its definitions roll over.",
+      "license": {
+        "line": "ssc_black_witch",
+        "level": 3
+      },
+      "id": "ssc_black_ice_module"
+    },
+    {
+      "name": "Mag Shield",
+      "sp": 2,
+      "tags": {
+        "shield": true,
+        "unique": true
+      },
+      "actions": [
+        {
+          "id": "ssc_mag_shield_action",
+          "type": "quick",
+          "tags": {},
+          "name": "Mag Shield",
+          "text": "As a quick action, this system creates a line 4 force field 4 spaces high with at least 1 square in an adjacent space to you. Any adjacent mech can use this force field for heavy cover from attacks on the other side. It additionally gains resistance to kinetic and explosive damage from attacks on the other side of this field, but conversely, any of its targets on the other side of the forcefield gain resistance to kinetic and explosive damage from its attacks. The shield lasts until the end of the current challenge, but only 1 shield can be placed at a time."
+        }
+      ],
+      "text": "<Action id=\"ssc_mag_shield_action\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_black_witch",
+        "level": 3
+      },
+      "id": "ssc_mag_shield"
+    }
+  ],
+  "coreBonuses": [
+    {
+      "id": "ssc_subjectivity_sync",
+      "name": "Full Subjectivity Sync",
+      "text": "Your mech gains +1 evasion. You control the mech with no separation between your subjectivity and your input; a second set of physical controls are built in to a retractable panel."
+    },
+    {
+      "id": "ssc_ghostweave",
+      "name": "Ghostweave",
+      "text": "Your mech is invisible during your turn (from the start until the end of your turn). If you do nothing on your turn except move, hide, or boost (no attack rolls or other actions), keep this invisibility until the start of your next turn. It breaks if you take a reaction."
+    },
+    {
+      "id": "ssc_integrated_nerveweave",
+      "name": "Integrated Nerveweave",
+      "text": "Your mech gains +3 speed when boosting"
+    },
+    {
+      "id": "ssc_kai_bioplating",
+      "name": "Kai Bioplating",
+      "text": "You gain +1 accuracy on all agility checks"
+    },
+    {
+      "id": "ssc_neurolinked_targetting",
+      "name": "Neuro-linked Targetting",
+      "text": "All ranged weapons your mech mounts gain +3 range."
+    },
+    {
+      "id": "ssc_all_theater_movement_suite",
+      "name": "SSC All-Theater Movement Suite",
+      "text": "Your mech can fly when it moves or boosts"
+    }
+  ],
+  "shells": [
+    {
+      "id": "ssc_swallowtail",
+      "name": "Swallowtail",
+      "size": 1,
+      "armor": 0,
+      "sp": 8,
+      "stats": {
+        "agility": 2,
+        "speed": 1,
+        "systems": 1,
+        "hull": -2
+      },
+      "mounts": [
+        "flexible",
+        "auxiliary"
+      ],
+      "flavor": "The SWALLOWTAIL platform is Smith-Shimano’s primary long range/long term scouting platform, built for rapid and sustained ranging across hostile, volatile environments.",
+      "ultName": "Cloudscout TACSIM Swarms",
+      "ultPassive": " Gain +1 Accuracy to all agility checks against effects you can see or are aware of. If you can’t see a target when it attacks you (it’s invisible or hiding, for example), you don’t gain this benefit.",
+      "actions": [
+        {
+          "id": "ssc_swallowtail_ult",
+          "name": "Prophetic Interjection",
+          "type": "reaction",
+          "tags": {
+            "corePower": true
+          },
+          "text": "Until the end of the current challenge, once per round, as a reaction when an allied target you can see is damaged by another target you can see, you can make a systems check. On success, the attack hitting was actually a simulation that your mech predicted. Your ally gains resistance to all the damage from that attack, and your ally can move 3 in any direction to where they ‘actually’ were. This movement does not provoke reactions and ignores engagement."
+        }
+      ],
+      "ultActive": "**Prophetic Interjection**  \n<Action id=\"ssc_swallowtail_ult\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_swallowtail",
+        "level": 2
+      }
+    },
+    {
+      "id": "ssc_monarch",
+      "name": "Swallowtail",
+      "size": 2,
+      "armor": 1,
+      "sp": 5,
+      "stats": {
+        "agility": 1,
+        "systems": 1,
+        "hull": -1
+      },
+      "mounts": [
+        "flexible",
+        "main",
+        "spinal"
+      ],
+      "flavor": "The SSC MONARCH platform is Smith-Shimano’s solution for a fast, self-propelled missile/barrage battery. Able to mount ground-to-ground, ground-to-air, ground-to-space, and all-theater missile tubes and their guidance systems, the MONARCH can be adjusted to deliver any payload at any distance to any target. The MONARCH is commonly deployed in a fire-support role, though field tests of a MICROMONARCH mid/close range system is underway.",
+      "ultName": "Avenger Silos",
+      "ultPassive": "When you score a critical hit with a launcher weapon, a target different to your first target in range and line of sight takes 2 explosive damage (no roll required).",
+      "actions": [
+        {
+          "id": "ssc_monarch_ult",
+          "name": "Divine Punishment",
+          "type": "full",
+          "tags": {
+            "corePower": true
+          },
+          "damage": {
+            "explosive": "1d6+3"
+          },
+          "text": "You unload your Avenger silos. All targets of your choice on the battlefield (or a burst 50 area from your mech) must pass an agility check with 1 difficulty or take 1d6+3 explosive damage, and half on a successful save. You do not need line of sight to any targets, and the self-guiding missiles can perfectly seek any target as long as they can trace a path. Once used, you cannot benefit from the passive of this system until you take a full repair."
+        }
+      ],
+      "ultActive": "**Divine Punishment**  \n<Action id=\"ssc_monarch_ult\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_monarch",
+        "level": 2
+      }
+    },
+    {
+      "id": "ssc_mourning_cloak",
+      "name": "Mourning Cloak",
+      "size": 1,
+      "armor": 0,
+      "sp": 6,
+      "stats": {
+        "agility": 1,
+        "systems": -1,
+        "evasion": 2,
+        "hull": -1
+      },
+      "mounts": [
+        "flexible",
+        "flexible"
+      ],
+      "flavor": "The SSC MOURNING CLOAK core is intended to provide pilots with a closer-than-CQB tactical option for situations where firearms and ordnance weapons are impractical or unavailable. The MOURNING CLOAK line specializes in precision melee combat and is commonly outfitted with a complement of variable weaponry; shielded microfilament wires designed to attack vulnerable joints and external modules.",
+      "ultName": "Smith-Shimano EX Slipstream Module",
+      "ultPassive": "This dangerous and experimental module is a miniaturized starship nearlight drive. You can use it instead of moving or taking the boost action. When you use it, roll 3d6. You can teleport to a point within that range around you as long as there is space for your mech. You don’t have to be able to see this point, but if you attempt to teleport to an already occupied space (by terrain, another mech, etc), the teleport fails and you take 2d6 kinetic damage.\n\nIf you roll triples for this system, your mech disappears and does not re-appear, either indefinitely or until your party rests (up to you).",
+      "actions": [
+        {
+          "id": "ssc_mourning_cloak_ult",
+          "name": "Stabilize Singularity",
+          "type": "free",
+          "tags": {
+            "corePower": true,
+            "protocol": true
+          },
+          "text": "Until the end of this challenge, when you move or boost, you instead teleport up to the same distance."
+        }
+      ],
+      "ultActive": "**Stabilize Singularity**  \n<Action id=\"ssc_mourning_cloak_ult\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_mourning_cloak",
+        "level": 2
+      }
+    },
+    {
+      "id": "ssc_deaths_head",
+      "name": "Death's Head",
+      "size": 1,
+      "armor": 0,
+      "sp": 6,
+      "stats": {
+        "agility": 2,
+        "targetting": 1,
+        "hull": -2
+      },
+      "mounts": [
+        "flexible",
+        "auxiliary",
+        "heavy"
+      ],
+      "flavor": "The DEATH’S HEAD is Smith-Shimano’s answer to all other long range, low splash artillery mechs. By sacrificing hull strength for stability and alacrity, the DEATH’S HEAD manages to avoid incoming fire while holding a near-perfect lock through advanced maneuvers.",
+      "ultName": "Precognitive Targeting",
+      "ultPassive": " You can re-roll the very first attack roll you make in a round, but must keep the second result.",
+      "actions": [
+        {
+          "id": "ssc_deaths_head_ult",
+          "name": "Transcranial Ego Ballistics",
+          "type": "free",
+          "tags": {
+            "corePower": true,
+            "protocol": true
+          },
+          "text": "Integrated combat routines make your next weapon attack gain the seeking tag, its maximum range increases by +10, and it automatically hits, no matter how difficult the shot."
+        }
+      ],
+      "ultActive": "**Activate Neural Shunt**  \nGain the following protocol:  \n*Transcranial Ego Ballistics*  \n<Action id=\"ssc_deaths_head_ult\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_deaths_head",
+        "level": 2
+      }
+    },
+    {
+      "id": "ssc_dusk_wing",
+      "name": "Dusk Wing",
+      "size": 0.5,
+      "armor": 0,
+      "sp": 7,
+      "stats": {
+        "agility": 1,
+        "systems": 1,
+        "engineering": -1,
+        "hull": -1
+      },
+      "mounts": [
+        "flexible",
+        "auxiliary",
+        "auxiliary"
+      ],
+      "flavor": "The SSC DUSK WING is built from a legacy-inspired modification package to hazardous/hardened EVA suits; in the early days of deep space exploration, there was a need for mechanized exoskeletons that provided not only amplified capacity, but plated kinetic defense. The DUSK WING is the spiritual heir of those early deep space suits. Fast and small, the DUSK WING mounts a complement of all-theater maneuverability jets that allow for perfect (or near-perfect) flight.",
+      "ultName": "SSC EX Hover Propulsion System",
+      "ultPassive": "When your mech moves or boosts, it can Fly",
+      "actions": [
+        {
+          "id": "ssc_dusk_wing_ult",
+          "name": "Engage Flicker Drives",
+          "type": "free",
+          "tags": {
+            "corePower": true,
+            "protocol": true
+          },
+          "text": "For the rest of this challenge, your mech can Hover when it moves or boosts (it can fly, doesn’t need to move, it can move without going in a straight line, and doesn’t need to land). During your turn, your mech is covering in coruscating patterns of distorting energy and counts as Invisible. Electronic systems such as sensors/cameras, etc have a hard time picking up the outline of your mech at all. When your turn finishes, you lose this invisibility until the start of your next turn."
+        }
+      ],
+      "ultActive": "**Engage Flicker Drives**  \n<Action id=\"ssc_dusk_wing_ult\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_dusk_wing",
+        "level": 2
+      }
+    },
+    {
+      "id": "ssc_metalmark",
+      "name": "MetalMark",
+      "size": 1,
+      "armor": 1,
+      "sp": 5,
+      "stats": {
+        "agility": 1
+      },
+      "mounts": [
+        "flexible",
+        "auxiliary",
+        "heavy"
+      ],
+      "flavor": "The METALMARK is SCC’s backbone-class line mech, fully equipped with SSC’s proprietary design and engineering hallmarks to ensure that it is just as survivable as it is agile. The METALMARK base model reflects SSC’s deep-space and long patrol heritage in its aquiline design, sturdy construction, and multiple redundant systems. All METALMARK models come standard with a SMITH CUSTOM LEATHER gimbaled pilot seat to ensure comfort on long distance ranging expeditions.",
+      "ultName": "Tactical Cloak",
+      "ultPassive": "You are invisible while moving (regular move, boosting, moves from talents, etc), but reappear after you finish your movement.",
+      "actions": [
+        {
+          "id": "ssc_metalmark_ult",
+          "name": "Cloaking Protocol",
+          "type": "free",
+          "tags": {
+            "corePower": true,
+            "protocol": true
+          },
+          "text": "Until the end of the current challenge, or when you deactivate this module: At the start of your turn, you become invisible. If you take damage or roll an overheating roll, you lose the benefit of this module until the start of your next turn. No other action will deactivate it."
+        }
+      ],
+      "ultActive": "**Cloaking Protocol**  \n<Action id=\"ssc_metalmark_ult\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_metalmark",
+        "level": 2
+      }
+    },
+    {
+      "id": "ssc_black_witch",
+      "name": "Black Witch",
+      "size": 1,
+      "armor": 0,
+      "sp": 8,
+      "stats": {
+        "agility": 1,
+        "systems": 1
+      },
+      "mounts": [
+        "auxiliary",
+        "flexible"
+      ],
+      "flavor": "The BLACK WITCH is the primary designate model in SSC’s newest line of mech cores meant to compete with HORUS’s dominance in the field of invasion/control cores. The BLACK WITCH is open to all pilots with the necessary SSC licensing and should experience greater overall use, as current SSC licenses outnumber the hypothetical maximum of HORUS licenses issued.\n\nThe BLACK WITCH is built to withstand the stresses of combat system invasion and magnetic weaponry: it is a primary platform for engagements where the use of kinetic, ferrous projectiles and ordinance is expected. Developed primarily as a salvage and scrap repair system, the SSC-BW’s mag field system was soon repurposed by the SSC Gendarme as a personal defense system",
+      "ultName": "Mag Projector",
+      "ultPassive": "<Action id=\"ssc_black_witch_passive\" format=\"text\"/>",
+      "actions": [
+        {
+          "id": "ssc_black_witch_passive",
+          "name": "Mag Parry",
+          "type": "reaction",
+          "tags": {},
+          "damage": {
+            "heat": "1d6"
+          },
+          "text": "Once per turn, you can attempt to parry any attack that hits your mech as a reaction. Roll a d6. On a 6, you reduce the damage from that attack to 0, and deal 1d6 heat back to your attacker.",
+          "license": {
+            "shell": "ssc_black_witch"
+          }
+        },
+        {
+          "id": "ssc_black_witch_ult",
+          "name": "Mag Field",
+          "type": "quick",
+          "tags": {
+            "corePower": true
+          },
+          "range": {
+            "blast": [
+              4,
+              4
+            ]
+          },
+          "text": "As a quick action, you may activate the mag field to create a Blast 4 area in any area with at least one square adjacent to you. Inside, ranged weapon attacks that deal kinetic or explosive damage cannot penetrate into or out of the field and will stop at the edge, doing no damage (keep track of them). The field is difficult terrain for all mechs and vehicles made at least partly of metal. Targets that start their turn in the Mag Field or enter it for the first time on their turns must make a successful Engineering check with 1 difficulty or be pulled to the center as far as possible and immobilized. They can repeat this check at the start of their turns while trapped this way and can move normally on a success, otherwise they remain trapped. The field persists for 3 rounds after deployment. At the end of the third round any attacks fired into this field will resume trajectory towards the center of this zone. The GM performs a single attack roll vs each target still inside the zone with +1 targeting per attack fired into this zone (cumulative, up to a max of +6). Successful hits deal 1d6 Kinetic damage per attack fired into this zone (cumulative). Then, the zone deactivates."
+        }
+      ],
+      "ultActive": "**Mag Field**  \n<Action id=\"ssc_black_witch_ult\" format=\"text\"/>",
+      "license": {
+        "line": "ssc_black_witch",
+        "level": 2
+      }
+    }
+  ]
+}
