@@ -7,8 +7,8 @@
   },
   "licenses": {
     "ssc_swallowtail": {
-      "name": "Balor",
-      "summary": "Nanobot Swarm Host/Frontline Assault",
+      "name": "Swallowtail",
+      "summary": "Scout",
       "flavor": "",
       "levels": [
         {},
@@ -17,8 +17,8 @@
       ]
     },
     "ssc_monarch": {
-      "name": "Goblin",
-      "summary": "Technical/Enlightenment/Hacking",
+      "name": "Monarch",
+      "summary": "Missile",
       "flavor": "",
       "levels": [
         {},
@@ -27,8 +27,8 @@
       ]
     },
     "ssc_mourning_cloak": {
-      "name": "Hydra",
-      "summary": "Drone Mech",
+      "name": "Mourning Cloak",
+      "summary": "Agile, Teleporting Melee Assassin",
       "flavor": "",
       "levels": [
         {},
@@ -37,8 +37,8 @@
       ]
     },
     "ssc_deaths_head": {
-      "name": "Gorgon",
-      "summary": "Overwatch/Electronic Defense",
+      "name": "Death's Head",
+      "summary": "Marksmanship",
       "flavor": "",
       "levels": [
         {},
@@ -47,8 +47,8 @@
       ]
     },
     "ssc_dusk_wing": {
-      "name": "Manticore",
-      "summary": "EMP",
+      "name": "Dusk Wing",
+      "summary": "Rapid Assault",
       "flavor": "",
       "levels": [
         {},
